@@ -1,7 +1,7 @@
 @import 'components/font';
-$primaryColor: red;
+@import 'components/var';
 
 body{
-    color: $primaryColor;
+    background-color: $primary-back-color;
 }
 

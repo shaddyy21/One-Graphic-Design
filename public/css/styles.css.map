@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/font.scss","app.scss"],"names":[],"mappings":"AAAA;EACI,aAAa,EAChB;;ACCD;EACI,WAHc,EAIjB","file":"styles.css","sourcesContent":["font{\r\n    color: white;\r\n}","@import 'components/font';\n$primaryColor: red;\n\nbody{\n    color: $primaryColor;\n}\n\n"],"sourceRoot":"/source/"}

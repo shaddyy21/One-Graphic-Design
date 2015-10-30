@@ -1,5 +1,10 @@
-@import 'components/font';
 @import 'components/var';
+@import 'components/reset';
+@import 'components/font';
+@import 'components/head';
+@import 'components/main';
+@import 'components/foot';
+@import 'components/breakpoints';
 
 body{
     background-color: $primary-back-color;

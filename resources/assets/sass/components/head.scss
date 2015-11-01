@@ -1,0 +1,22 @@
+.heading{
+    display: flex;
+    
+    h1{
+        margin: auto;
+        flex: 1 1 content;
+        align-content: center;
+    }
+}
+
+nav{
+    display: none;
+    ul{
+        margin: 0;
+        padding: 0;
+        
+        li{
+            margin: auto;
+            text-align: center;
+        }
+    }
+}

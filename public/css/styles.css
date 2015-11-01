@@ -77,6 +77,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+li {
+  list-style: none; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -199,15 +202,57 @@ textarea {
   h3 {
     page-break-after: avoid; } }
 
-font {
-  color: white; }
+.heading h1 {
+  color: black;
+  text-align: center;
+  font-family: Agency FB;
+  font-weight: normal; }
+
+nav {
+  font-family: Agency FB;
+  font-weight: normal;
+  font-size: 2em; }
+
+.heading {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .heading h1 {
+    margin: auto;
+    -webkit-flex: 1 1 content;
+    -ms-flex: 1 1 content;
+    flex: 1 1 content;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center; }
+
+nav {
+  display: none; }
+  nav ul {
+    margin: 0;
+    padding: 0; }
+    nav ul li {
+      margin: auto;
+      text-align: center; }
+
+body {
+  background-color: #9E9E9E; }
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
   body {
     background-color: lightgray; } }
 
-body {
-  background-color: #9E9E9E; }
+@media only screen and (min-width: 75em) {
+  nav {
+    margin: auto; }
+    nav ul {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      nav ul li {
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto; } }
 
 /*# sourceMappingURL=styles.css.map */

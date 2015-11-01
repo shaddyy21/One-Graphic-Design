@@ -10,5 +10,13 @@
 }
 
 @media only screen and (min-width: 75em) {
-    /* Style adjustments for viewports that meet the condition */
+    nav{
+        margin: auto;
+        ul{
+            display: flex;
+            li{
+                flex: 1 1 auto;
+            }
+        }
+    }
 }

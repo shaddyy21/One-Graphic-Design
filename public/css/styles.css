@@ -217,6 +217,8 @@ nav {
   font-family: Agency FB;
   font-weight: normal;
   font-size: 2em; }
+  nav a {
+    color: black; }
 
 .heading {
   display: -webkit-flex;
@@ -233,6 +235,8 @@ nav {
 
 nav {
   display: none; }
+  nav a {
+    text-decoration: none; }
   nav ul {
     margin: 0;
     padding: 0; }
@@ -240,8 +244,43 @@ nav {
       margin: auto;
       text-align: center; }
 
+.linkUnderline {
+  text-decoration: underline; }
+
 body {
   background-color: #9E9E9E; }
+
+section {
+  min-height: 100vh; }
+
+.image-shown {
+  display: inline-block; }
+
+.image-hidden {
+  display: none; }
+
+.carousel-outter {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.carousel-inner {
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  width: 18em;
+  height: 15em;
+  position: relative; }
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.50em; }
+
+.previousLink, .nextLink {
+  display: inline-block;
+  margin-top: 3.5em;
+  margin-left: 3.5em; }
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
@@ -249,15 +288,19 @@ body {
     background-color: lightgray; } }
 
 @media only screen and (min-width: 75em) {
+  #bars {
+    display: none; }
   nav {
-    margin: auto; }
+    margin: 2em 4em 2em 4em;
+    display: block; }
     nav ul {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
       nav ul li {
-        -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-        flex: 1 1 auto; } }
+        margin: 0 2.35em 0 2.5em;
+        -webkit-flex: 1 1 content;
+        -ms-flex: 1 1 content;
+        flex: 1 1 content; } }
 
 /*# sourceMappingURL=styles.css.map */

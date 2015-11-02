@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <div class="heading">
+        <div class="heading" data-role="header" data-position=fixed>
             <img src="" alt="logo">
             <h1>One Graphic Design</h1>
             <p id="bars"><i class="fa fa-bars"></i></p>
@@ -21,25 +21,45 @@
         
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Portfolio</li>
-                <li>About</li>
-                <li>Contact Us</li>
-                <li>Other Art</li>
+                <a class="linkUnderline" href="#"><li>Home</li></a>
+                <a class="linkUnderline-two" href="#"><li>Portfolio</li></a>
+                <a class="linkUnderline-three" href="#"><li>About</li></a>
+                <a class="linkUnderline-four" href="#"><li>Contact Us</li></a>
+                <a class="linkUnderline-five" href="#"><li>Other Art</li></a>
             </ul>
         </nav>
         
-        <div class="page">
+        <main>
+            <section id="Home">
+                <div class="page">
             <div class="carousel-outer">
-				<a class="previousLink" href="#">Previous</a>
 				<div class="carousel-inner">
-			<img class="image-shown" src="{{asset('img/_MG_8850.jpg')}}" alt="" />
-					<a class="image-hidden"><img  src="{{asset('img/wholeMilk.jpg')}}" alt="" /></a>
+                    <img class="image-shown" src="{{asset('img/_MG_8850.jpg')}}" alt=""/>
+					<img class="image-hidden" src="{{asset('img/wholeMilk.jpg')}}" alt=""/>
 		
 				</div>
+				<a class="previousLink" href="#">Previous</a>
 				<a class="nextLink" href="#">Next</a>
 			</div>
         </div>
+            </section>
+            
+            <section id="Portfolio">
+                
+            </section>
+            
+            <section id="About">
+                
+            </section>
+            
+            <section id="Contact">
+                
+            </section>
+            
+            <section id="Other">
+                
+            </section>
+        </main>
     </header>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="{{asset('js/jQuery.js')}}"></script>

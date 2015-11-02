@@ -1,0 +1,36 @@
+.image-shown
+{
+	display: inline-block;
+}
+
+.image-hidden
+{
+	display: none;
+}
+
+.carousel-outter {
+	display: flex;
+}
+
+.carousel-inner
+{   
+    flex: 1 1 100%;
+	width: 18em;
+	height: 15em;
+	position: relative;
+
+}
+
+.carousel-inner img
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 0.50em;
+}
+
+.previousLink, .nextLink
+{
+    display: inline-block;
+	margin-top: 3.5em;
+    margin-left: 3.5em;
+}

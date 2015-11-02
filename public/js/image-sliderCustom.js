@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 		if(nextActiveImage.length == 0)
 		{
-			nextActiveImage = $(".carousel-inner a").first();
+			nextActiveImage = $(".carousel-inner img").first();
 		}
 
 		currentActiveImage.removeClass("image-shown").addClass("image-hidden").css("z-index", -10);
@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 		if(nextActiveImage.length == 0)
 		{
-			nextActiveImage = $(".carousel-inner a").last();
+			nextActiveImage = $(".carousel-inner img").last();
 		}
 
 		currentActiveImage.removeClass("image-shown").addClass("image-hidden").css("z-index",-10);

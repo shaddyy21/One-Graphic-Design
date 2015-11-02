@@ -1,6 +1,9 @@
 .heading{
     display: flex;
-    
+//    position: fixed;
+//    top: 0;
+//    margin: auto;
+//    z-index: 1000000000;
     h1{
         margin: auto;
         flex: 1 1 content;
@@ -8,8 +11,19 @@
     }
 }
 
+
+
 nav{
     display: none;
+    
+    a{
+            text-decoration: none;
+    }
+    
+    a:hover{
+        
+    }
+    
     ul{
         margin: 0;
         padding: 0;
@@ -19,4 +33,8 @@ nav{
             text-align: center;
         }
     }
+}
+
+.linkUnderline{
+    text-decoration: underline;
 }

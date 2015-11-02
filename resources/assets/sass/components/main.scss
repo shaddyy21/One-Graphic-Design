@@ -1,3 +1,7 @@
 body{
     background-color: $primary-back-color;
 }
+
+section{
+    min-height: 100vh;
+}

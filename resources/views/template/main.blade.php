@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <div class="heading" data-role="header" data-position=fixed>
+        <div class="heading">
             <img src="" alt="logo">
             <h1>One Graphic Design</h1>
             <p id="bars"><i class="fa fa-bars"></i></p>

@@ -1,13 +1,17 @@
 .heading{
     display: flex;
-//    position: fixed;
-//    top: 0;
-//    margin: auto;
-//    z-index: 1000000000;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    
     h1{
         margin: auto;
         flex: 1 1 content;
         align-content: center;
+    }
+    
+    p{
+        margin-left: 0.5em;
     }
 }
 
@@ -15,6 +19,7 @@
 
 nav{
     display: none;
+    margin-top: 3em;
     
     a{
             text-decoration: none;

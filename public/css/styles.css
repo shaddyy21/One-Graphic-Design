@@ -223,7 +223,10 @@ nav {
 .heading {
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 100; }
   .heading h1 {
     margin: auto;
     -webkit-flex: 1 1 content;
@@ -232,9 +235,12 @@ nav {
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center; }
+  .heading p {
+    margin-left: 0.5em; }
 
 nav {
-  display: none; }
+  display: none;
+  margin-top: 3em; }
   nav a {
     text-decoration: none; }
   nav ul {

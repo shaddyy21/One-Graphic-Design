@@ -11,13 +11,14 @@ $(function (){
                 isOpen = true;
                 
             }else{
-                $('nav').hide(550);
-                    isOpen = false;  
                 
                 $('nav a').on('click', function(){
                     $('nav').hide(550);
                     isOpen = false;  
                 });
+                
+                $('nav').hide(550);
+                    isOpen = false;  
             }
         });
     /*============================================================*/

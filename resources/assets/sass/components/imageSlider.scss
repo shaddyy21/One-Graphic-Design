@@ -9,16 +9,17 @@
 }
 
 .carousel-outter {
+    margin-top: 20em;
 	display: flex;
 }
 
-.carousel-inner
-{   
+.carousel-inner{   
     flex: 1 1 100%;
 	width: 18em;
 	height: 15em;
 	position: relative;
-
+//    margin-top: 10em;
+    margin: 10em auto 0 auto;
 }
 
 .carousel-inner img
@@ -30,7 +31,7 @@
 
 .previousLink, .nextLink
 {
-    display: inline-block;
-	margin-top: 3.5em;
-    margin-left: 3.5em;
+    flex:  1 1 content;
+	margin-top: 5.5em;
+    margin-left: 5.5em;
 }

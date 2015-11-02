@@ -269,6 +269,7 @@ section {
   display: none; }
 
 .carousel-outter {
+  margin-top: 20em;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
@@ -279,7 +280,8 @@ section {
   flex: 1 1 100%;
   width: 18em;
   height: 15em;
-  position: relative; }
+  position: relative;
+  margin: 10em auto 0 auto; }
 
 .carousel-inner img {
   width: 100%;
@@ -287,9 +289,11 @@ section {
   border-radius: 0.50em; }
 
 .previousLink, .nextLink {
-  display: inline-block;
-  margin-top: 3.5em;
-  margin-left: 3.5em; }
+  -webkit-flex: 1 1 content;
+  -ms-flex: 1 1 content;
+  flex: 1 1 content;
+  margin-top: 5.5em;
+  margin-left: 5.5em; }
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */

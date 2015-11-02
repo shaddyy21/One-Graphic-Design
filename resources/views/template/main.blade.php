@@ -21,11 +21,11 @@
         
         <nav>
             <ul>
-                <a class="linkUnderline" href="#"><li>Home</li></a>
-                <a class="linkUnderline-two" href="#"><li>Portfolio</li></a>
-                <a class="linkUnderline-three" href="#"><li>About</li></a>
-                <a class="linkUnderline-four" href="#"><li>Contact Us</li></a>
-                <a class="linkUnderline-five" href="#"><li>Other Art</li></a>
+                <a class="linkUnderline" href="#Home"><li>Home</li></a>
+                <a class="linkUnderline-two" href="#Portfolio"><li>Portfolio</li></a>
+                <a class="linkUnderline-three" href="#About"><li>About</li></a>
+                <a class="linkUnderline-four" href="#Contact"><li>Contact Us</li></a>
+                <a class="linkUnderline-five" href="#Other"><li>Other Art</li></a>
             </ul>
         </nav>
         

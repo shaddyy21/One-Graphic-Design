@@ -10,6 +10,16 @@
 }
 
 @media only screen and (min-width: 75em) {
+    .heading{
+       margin: 1em 0 1.5em 0;
+        width: 100%;
+        border: thin red solid;
+        h1{
+            margin-left: 16em;
+            display: block;
+        }
+    }
+    
     #bars{
         display: none;
     }
@@ -19,8 +29,7 @@
         ul{
             display: flex;
                 li{
-                    margin:0 2.35em 0 2.5em;
-//                    text-align: center;
+                    margin:0 2em 0 2em;
                     flex: 1 1 content;
                 }
         }

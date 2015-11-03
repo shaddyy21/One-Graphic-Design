@@ -3,7 +3,9 @@ body{
 }
 
 section{
-    min-height: 100vh;
+    padding-top: 5em;
+    min-height: 60vh;
+//    margin-top: 20em;
 }
 
 .image-slider{   
@@ -12,5 +14,36 @@ section{
 	height: 15em;
 	position: relative;
 //    margin-top: 10em;
-    margin: 10em auto 0 auto;
+    margin: 0 auto 0 auto;
+}
+
+#Home{
+//    margin-top: 8em;
+
+}
+.work{
+    display: flex;
+    p{
+        flex: 1 1 auto;
+        margin-left: 2em;
+    }
+}
+.display{
+    display: flex;
+}
+
+.paper{
+    flex: 1 0 100%;
+//    border: thin red solid;
+    width: 23.5em;
+    img{
+        width: 10em;
+        height: 10em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+    
+    p{
+        margin: 0.4em auto 0.4em auto;
+    }
 }

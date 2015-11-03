@@ -202,13 +202,13 @@ li {
   h3 {
     page-break-after: avoid; } }
 
-.heading h1 {
+h1 {
   color: black;
   text-align: center;
   font-family: Agency FB;
   font-weight: normal; }
 
-.heading #bars {
+.heading #Bars {
   font-family: Agency FB;
   font-weight: normal;
   font-size: 2em; }
@@ -220,16 +220,38 @@ nav {
   nav a {
     color: black; }
 
+#Home h1 {
+  color: black;
+  text-align: center;
+  font-family: Agency FB;
+  font-weight: normal;
+  font-size: 2.5em; }
+
+#Portfolio h1 {
+  color: black;
+  text-align: center;
+  font-family: Agency FB;
+  font-weight: normal;
+  font-size: 2.5em; }
+
+.paper p {
+  color: black;
+  text-align: center;
+  font-family: Agency FB;
+  font-weight: normal;
+  font-size: 2em; }
+
 .heading {
   background-color: #6E6E6E;
+  position: fixed;
   width: 100%;
+  z-index: 1000;
   height: 6.5em;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
   top: 0;
-  z-index: 100; }
+  left: 0; }
   .heading h1 {
     margin: auto;
     -webkit-flex: 1 1 content;
@@ -253,9 +275,6 @@ nav {
       margin: auto;
       text-align: center; }
 
-#Nav {
-  margin-bottom: -4em; }
-
 .linkUnderline {
   text-decoration: underline; }
 
@@ -263,7 +282,8 @@ body {
   background-color: #9E9E9E; }
 
 section {
-  min-height: 100vh; }
+  padding-top: 5em;
+  min-height: 60vh; }
 
 .image-slider {
   -webkit-flex: 1 1 100%;
@@ -272,7 +292,35 @@ section {
   width: 18em;
   height: 15em;
   position: relative;
-  margin: 10em auto 0 auto; }
+  margin: 0 auto 0 auto; }
+
+.work {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .work p {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin-left: 2em; }
+
+.display {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.paper {
+  -webkit-flex: 1 0 100%;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+  width: 23.5em; }
+  .paper img {
+    width: 10em;
+    height: 10em;
+    margin-left: 1em;
+    margin-bottom: 1em; }
+  .paper p {
+    margin: 0.4em auto 0.4em auto; }
 
 .image-shown {
   display: inline-block; }
@@ -335,7 +383,7 @@ section {
     display: none; }
   nav {
     display: block;
-    margin: 5em; }
+    margin: 5em 4em 5em 4em; }
     nav ul {
       display: -webkit-flex;
       display: -ms-flexbox;

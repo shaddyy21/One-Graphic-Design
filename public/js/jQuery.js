@@ -1,25 +1,34 @@
 $(function (){
+
     /*============================================================*/
     /*                    Navigation                              */
     /*============================================================*/
         var isOpen = false;
-        $('#bars').on('click', function(event){
+        $('#Bars').on('click', function(event){
             event.preventDefault();
             scroll(0,0);
             if(isOpen == false){
                 $('nav').show(600);
+                $('section').css('padding-top','5em');
+
                 isOpen = true;
                 
             }else{
-                
-                $('nav a').on('click', function(){
-                    $('nav').hide(550);
-                    isOpen = false;  
-                });
-                
-                $('nav').hide(550);
+                $('#Nav').hide(550);
+//                $('section').css('padding-top','5em');
                     isOpen = false;  
             }
+        });
+    /*============================================================*/
+    
+    
+    /*============================================================*/
+    /*             Hides navigation on link click                 */
+    /*============================================================*/
+        $('#Nav a').on('click', function(){
+            $('#Nav').hide(550);
+            $('section').css('padding-top','25.5em');
+            isOpen = false;  
         });
     /*============================================================*/
     
@@ -34,14 +43,18 @@ $(function (){
         });
     /*============================================================*/
     
-    $(document).ready(function(){
-        $('.image-slider').slick({
-            dots: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
+    
+    /*============================================================*/
+    /*                  Image Slider(not mine)                    */
+    /*============================================================*/
+        $(document).ready(function(){
+            $('.image-slider').slick({
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
         });
-    });
-
+    /*============================================================*/
 });

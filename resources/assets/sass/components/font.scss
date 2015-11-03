@@ -1,12 +1,13 @@
+h1{
+    color: black;
+    text-align: center;
+    font-family: Agency FB;
+    font-weight: normal;
+}
+
 .heading{
-    h1{
-        color: black;
-        text-align: center;
-        font-family: Agency FB;
-        font-weight: normal;
-    }
     
-    #bars{
+    #Bars{
         font-family: Agency FB;
         font-weight: normal;
         font-size: 2em;
@@ -20,5 +21,34 @@ nav{
     
     a{
         color: black;
+    }
+}
+
+#Home{
+    h1{
+        color: black;
+        text-align: center;
+        font-family: Agency FB;
+        font-weight: normal;
+        font-size: 2.5em;
+    }
+}
+
+#Portfolio{
+    h1{
+        color: black;
+        text-align: center;
+        font-family: Agency FB;
+        font-weight: normal;
+        font-size: 2.5em;
+    }
+}
+.paper{
+    p{
+        color: black;
+        text-align: center;
+        font-family: Agency FB;
+        font-weight: normal;
+        font-size: 2em;
     }
 }

@@ -5,3 +5,12 @@ body{
 section{
     min-height: 100vh;
 }
+
+.image-slider{   
+    flex: 1 1 100%;
+	width: 18em;
+	height: 15em;
+	position: relative;
+//    margin-top: 10em;
+    margin: 10em auto 0 auto;
+}

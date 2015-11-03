@@ -33,4 +33,15 @@ $(function (){
             $(this).toggleClass('linkUnderline');
         });
     /*============================================================*/
+    
+    $(document).ready(function(){
+        $('.image-slider').slick({
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    });
+
 });

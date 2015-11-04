@@ -9,7 +9,6 @@ $(function (){
             scroll(0,0);
             if(isOpen == false){
                 $('nav').show(600);
-//                $('section').css('padding-top','5em');
                 isOpen = true;
                 
             }else{
@@ -61,7 +60,7 @@ $(function (){
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 2500,
             });
         });
     /*============================================================*/
@@ -97,4 +96,5 @@ $(function (){
                 $('.packaging').show(600);
         });
     /*============================================================*/
+
 });

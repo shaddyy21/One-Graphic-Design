@@ -220,26 +220,39 @@ nav {
   nav a {
     color: black; }
 
-#Home h1 {
+#Home h1, #Portfolio h1, #About h1, #Contact h1, #Other h1 {
   color: black;
   text-align: center;
   font-family: Agency FB;
   font-weight: normal;
   font-size: 2.5em; }
 
-#Portfolio h1 {
+.work p {
   color: black;
-  text-align: center;
   font-family: Agency FB;
   font-weight: normal;
-  font-size: 2.5em; }
+  font-size: 1.5em; }
 
-.paper p {
+.paper p, .logo p, .packaging p {
   color: black;
   text-align: center;
   font-family: Agency FB;
   font-weight: normal;
   font-size: 2em; }
+
+#About p {
+  color: black;
+  font-family: Agency FB;
+  font-weight: normal;
+  font-size: 1.5em;
+  text-align: justify; }
+
+footer p {
+  color: black;
+  text-align: center;
+  font-family: Agency FB;
+  font-weight: normal;
+  font-size: 1.4em; }
 
 .heading {
   background-color: #6E6E6E;
@@ -309,18 +322,21 @@ section {
   display: -ms-flexbox;
   display: flex; }
 
-.paper {
+.paper, .logo, .packaging {
   -webkit-flex: 1 0 100%;
   -ms-flex: 1 0 100%;
   flex: 1 0 100%;
   width: 23.5em; }
-  .paper img {
+  .paper img, .logo img, .packaging img {
     width: 10em;
     height: 10em;
     margin-left: 1em;
-    margin-bottom: 1em; }
-  .paper p {
-    margin: 0.4em auto 0.4em auto; }
+    margin-bottom: 1em;
+    border: 0.15em black solid;
+    border-radius: 2em; }
+
+.logo, .packaging {
+  display: none; }
 
 .image-shown {
   display: inline-block; }
@@ -379,11 +395,15 @@ section {
     .heading h1 {
       margin-left: 16em;
       display: block; }
-  #bars {
+  #Bars {
     display: none; }
   nav {
     display: block;
-    margin: 5em 4em 5em 4em; }
+    position: fixed;
+    z-index: 1000;
+    top: 50;
+    right: 50;
+    margin: 0; }
     nav ul {
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -392,6 +412,8 @@ section {
         margin: 0 2em 0 2em;
         -webkit-flex: 1 1 content;
         -ms-flex: 1 1 content;
-        flex: 1 1 content; } }
+        flex: 1 1 content; }
+  section {
+    padding-top: 15em; } }
 
 /*# sourceMappingURL=styles.css.map */

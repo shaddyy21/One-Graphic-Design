@@ -20,12 +20,17 @@
         }
     }
     
-    #bars{
+    #Bars{
         display: none;
     }
+    
     nav{
         display: block;
-        margin: 5em 4em 5em 4em;
+        position: fixed;
+        z-index: 1000;
+        top: 50;
+        right: 50;
+        margin-left: 2em''
         ul{
             display: flex;
                 li{
@@ -33,5 +38,9 @@
                     flex: 1 1 content;
                 }
         }
+    }
+    
+    section{
+        padding-top: 15em;
     }
 }

@@ -23,7 +23,7 @@
         
         <nav id="Nav">
             <ul>
-                <a class="linkUnderline-one" href="#Home"><li>Home</li></a>
+                <a class="linkUnderline" href="#Home"><li>Home</li></a>
                 <a class="linkUnderline-two" href="#Portfolio"><li>Portfolio</li></a>
                 <a class="linkUnderline-three" href="#About"><li>About</li></a>
                 <a class="linkUnderline-four" href="#Contact"><li>Contact Us</li></a>
@@ -47,9 +47,9 @@
             <section id="Portfolio">
                <h1>Portfolio</h1>
                 <div class="work" id="Work">
-                    <p>Paper Art</p>
-                    <p>Logo</p>
-                    <p>Packaging</p>
+                    <p id="Paperart" class="linkUnderline">Paper Art</p>
+                    <p id="Logo" class="linkUnderline-two">Logo</p>
+                    <p id="Pack" class="linkUnderline-three">Packaging</p>
                 </div>
                 <div class="display">
                    <div class="paper">
@@ -58,23 +58,44 @@
                        <img src="{{asset('img/_MG_8850.jpg')}}" alt="">
                        <img src="{{asset('img/flagTwoSided.jpg')}}" alt="">
                        <img src="{{asset('img/wholeMilk.jpg')}}" alt="">
-                   </div> 
+                   </div>
+                   
+                   <div class="logo">
+                       <p>Logo</p>
+                       <img src="{{asset('img/naturyoLogo.png')}}" alt="">
+                       <img src="{{asset('img/naturyoLogo1.png')}}" alt="">
+                   </div>
+                   
+                   <div class="packaging">
+                      <p>Packaging</p>
+                      <img src="{{asset('img/_MG_8841.jpg')}}" alt="">
+                      <img src="{{asset('img/flagTwoSided.jpg')}}" alt="">
+                      <img src="{{asset('img/sachet.jpg')}}" alt="">
+                      <img src="{{asset('img/SkimMilk.jpg')}}" alt="">
+                      <img src="{{asset('img/wholeMilk.jpg')}}" alt="">
+                   </div>
                 </div>
-                <!-- <div id="Port"></div> -->
             </section>
             
             <section id="About">
-                
+                <h1>About</h1>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In reprehenderit eius delectus ad consectetur unde, dolorum minima odio, provident, architecto facere nulla aut libero ratione magni laudantium dolores commodi. Porro asperiores numquam praesentium placeat suscipit itaque, eius nulla neque voluptate! Veniam, enim dignissimos, quibusdam maxime hic temporibus perferendis aperiam cupiditate omnis incidunt cum ducimus dolores debitis delectus est iste quia porro libero nam, at aspernatur ratione. Exercitationem incidunt necessitatibus provident ratione aspernatur, doloribus fugiat perspiciatis sed! Eum inventore, veniam ratione natus quis, maiores voluptate numquam corporis doloremque dolorum odit nemo est, laudantium dolores voluptatum. Voluptates, provident sapiente dolor magni excepturi.</p>
+                </div>
             </section>
             
             <section id="Contact">
-                
+                <h1>Contact Us</h1>
             </section>
             
             <section id="Other">
-                
+                <h1>Other Art</h1>
             </section>
         </main>
+        
+        <footer>
+            <p> &copy; All rights reserved One Graphic Design</p>
+        </footer>
     </header>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="{{asset('js/jQuery.js')}}"></script>

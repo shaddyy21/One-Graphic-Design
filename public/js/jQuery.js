@@ -9,13 +9,11 @@ $(function (){
             scroll(0,0);
             if(isOpen == false){
                 $('nav').show(600);
-                $('section').css('padding-top','5em');
-
+//                $('section').css('padding-top','5em');
                 isOpen = true;
                 
             }else{
                 $('#Nav').hide(550);
-//                $('section').css('padding-top','5em');
                     isOpen = false;  
             }
         });
@@ -27,7 +25,6 @@ $(function (){
     /*============================================================*/
         $('#Nav a').on('click', function(){
             $('#Nav').hide(550);
-            $('section').css('padding-top','25.5em');
             isOpen = false;  
         });
     /*============================================================*/
@@ -37,6 +34,17 @@ $(function (){
     /*                    Active Link                             */
     /*============================================================*/
         $("nav a[class^='linkUnderline']").on('click', function(){
+            $(this).siblings().addClass('linkUnderline');
+            $(this).siblings().removeClass('linkUnderline');
+            $(this).toggleClass('linkUnderline');
+        });
+    /*============================================================*/
+    
+    
+    /*============================================================*/
+    /*                    Active Link                             */
+    /*============================================================*/
+        $(".work p[class^='linkUnderline']").on('click', function(){
             $(this).siblings().addClass('linkUnderline');
             $(this).siblings().removeClass('linkUnderline');
             $(this).toggleClass('linkUnderline');
@@ -55,6 +63,38 @@ $(function (){
                 autoplay: true,
                 autoplaySpeed: 2000,
             });
+        });
+    /*============================================================*/
+    
+    /*============================================================*/
+    /*                   Paper Art                                */
+    /*============================================================*/
+        $('#Paperart').on('click', function(){
+            $('.packaging').hide(550);
+            $('.logo').hide(550);
+            $('.paper').show(550);
+        });
+    /*============================================================*/
+    
+    
+    /*============================================================*/
+    /*                        Logo                                */
+    /*============================================================*/
+        $('#Logo').on('click', function(){
+            $('.packaging').hide(550);
+            $('.paper').hide(550);
+            $('.logo').show(550);
+        });
+    /*============================================================*/
+    
+    
+    /*============================================================*/
+    /*                        Packaging                           */
+    /*============================================================*/
+        $('#Pack').on('click', function(){
+                $('.paper').hide(550);
+                $('.logo').hide(550);
+                $('.packaging').show(600);
         });
     /*============================================================*/
 });

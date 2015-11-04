@@ -287,6 +287,8 @@ nav {
     nav ul li {
       margin: auto;
       text-align: center; }
+  nav.show {
+    display: block; }
 
 .linkUnderline {
   text-decoration: underline; }

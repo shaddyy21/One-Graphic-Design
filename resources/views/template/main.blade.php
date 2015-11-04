@@ -86,6 +86,21 @@
             
             <section id="Contact">
                 <h1>Contact Us</h1>
+                <div class="form">
+                    <form action="#">
+                        <label for="Name">Full Name</label>
+                        <input id="Name" type="text">
+                        
+                        <label for="Email">E-mail</label>
+                        <input id="Email" type="text">
+                        
+                        <label for="Subject">Subject</label>
+                        <input  id="Subject" type="text">
+                        
+                        <label for="Message">Message</label>
+                        <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Enter Message Here"></textarea>
+                    </form>
+                </div>
             </section>
             
             <section id="Other">

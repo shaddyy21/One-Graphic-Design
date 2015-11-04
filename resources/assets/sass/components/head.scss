@@ -42,6 +42,10 @@ nav{
             text-align: center;
         }
     }
+    
+    &.show{
+        display: block;
+    }
 }
 
 #Nav{

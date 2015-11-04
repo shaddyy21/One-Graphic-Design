@@ -7,14 +7,16 @@ $(function (){
         $('#Bars').on('click', function(event){
             event.preventDefault();
             scroll(0,0);
-            if(isOpen == false){
-                $('nav').show(600);
-                isOpen = true;
-                
-            }else{
-                $('#Nav').hide(550);
-                    isOpen = false;  
-            }
+            
+            $('#Nav').toggleClass("show");
+//            if(isOpen == false){
+//                $('nav').show(600);
+//                isOpen = true;
+//                
+//            }else{
+//                $('#Nav').hide(550);
+//                    isOpen = false;  
+//            }
         });
     /*============================================================*/
     
@@ -23,8 +25,9 @@ $(function (){
     /*             Hides navigation on link click                 */
     /*============================================================*/
         $('#Nav a').on('click', function(){
-            $('#Nav').hide(550);
-            isOpen = false;  
+            //$('#Nav').hide(550);
+            $('#Nav').toggleClass("show");
+
         });
     /*============================================================*/
     

@@ -43,10 +43,50 @@ section{
         margin-left: 1em;
         margin-bottom: 1em;
         border: 0.15em black solid;
-        border-radius: 2em;
+//        border-radius: 2em;
     }
 }
 
 .logo,.packaging{
     display: none;
+}
+
+.form{
+//    border: thin red solid;
+    #Form{
+//        border: thin blue solid;
+        width: 21em;
+        margin: auto;
+        
+        label{
+//            border: thin green solid;
+            width: 2em;
+        }
+        
+        input{
+//            border: thin orange solid;
+            width: 18em;
+            height: 2em;
+            margin-bottom: 1.2em;
+            margin-left: 1em;
+        }
+        
+        #Email{
+            margin-left: 2.75em;
+        }
+        
+        #Subject{
+            margin-left: 2.5em;
+        }
+        
+        #Message{
+            width: 17.8em;
+            margin-left: 1.75em;
+        }
+        
+        #Send{
+            height: 3em;
+            margin: 1em 0 0 12em;
+        }
+    }
 }

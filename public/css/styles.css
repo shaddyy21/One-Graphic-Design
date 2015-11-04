@@ -244,8 +244,8 @@ nav {
   color: black;
   font-family: Agency FB;
   font-weight: normal;
-  font-size: 1.5em;
-  text-align: justify; }
+  font-size: 1.2em;
+  text-align: left; }
 
 footer p {
   color: black;
@@ -253,6 +253,9 @@ footer p {
   font-family: Agency FB;
   font-weight: normal;
   font-size: 1.4em; }
+
+#Form {
+  color: black; }
 
 .heading {
   background-color: #6E6E6E;
@@ -275,6 +278,11 @@ footer p {
     align-content: center; }
   .heading p {
     margin-right: 1em; }
+  .heading img {
+    width: 5em;
+    height: 5em;
+    margin-top: 1em;
+    margin-left: 1em; }
 
 nav {
   display: none;
@@ -334,11 +342,31 @@ section {
     height: 10em;
     margin-left: 1em;
     margin-bottom: 1em;
-    border: 0.15em black solid;
-    border-radius: 2em; }
+    border: 0.15em black solid; }
 
 .logo, .packaging {
   display: none; }
+
+.form #Form {
+  width: 21em;
+  margin: auto; }
+  .form #Form label {
+    width: 2em; }
+  .form #Form input {
+    width: 18em;
+    height: 2em;
+    margin-bottom: 1.2em;
+    margin-left: 1em; }
+  .form #Form #Email {
+    margin-left: 2.75em; }
+  .form #Form #Subject {
+    margin-left: 2.5em; }
+  .form #Form #Message {
+    width: 17.8em;
+    margin-left: 1.75em; }
+  .form #Form #Send {
+    height: 3em;
+    margin: 1em 0 0 12em; }
 
 .image-shown {
   display: inline-block; }
@@ -384,11 +412,6 @@ section {
   font-size: 1.4em;
   font-weight: normal; }
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-  body {
-    background-color: lightgray; } }
-
 @media only screen and (min-width: 75em) {
   .heading {
     margin: 0 0 1em 0;
@@ -414,7 +437,7 @@ section {
       display: -ms-flexbox;
       display: flex; }
       nav ul li {
-        margin-left: 6em;
+        margin-left: 5.5em;
         -webkit-flex: 1 1 content;
         -ms-flex: 1 1 content;
         flex: 1 1 content; }

@@ -1,8 +1,6 @@
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
-    body{
-        background-color: lightgray;
-    }
+   
 }
 
 @media only screen and (min-width: 55em) {
@@ -38,7 +36,7 @@
         ul{
             display: flex;
                 li{
-                    margin-left: 6em;
+                    margin-left: 5.5em;
                     flex: 1 1 content;
                 }
         }

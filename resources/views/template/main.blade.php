@@ -6,6 +6,7 @@
     <meta name="description" content="logo design art">
     <meta name="author" content="Shadowz Web Development LTD">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel=icon href="{{asset('img/logo.png')}}" sizes="48x48" type="image/png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
     <!-- <link rel="stylesheet" type="text/css" href="{{asset('css/image-slider.css')}}"> -->
@@ -16,7 +17,7 @@
 <body>
     <header>
         <div class="heading">
-            <img src="" alt="logo">
+            <img src="{{asset('img/logo.png')}}" alt="logo">
             <h1>One Graphic Design</h1>
             <p id="Bars"><i class="fa fa-bars"></i></p>
         </div>
@@ -87,7 +88,7 @@
             <section id="Contact">
                 <h1>Contact Us</h1>
                 <div class="form">
-                    <form action="#">
+                    <form action="#" id="Form">
                         <label for="Name">Full Name</label>
                         <input id="Name" type="text">
                         
@@ -99,6 +100,8 @@
                         
                         <label for="Message">Message</label>
                         <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Enter Message Here"></textarea>
+                        
+                        <button id="Send"><i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Send</button>
                     </form>
                 </div>
             </section>

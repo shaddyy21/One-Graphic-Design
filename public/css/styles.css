@@ -1,9 +1,3 @@
-.show {
-  display: block; }
-
-.hide {
-  display: none; }
-
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -297,23 +291,33 @@ footer p {
     margin-top: 1em;
     margin-left: 1em; }
 
-nav {
+#Nav {
+  width: 100%;
   display: none;
-  margin-top: 4em;
-  background-color: #9E9E9E; }
-  nav a {
+  margin-top: 3.26em; }
+  #Nav a {
     text-decoration: none; }
-  nav ul {
+  #Nav a:hover {
+    text-decoration: underline; }
+  #Nav ul {
+    width: 100%;
     margin: 0;
     padding: 0; }
-    nav ul li {
+    #Nav ul li {
+      width: 100%;
       margin: auto;
       text-align: center; }
-  nav.show {
+  #Nav.show {
     display: block; }
 
 .linkUnderline {
   text-decoration: underline; }
+
+.show {
+  display: block; }
+
+.hide {
+  display: none; }
 
 body {
   background-color: #9E9E9E; }
@@ -450,7 +454,7 @@ section {
       display: block; }
   #Bars {
     display: none; }
-  nav {
+  #Nav {
     display: block;
     position: fixed;
     z-index: 1000;
@@ -460,11 +464,11 @@ section {
     margin-top: 3.5em;
     width: 100%;
     height: 2.5em; }
-    nav ul {
+    #Nav ul {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
-      nav ul li {
+      #Nav ul li {
         margin-left: 5.5em;
         -webkit-flex: 1 1 content;
         -ms-flex: 1 1 content;

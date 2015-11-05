@@ -62,10 +62,10 @@ $(function (){
     /*                   Paper Art                                */
     /*============================================================*/
         $('#Paperart').on('click', function(){
-            $('.packaging').hide(550);
             $('.logo').hide(550);
+            $('.packaging').hide(650);
             $('.paper').show(550);
-        });
+        });           
     /*============================================================*/
     
     
@@ -73,9 +73,18 @@ $(function (){
     /*                        Logo                                */
     /*============================================================*/
         $('#Logo').on('click', function(){
-            $('.packaging').hide(550);
+            $('.packaging').hide(650);
             $('.paper').hide(550);
             $('.logo').show(550);
+//            
+//            
+//            $('.logo').removeClass('hide');
+//            setTimeout(function(){
+//                $('.logo').addClass('show');
+//            },1);
+//            
+            
+            
         });
     /*============================================================*/
     
@@ -86,11 +95,11 @@ $(function (){
         $('#Pack').on('click', function(){
                 $('.paper').hide(550);
                 $('.logo').hide(550);
-                $('.packaging').show(600);
+                $('.packaging').show(650);
         });
     /*============================================================*/
     
-    $('.pic').on('click', function(){
+    $('.pic1').on('click', function(){
         $('.container').addClass('dim');
         $('.paper,.logo,.packaging').hide(600);
         $('.image-slider,.form').hide(600);
@@ -99,7 +108,39 @@ $(function (){
         $('.close').on('click', function(){
             $('.container').removeClass('dim');
             $('.info').hide('600');
-            $('.paper,.logo,.packaging').show(650);
+            $('.paper').show(000);
+            $('.image-slider,.form').show(650);
+        });
+        
+    });
+    
+     $('.pic2').on('click', function(){
+        $('.container').addClass('dim');
+        $('.paper,.logo,.packaging').hide(600);
+        $('.image-slider,.form').hide(600);
+        $('.info').show(650);
+        
+        $('.close').on('click', function(){
+            $('.container').removeClass('dim');
+            $('.info').hide('600');
+            $('.paper').hide('0000');
+            $('.logo').show(650);
+            $('.image-slider,.form').show(650);
+        });
+        
+    });
+    
+     $('.pic3').on('click', function(){
+        $('.container').addClass('dim');
+        $('.paper,.logo,.packaging').hide(600);
+        $('.image-slider,.form').hide(600);
+        $('.info').show(650);
+        
+        $('.close').on('click', function(){
+            $('.container').removeClass('dim');
+            $('.info').hide('600');
+            $('.paper').hide('0000');
+            $('.packaging').show(650);
             $('.image-slider,.form').show(650);
         });
         

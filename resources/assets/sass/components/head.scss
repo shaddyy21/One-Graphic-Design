@@ -28,25 +28,27 @@
 
 
 
-nav{
+#Nav{
+    width: 100%;
     display: none;
-    margin-top: 4em;
-    background-color: $primary-back-color;
-
+    margin-top: 3.26em;
+//    background-color: $secondary-back-color;
     
     a{
             text-decoration: none;
     }
     
     a:hover{
-        
+        text-decoration: underline;
     }
     
     ul{
+        width: 100%;
         margin: 0;
         padding: 0;
         
         li{
+            width: 100%;
             margin: auto;
             text-align: center;
         }
@@ -55,10 +57,6 @@ nav{
     &.show{
         display: block;
     }
-}
-
-#Nav{
-//    margin-bottom: -4em;
 }
 
 .linkUnderline{

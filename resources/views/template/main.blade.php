@@ -9,7 +9,7 @@
     <link rel=icon href="{{asset('img/logo.png')}}" sizes="48x48" type="image/png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
-    <!-- <link rel="stylesheet" type="text/css" href="{{asset('css/image-slider.css')}}"> -->
+    <link rel="stylesheet" type="text/css" href="{{asset('css/animate.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('slick/slick.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('slick/slick-theme.css')}}">
     
@@ -57,25 +57,25 @@
                 <div class="display">
                    <div class="paper">
                       <p>Paper Art</p>
-                       <img class="pic" src="{{asset('img/_MG_8841.jpg')}}" alt="">
-                       <img class="pic" src="{{asset('img/_MG_8850.jpg')}}" alt="">
-                       <img class="pic" src="{{asset('img/flagTwoSided.jpg')}}" alt="">
-                       <img class="pic" src="{{asset('img/wholeMilk.jpg')}}" alt="">
+                       <img class="pic1" src="{{asset('img/_MG_8841.jpg')}}" alt="">
+                       <img class="pic1" src="{{asset('img/_MG_8850.jpg')}}" alt="">
+                       <img class="pic1" src="{{asset('img/flagTwoSided.jpg')}}" alt="">
+                       <img class="pic1" src="{{asset('img/wholeMilk.jpg')}}" alt="">
                    </div>
                    
                    <div class="logo">
                        <p>Logo</p>
-                       <img class="pic" src="{{asset('img/naturyoLogo.png')}}" alt="">
-                       <img class="pic" src="{{asset('img/naturyoLogo1.png')}}" alt="">
+                       <img class="pic2" src="{{asset('img/naturyoLogo.png')}}" alt="">
+                       <img class="pic2" src="{{asset('img/naturyoLogo1.png')}}" alt="">
                    </div>
                    
                    <div class="packaging">
                       <p>Packaging</p>
-                      <img class="pic" src="{{asset('img/_MG_8841.jpg')}}" alt="">
-                      <img class="pic" src="{{asset('img/flagTwoSided.jpg')}}" alt="">
-                      <img class="pic" src="{{asset('img/sachet.jpg')}}" alt="">
-                      <img class="pic" src="{{asset('img/SkimMilk.jpg')}}" alt="">
-                      <img class="pic" src="{{asset('img/wholeMilk.jpg')}}" alt="">
+                      <img class="pic3" src="{{asset('img/_MG_8841.jpg')}}" alt="">
+                      <img class="pic3" src="{{asset('img/flagTwoSided.jpg')}}" alt="">
+                      <img class="pic3" src="{{asset('img/sachet.jpg')}}" alt="">
+                      <img class="pic3" src="{{asset('img/SkimMilk.jpg')}}" alt="">
+                      <img class="pic3" src="{{asset('img/wholeMilk.jpg')}}" alt="">
                    </div>
                 </div>
                 <div class="info hide">

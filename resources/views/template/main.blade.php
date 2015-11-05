@@ -15,6 +15,7 @@
     
 </head>
 <body>
+   <div class="container">
     <header>
         <div class="heading">
             <img src="{{asset('img/logo.png')}}" alt="logo">
@@ -31,6 +32,7 @@
                 <a class="linkUnderline-five" href="#Other"><li>Other Art</li></a>
             </ul>
         </nav>
+    </header>
         
         <main>
             <section id="Home">
@@ -55,27 +57,32 @@
                 <div class="display">
                    <div class="paper">
                       <p>Paper Art</p>
-                       <img src="{{asset('img/_MG_8841.jpg')}}" alt="">
-                       <img src="{{asset('img/_MG_8850.jpg')}}" alt="">
-                       <img src="{{asset('img/flagTwoSided.jpg')}}" alt="">
-                       <img src="{{asset('img/wholeMilk.jpg')}}" alt="">
+                       <img class="pic" src="{{asset('img/_MG_8841.jpg')}}" alt="">
+                       <img class="pic" src="{{asset('img/_MG_8850.jpg')}}" alt="">
+                       <img class="pic" src="{{asset('img/flagTwoSided.jpg')}}" alt="">
+                       <img class="pic" src="{{asset('img/wholeMilk.jpg')}}" alt="">
                    </div>
                    
                    <div class="logo">
                        <p>Logo</p>
-                       <img src="{{asset('img/naturyoLogo.png')}}" alt="">
-                       <img src="{{asset('img/naturyoLogo1.png')}}" alt="">
+                       <img class="pic" src="{{asset('img/naturyoLogo.png')}}" alt="">
+                       <img class="pic" src="{{asset('img/naturyoLogo1.png')}}" alt="">
                    </div>
                    
                    <div class="packaging">
                       <p>Packaging</p>
-                      <img src="{{asset('img/_MG_8841.jpg')}}" alt="">
-                      <img src="{{asset('img/flagTwoSided.jpg')}}" alt="">
-                      <img src="{{asset('img/sachet.jpg')}}" alt="">
-                      <img src="{{asset('img/SkimMilk.jpg')}}" alt="">
-                      <img src="{{asset('img/wholeMilk.jpg')}}" alt="">
+                      <img class="pic" src="{{asset('img/_MG_8841.jpg')}}" alt="">
+                      <img class="pic" src="{{asset('img/flagTwoSided.jpg')}}" alt="">
+                      <img class="pic" src="{{asset('img/sachet.jpg')}}" alt="">
+                      <img class="pic" src="{{asset('img/SkimMilk.jpg')}}" alt="">
+                      <img class="pic" src="{{asset('img/wholeMilk.jpg')}}" alt="">
                    </div>
                 </div>
+                <div class="info hide">
+                           <img src="{{asset('img/_MG_8841.jpg')}}" alt="">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque magnam, qui placeat vitae alias commodi saepe quos sit sint error?</p>
+                           <p class="close"><i class="fa fa-times"></i>&nbsp;&nbsp; Close</p>
+                       </div>
             </section>
             
             <section id="About">
@@ -114,7 +121,7 @@
         <footer>
             <p> &copy; All rights reserved One Graphic Design</p>
         </footer>
-    </header>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="{{asset('js/jQuery.js')}}"></script>
     <script src="{{asset('slick/slick.js')}}"></script>

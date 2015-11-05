@@ -43,7 +43,23 @@ section{
         margin-left: 1em;
         margin-bottom: 1em;
         border: 0.15em black solid;
-//        border-radius: 2em;
+    }
+}
+
+.dim{
+   background-color: rgba(0,0,0,0.9);
+}
+
+.info{
+    opacity: 1;
+    border: thin black solid;
+    background-color: $primary-back-color;
+    img{
+        width: 20em;
+        height: 20em;
+        margin-left: 1.5em;
+        margin-top: 1.5em;
+        border: none;
     }
 }
 

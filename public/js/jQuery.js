@@ -9,14 +9,6 @@ $(function (){
             scroll(0,0);
             
             $('#Nav').toggleClass("show");
-//            if(isOpen == false){
-//                $('nav').show(600);
-//                isOpen = true;
-//                
-//            }else{
-//                $('#Nav').hide(550);
-//                    isOpen = false;  
-//            }
         });
     /*============================================================*/
     
@@ -25,9 +17,7 @@ $(function (){
     /*             Hides navigation on link click                 */
     /*============================================================*/
         $('#Nav a').on('click', function(){
-            //$('#Nav').hide(550);
             $('#Nav').toggleClass("show");
-
         });
     /*============================================================*/
     
@@ -99,5 +89,20 @@ $(function (){
                 $('.packaging').show(600);
         });
     /*============================================================*/
+    
+    $('.pic').on('click', function(){
+        $('.container').addClass('dim');
+        $('.paper,.logo,.packaging').hide(600);
+        $('.image-slider,.form').hide(600);
+        $('.info').show(650);
+        
+        $('.close').on('click', function(){
+            $('.container').removeClass('dim');
+            $('.info').hide('600');
+            $('.paper,.logo,.packaging').show(650);
+            $('.image-slider,.form').show(650);
+        });
+        
+    });
 
 });

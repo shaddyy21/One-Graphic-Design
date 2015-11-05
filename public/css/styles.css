@@ -1,3 +1,9 @@
+.show {
+  display: block; }
+
+.hide {
+  display: none; }
+
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -247,6 +253,13 @@ nav {
   font-size: 1.2em;
   text-align: left; }
 
+.info p {
+  color: black;
+  font-family: Agency FB;
+  font-weight: normal;
+  font-size: 1.3em;
+  text-align: center; }
+
 footer p {
   color: black;
   text-align: center;
@@ -286,7 +299,8 @@ footer p {
 
 nav {
   display: none;
-  margin-top: 4em; }
+  margin-top: 4em;
+  background-color: #9E9E9E; }
   nav a {
     text-decoration: none; }
   nav ul {
@@ -343,6 +357,20 @@ section {
     margin-left: 1em;
     margin-bottom: 1em;
     border: 0.15em black solid; }
+
+.dim {
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.info {
+  opacity: 1;
+  border: thin black solid;
+  background-color: #9E9E9E; }
+  .info img {
+    width: 20em;
+    height: 20em;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    border: none; }
 
 .logo, .packaging {
   display: none; }

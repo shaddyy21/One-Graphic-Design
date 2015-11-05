@@ -7,8 +7,14 @@ $(function (){
         $('#Bars').on('click', function(event){
             event.preventDefault();
             scroll(0,0);
-            
-            $('#Nav').toggleClass("show");
+            if(isOpen == false){
+                $('#Nav').show(650);
+                isOpen = true;
+            }else{
+                $('#Nav').hide(600);
+                isOpen = false;
+            }
+//            $('#Nav').toggleClass("show");
         });
     /*============================================================*/
     

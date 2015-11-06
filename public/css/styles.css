@@ -231,7 +231,7 @@ nav {
   color: black;
   font-family: Agency FB;
   font-weight: normal;
-  font-size: 1.5em; }
+  font-size: 1.4em; }
 
 .paper p, .logo p, .packaging p {
   color: black;
@@ -266,6 +266,8 @@ footer p {
 
 .heading {
   background-color: #6E6E6E;
+  margin: 0;
+  padding: 0;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -320,7 +322,10 @@ footer p {
   display: none; }
 
 body {
-  background-color: #9E9E9E; }
+  margin: 0;
+  padding: 0;
+  background-color: #9E9E9E;
+  border: thin blue solid; }
 
 section {
   padding-top: 5em;
@@ -379,23 +384,29 @@ section {
 .logo, .packaging {
   display: none; }
 
+.pic1, .pic2, .pic3, #Paperart, #Logo, #Pack {
+  cursor: pointer; }
+
 .form #Form {
-  width: 21em;
+  width: 23em;
   margin: auto; }
   .form #Form label {
-    width: 2em; }
+    float: left;
+    clear: both;
+    display: inline-block; }
   .form #Form input {
     width: 18em;
     height: 2em;
     margin-bottom: 1.2em;
-    margin-left: 1em; }
+    margin-left: 1em;
+    float: left; }
   .form #Form #Email {
     margin-left: 2.75em; }
   .form #Form #Subject {
     margin-left: 2.5em; }
   .form #Form #Message {
     width: 17.8em;
-    margin-left: 1.75em; }
+    margin-left: 2em; }
   .form #Form #Send {
     height: 3em;
     margin: 1em 0 0 12em; }

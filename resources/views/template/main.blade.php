@@ -5,14 +5,13 @@
     <title>One Graphic Design</title>
     <meta name="description" content="logo design art">
     <meta name="author" content="Shadowz Web Development LTD">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale= 0.8, maximum-scale=1">
     <link rel=icon href="{{asset('img/logo.png')}}" sizes="48x48" type="image/png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/animate.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('slick/slick.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('slick/slick-theme.css')}}">
-    
+    <link rel="stylesheet" type="text/css" href="{{asset('slick/slick-theme.css')}}">  
 </head>
 <body>
    <div class="container">
@@ -123,10 +122,9 @@
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   
     <script src="{{asset('js/jQuery.js')}}"></script>
     <script src="{{asset('slick/slick.js')}}"></script>
-    <script src="{{asset('slick/slick.min.js')}}"></script>
-    <!-- <script src="{{asset('js/image-sliderCustom.js')}}"></script> -->
-    
+    <script src="{{asset('slick/slick.min.js')}}"></script>    
 </body>
 </html>

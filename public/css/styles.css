@@ -387,29 +387,27 @@ section {
 .pic1, .pic2, .pic3, #Paperart, #Logo, #Pack {
   cursor: pointer; }
 
-.form #Form {
-  width: 23em;
-  margin: auto; }
-  .form #Form label {
-    float: left;
-    clear: both;
-    display: inline-block; }
-  .form #Form input {
-    width: 18em;
-    height: 2em;
-    margin-bottom: 1.2em;
-    margin-left: 1em;
-    float: left; }
-  .form #Form #Email {
-    margin-left: 2.75em; }
-  .form #Form #Subject {
-    margin-left: 2.5em; }
-  .form #Form #Message {
-    width: 17.8em;
-    margin-left: 2em; }
-  .form #Form #Send {
-    height: 3em;
-    margin: 1em 0 0 12em; }
+.form {
+  border: thin red solid; }
+  .form #Form {
+    width: 23em;
+    margin: auto; }
+    .form #Form input {
+      width: 18em;
+      height: 2em;
+      margin-bottom: 1.2em;
+      margin-left: 1em;
+      float: left; }
+    .form #Form #Email {
+      margin-left: 2.75em; }
+    .form #Form #Subject {
+      margin-left: 2.5em; }
+    .form #Form #Message {
+      width: 17.8em;
+      margin-left: 2em; }
+    .form #Form #Send {
+      height: 3em;
+      margin: 1em 0 0 12em; }
 
 .image-shown {
   display: inline-block; }
@@ -454,6 +452,11 @@ section {
   font-family: Agency FB;
   font-size: 1.4em;
   font-weight: normal; }
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+  .heading {
+    background-color: #6E6E6E; } }
 
 @media only screen and (min-width: 75em) {
   .heading {

@@ -7,9 +7,9 @@
     <meta name="author" content="Shadowz Web Development LTD">
     <meta name="viewport" content="width=device-width, initial-scale= 0.8, maximum-scale=1">
     <link rel=icon href="{{asset('img/logo.png')}}" sizes="48x48" type="image/png">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/animate.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('slick/slick.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('slick/slick-theme.css')}}">  
 </head>
@@ -93,8 +93,16 @@
             
             <section id="Contact">
                 <h1>Contact Us</h1>
-                <div class="form">
-                    <form action="#" id="Form">
+                <div class="form pure-form pure-form-aligned">
+                    <fieldset>
+                        {!! Form::open(array('url' => 'foo/bar')) !!}
+                            <div class="pure-control-group">
+                                {!! Form::label('name', 'Full Name') !!}
+                                {!! Form::text('name') !!}
+                            </div>
+                        {!! Form::close() !!}
+                    </fieldset>
+                    <!--<form action="#" id="Form">
                         <label for="Name">Full Name</label>
                         <input id="Name" type="text">
                         
@@ -108,7 +116,7 @@
                         <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Enter Message Here"></textarea>
                         
                         <button id="Send"><i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Send</button>
-                    </form>
+                    </form>-->
                 </div>
             </section>
             

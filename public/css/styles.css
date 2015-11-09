@@ -335,6 +335,10 @@ body {
   background-color: #9E9E9E;
   width: 100%; }
 
+.container {
+  width: 100%;
+  border: cyan solid thin; }
+
 .img-slider {
   margin-left: 0.8em;
   width: 24em; }

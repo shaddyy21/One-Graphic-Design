@@ -9,6 +9,7 @@
     <link rel=icon href="{{asset('img/logo.png')}}" sizes="48x48" type="image/png">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('slick/slick.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('slick/slick-theme.css')}}">  
@@ -36,7 +37,7 @@
         <main>
             <section id="Home">
                <h1>Home</h1>
-            <div class="carousel-outer">
+            <div class="img-slider">
 				<div class="image-slider">
                     <img class="image-shown" src="{{asset('img/_MG_8841.jpg')}}" alt=""/>
                     <img class="image-hidden" src="{{asset('img/_MG_8850.jpg')}}" alt=""/>
@@ -80,7 +81,7 @@
                 <div class="info hide">
                            <img src="{{asset('img/_MG_8841.jpg')}}" alt="">
                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque magnam, qui placeat vitae alias commodi saepe quos sit sint error?</p>
-                           <p class="close"><i class="fa fa-times"></i>&nbsp;&nbsp; Close</p>
+                           <p class="cls"><i class="fa fa-times"></i>&nbsp;&nbsp; Close</p>
                        </div>
             </section>
             
@@ -95,11 +96,28 @@
                 <h1>Contact Us</h1>
                 <div class="form pure-form pure-form-aligned">
                     <fieldset>
-                        {!! Form::open(array('url' => 'foo/bar')) !!}
+                        {!! Form::open(array('url' => 'foo/bar', 'id'=>'Form')) !!}
                             <div class="pure-control-group">
                                 {!! Form::label('name', 'Full Name') !!}
                                 {!! Form::text('name') !!}
                             </div>
+                            
+                            <div class="pure-control-group">
+                                {!! Form::label('email', 'E-mail') !!}
+                                {!! Form::text('email') !!}
+                            </div>
+                            
+                            <div class="pure-control-group">
+                                {!! Form::label('subject', 'Subject') !!}
+                                {!! Form::text('subject') !!}
+                            </div>
+                            
+                            <div class="pure-control-group">
+                                {!! Form::label('message', 'Message') !!}
+                                {!! Form::textarea('message',null,array('id' => 'Message')) !!}
+                            </div>
+                            
+                            {!! Form::submit('Send',array('id' => 'Send')) !!}
                         {!! Form::close() !!}
                     </fieldset>
                     <!--<form action="#" id="Form">

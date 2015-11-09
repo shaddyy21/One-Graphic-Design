@@ -102,12 +102,15 @@ $(function (){
     /*============================================================*/
         $('.pic1').on('click', function(){
             $('.container').addClass('dim');
+            $('.info').removeClass('hide');
+            
             $('.paper,.logo,.packaging').hide(600);
             $('.image-slider,.form').hide(600);
             $('.info').show(650);
             
-            $('.close').on('click', function(){
+            $('.cls').on('click', function(){
                 $('.container').removeClass('dim');
+                $('.info').addClass('hide');
                 $('.info').hide('600');
                 $('.paper').show(000);
                 $('.image-slider,.form').show(650);
@@ -121,12 +124,14 @@ $(function (){
     /*============================================================*/
         $('.pic2').on('click', function(){
             $('.container').addClass('dim');
+            $('.info').removeClass('hide');
             $('.paper,.logo,.packaging').hide(600);
             $('.image-slider,.form').hide(600);
             $('.info').show(650);
             
-            $('.close').on('click', function(){
+            $('.cls').on('click', function(){
                 $('.container').removeClass('dim');
+                $('.info').addClass('hide');
                 $('.info').hide('600');
                 $('.paper').hide('0000');
                 $('.logo').show(650);
@@ -141,12 +146,14 @@ $(function (){
     /*============================================================*/
         $('.pic3').on('click', function(){
             $('.container').addClass('dim');
+            $('.info').removeClass('hide');
             $('.paper,.logo,.packaging').hide(600);
             $('.image-slider,.form').hide(600);
             $('.info').show(650);
             
-            $('.close').on('click', function(){
+            $('.cls').on('click', function(){
                 $('.container').removeClass('dim');
+                $('.info').addClass('hide');
                 $('.info').hide('600');
                 $('.paper').hide('0000');
                 $('.packaging').show(650);

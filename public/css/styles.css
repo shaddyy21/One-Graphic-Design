@@ -252,7 +252,7 @@ nav {
   font-family: Agency FB;
   font-weight: normal;
   font-size: 1.3em;
-  text-align: center; }
+  text-align: left; }
 
 footer p {
   color: black;
@@ -262,7 +262,14 @@ footer p {
   font-size: 1.4em; }
 
 #Form {
-  color: black; }
+  color: black;
+  font-size: 1.2em; }
+
+html {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: red thin solid; }
 
 .heading {
   background-color: #6E6E6E;
@@ -286,7 +293,8 @@ footer p {
     -ms-flex-line-pack: center;
     align-content: center; }
   .heading p {
-    margin-right: 1em; }
+    margin-right: 1em;
+    margin-top: 1em; }
   .heading img {
     width: 5em;
     height: 5em;
@@ -325,7 +333,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: #9E9E9E;
-  border: thin blue solid; }
+  width: 100%; }
+
+.img-slider {
+  margin-left: 0.8em;
+  width: 24em; }
 
 section {
   padding-top: 5em;
@@ -335,10 +347,9 @@ section {
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  width: 18em;
+  width: 18.5em;
   height: 15em;
-  position: relative;
-  margin: 0 auto 0 auto; }
+  margin: 0 1em 0 0.5em; }
 
 .work {
   display: -webkit-flex;
@@ -353,7 +364,8 @@ section {
 .display {
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-left: 2em; }
 
 .paper, .logo, .packaging {
   -webkit-flex: 1 0 100%;
@@ -372,86 +384,52 @@ section {
 
 .info {
   opacity: 1;
-  border: thin black solid;
+  height: 32em;
   background-color: #9E9E9E; }
+  .info p {
+    width: 15em;
+    margin-left: 3em; }
   .info img {
     width: 20em;
     height: 20em;
-    margin-left: 1.5em;
-    margin-top: 1.5em;
+    margin: 1.5em 3em 1.5em 3em;
     border: none; }
+  .info .cls {
+    width: 5em;
+    margin: 1em 0 0 15em; }
 
 .logo, .packaging {
   display: none; }
 
-.pic1, .pic2, .pic3, #Paperart, #Logo, #Pack {
+.pic1, .pic2, .pic3, #Paperart, #Logo, #Pack, .cls {
   cursor: pointer; }
 
-.form {
-  border: thin red solid; }
-  .form #Form {
-    width: 23em;
-    margin: auto; }
-    .form #Form input {
-      width: 18em;
-      height: 2em;
-      margin-bottom: 1.2em;
-      margin-left: 1em;
-      float: left; }
-    .form #Form #Email {
-      margin-left: 2.75em; }
-    .form #Form #Subject {
-      margin-left: 2.5em; }
-    .form #Form #Message {
-      width: 17.8em;
-      margin-left: 2em; }
-    .form #Form #Send {
-      height: 3em;
-      margin: 1em 0 0 12em; }
-
-.image-shown {
-  display: inline-block; }
-
-.image-hidden {
-  display: none; }
-
-.carousel-outter {
-  margin-top: 20em;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-
-.carousel-inner {
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
-  width: 18em;
-  height: 15em;
-  position: relative;
-  margin: 10em auto 0 auto; }
-
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
-  border-radius: 0.50em; }
-
-.links {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-
-.previousLink, .nextLink {
-  -webkit-flex: 1 1 content;
-  -ms-flex: 1 1 content;
-  flex: 1 1 content;
-  margin-top: 1em;
-  margin-left: 2em;
-  width: 8em;
-  color: black;
-  text-decoration: none;
-  font-family: Agency FB;
-  font-size: 1.4em;
-  font-weight: normal; }
+.form #Form {
+  width: 23em;
+  margin: auto; }
+  .form #Form label {
+    width: 4.8em;
+    display: inline-block; }
+  .form #Form input {
+    width: 17em;
+    height: 2em;
+    margin-top: -2.5em;
+    margin-left: 5.2em;
+    display: inline-block; }
+  .form #Form #Email {
+    margin-left: 2.75em; }
+  .form #Form #Subject {
+    margin-left: 2.5em; }
+  .form #Form #Message {
+    margin-top: -2em;
+    width: 17em;
+    margin-left: 5.2em; }
+  .form #Form #Send {
+    height: 3em;
+    width: 100%;
+    margin: 1em 0 0 -0.7em;
+    background-color: #9E9E9E;
+    border: none; }
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
@@ -483,7 +461,9 @@ section {
       display: -ms-flexbox;
       display: flex; }
       #Nav ul li {
-        margin-left: 5.5em;
+        width: auto;
+        margin-left: 5em;
+        text-align: center;
         -webkit-flex: 1 1 content;
         -ms-flex: 1 1 content;
         flex: 1 1 content; }

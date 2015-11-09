@@ -38,8 +38,11 @@
         ul{
             display: flex;
                 li{
-                    margin-left: 5.5em;
+                    width: auto;
+                    margin-left: 5em;
+                    text-align: center;
                     flex: 1 1 content;
+//                    border: red thin solid;
                 }
         }
     }

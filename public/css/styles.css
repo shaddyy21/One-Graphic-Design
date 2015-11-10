@@ -675,6 +675,7 @@ section {
   .heading {
     background-color: #6E6E6E;
     height: 10.5em;
+    max-width: 54.88em;
     z-index: 2000; }
     .heading img {
       width: 8em;
@@ -715,8 +716,25 @@ section {
     transform: translate3d(0, 0, 0); }
   .slick-prev,
   .slick-next {
-    margin-right: -54px;
-    margin-left: -30px; }
+    margin-right: -60px;
+    margin-left: -50px; }
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 40px;
+    line-height: 0; }
+  .info {
+    height: 40em; }
+    .info p {
+      font-size: 1.8em;
+      width: 22em;
+      margin-left: 3em; }
+    .info img {
+      width: 25em;
+      height: 25em;
+      margin: 1.5em 0 1.5em 13em; }
+    .info .cls {
+      width: 5em;
+      margin: 2em 0 0 24em; }
   .work p {
     color: black;
     font-family: Agency FB;
@@ -734,7 +752,43 @@ section {
     width: 20em;
     height: 20em;
     margin: 1em 0 1em 2.5em;
-    border: 0.15em black solid; } }
+    border: 0.15em black solid; }
+  #About p {
+    font-size: 1.8em;
+    width: 25em;
+    margin: auto; }
+  .form {
+    border: thin red solid; }
+    .form #Form {
+      border: thin green solid;
+      width: 35em;
+      margin: auto; }
+      .form #Form label {
+        border: thin blue solid;
+        width: 8em;
+        margin-left: 2em;
+        margin-top: 2em;
+        text-align: center;
+        display: inline-block; }
+      .form #Form input {
+        width: 22em;
+        margin-top: 1.5em;
+        margin-left: 1.2em;
+        display: inline-block; }
+      .form #Form #Email {
+        margin-left: 2.75em; }
+      .form #Form #Subject {
+        margin-left: 2.5em; }
+      .form #Form #Message {
+        width: 22em;
+        margin-top: 2em;
+        margin-left: 1.2em; }
+      .form #Form #Send {
+        height: 3em;
+        width: 100%;
+        margin-top: 2em;
+        background-color: #9E9E9E;
+        border: none; } }
 
 @media only screen and (min-width: 75em) {
   .heading {

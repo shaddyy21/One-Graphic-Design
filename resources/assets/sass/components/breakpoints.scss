@@ -3,6 +3,7 @@
     .heading{
         background-color: $secondary-back-color;
         height: 10.5em;
+        max-width: 54.88em;
         z-index: 2000;
     
         img{
@@ -78,8 +79,32 @@
     
     .slick-prev,
     .slick-next {
-        margin-right: -54px;
-        margin-left: -30px;
+        margin-right: -60px;
+        margin-left: -50px;
+    }
+    
+    .slick-prev:before,
+    .slick-next:before{
+        font-size: 40px;
+        line-height: 0;
+    }
+    
+    .info{
+        height: 40em;
+        p{
+            font-size: 1.8em;
+            width: 22em;
+            margin-left: 3em;
+        }
+        img{
+            width: 25em;
+            height: 25em;
+            margin: 1.5em 0 1.5em 13em;
+        }
+        .cls{
+            width: 5em;
+            margin: 2em 0 0 24em;
+        }
     }
     
     .work{
@@ -108,7 +133,66 @@
             margin: 1em 0 1em 2.5em;
             border: 0.15em black solid;
         }
-    }  
+    }
+    
+    #About{
+        p{
+            font-size: 1.8em;
+            width: 25em;
+            margin: auto;
+        }
+    }
+    
+        .form{
+       border: thin red solid;
+        #Form{
+            border: thin green solid;
+            width: 35em;
+            margin: auto;
+
+            label{
+                border: thin blue solid;
+                width: 8em;
+                margin-left: 2em;
+                margin-top: 2em;
+                text-align: center;
+                 // float: left;
+                 // clear:both;
+                  display: inline-block;
+            }
+
+            input{
+    //            border: thin orange solid;
+                width: 22em;
+                margin-top: 1.5em;
+    //            margin-bottom: 1.2em;
+                margin-left: 1.2em;
+                display: inline-block;
+            }
+
+            #Email{
+                margin-left: 2.75em;
+            }
+
+            #Subject{
+                margin-left: 2.5em;
+            }
+
+            #Message{
+                width: 22em;
+                margin-top: 2em;
+                margin-left: 1.2em;
+            }
+
+            #Send{
+                height: 3em;
+                width: 100%;
+                margin-top: 2em;
+                background-color: $primary-back-color;
+                border: none;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 55em) {

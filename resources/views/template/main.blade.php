@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('slick/slick.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('slick/slick-theme.css')}}">  
+    <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">    
 </head>
 <body>
    <div class="container">
@@ -39,10 +37,10 @@
                <h1>Home</h1>
             <div class="img-slider">
 				<div class="image-slider">
-                    <img class="image-shown" src="{{asset('img/_MG_8841.jpg')}}" alt=""/>
-                    <img class="image-hidden" src="{{asset('img/_MG_8850.jpg')}}" alt=""/>
-					<img class="image-hidden" src="{{asset('img/flagTwoSided.jpg')}}" alt=""/>
-					<img class="image-hidden" src="{{asset('img/wholeMilk.jpg')}}" alt=""/>
+                    <img src="{{asset('img/_MG_8841.jpg')}}" alt=""/>
+                    <img src="{{asset('img/_MG_8850.jpg')}}" alt=""/>
+					<img src="{{asset('img/flagTwoSided.jpg')}}" alt=""/>
+					<img src="{{asset('img/wholeMilk.jpg')}}" alt=""/>
 				</div>
 			</div>
             </section>

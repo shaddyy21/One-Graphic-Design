@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -213,11 +214,11 @@ h1 {
   font-weight: normal;
   font-size: 2em; }
 
-nav {
+#Nav {
   font-family: Agency FB;
   font-weight: normal;
   font-size: 2em; }
-  nav a {
+  #Nav a {
     color: black; }
 
 #Home h1, #Portfolio h1, #About h1, #Contact h1, #Other h1 {
@@ -225,7 +226,8 @@ nav {
   text-align: center;
   font-family: Agency FB;
   font-weight: normal;
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  margin-top: 1em; }
 
 .work p {
   color: black;
@@ -264,12 +266,6 @@ footer p {
 #Form {
   color: black;
   font-size: 1.2em; }
-
-html {
-  width: auto;
-  margin: 0;
-  padding: 0;
-  border: red thin solid; }
 
 .heading {
   background-color: #6E6E6E;
@@ -336,8 +332,7 @@ body {
   width: 100%; }
 
 .container {
-  width: 100%;
-  border: cyan solid thin; }
+  width: 100%; }
 
 .img-slider {
   margin-left: 0.8em;
@@ -435,10 +430,311 @@ section {
     background-color: #9E9E9E;
     border: none; }
 
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat; }
+
+/* Icons */
+@font-face {
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg"); }
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-right: -54px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent; }
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent; }
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1; }
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: .25; }
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.slick-prev {
+  left: -20px; }
+
+[dir='rtl'] .slick-prev {
+  right: -25px;
+  left: auto; }
+
+.slick-prev:before {
+  content: '←'; }
+
+[dir='rtl'] .slick-prev:before {
+  content: '→'; }
+
+.slick-next {
+  right: 10px; }
+
+[dir='rtl'] .slick-next {
+  right: auto;
+  left: 1.56em; }
+
+.slick-next:before {
+  content: '→'; }
+
+[dir='rtl'] .slick-next:before {
+  content: '←'; }
+
+/* Dots */
+.slick-slider {
+  /*    margin-bottom: 1.88em;*/
+  height: 100%;
+  width: 320px; }
+
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  left: 20px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center; }
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer; }
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent; }
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none; }
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1; }
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.slick-dots li.slick-active button:before {
+  opacity: .80;
+  color: black; }
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+
+.slick-list:focus {
+  outline: none; }
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  height: 320px;
+  width: 320px;
+  margin-left: 15px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block; }
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: ''; }
+
+.slick-track:after {
+  clear: both; }
+
+.slick-loading .slick-track {
+  visibility: hidden; }
+
+.slick-slide {
+  display: none;
+  float: left;
+  margin-left: -15px;
+  height: 100%;
+  min-height: 1px; }
+
+[dir='rtl'] .slick-slide {
+  float: right; }
+
+.slick-slide img {
+  display: block; }
+
+.slick-slide.slick-loading img {
+  display: none;
+  margin-left: 16px; }
+
+.slick-slide.dragging img {
+  pointer-events: none;
+  margin-left: 16px; }
+
+.slick-initialized .slick-slide {
+  display: block; }
+
+.slick-loading .slick-slide {
+  visibility: hidden; }
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
   .heading {
-    background-color: #6E6E6E; } }
+    background-color: #6E6E6E;
+    height: 10.5em;
+    z-index: 2000; }
+    .heading img {
+      width: 8em;
+      height: 8em; }
+    .heading h1 {
+      font-size: 4em; }
+    .heading #Bars {
+      font-size: 3em;
+      margin-top: 0.5em; }
+  #Nav {
+    margin-top: 5.5em; }
+    #Nav li {
+      font-size: 1.5em; }
+  #Home h1, #Portfolio h1, #About h1, #Contact h1, #Other h1 {
+    font-size: 4em;
+    margin: 2em 0 1em 1.5em; }
+  .img-slider {
+    margin-left: 13em;
+    width: 28em;
+    height: 28em; }
+  .image-slider {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 1em 0 0.5em; }
+  .slick-slide {
+    display: none;
+    float: left;
+    margin-left: 0;
+    height: 100%;
+    min-height: 1px; }
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    height: 100%;
+    width: 100%;
+    margin-left: 2px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  .slick-prev,
+  .slick-next {
+    margin-right: -54px;
+    margin-left: -30px; }
+  .work p {
+    color: black;
+    font-family: Agency FB;
+    font-weight: normal;
+    font-size: 2.5em;
+    margin-bottom: 1em; }
+  .paper p, .logo p, .packaging p {
+    color: black;
+    text-align: center;
+    font-family: Agency FB;
+    font-weight: normal;
+    font-size: 3.5em;
+    margin-top: 1em; }
+  .paper img, .logo img, .packaging img {
+    width: 20em;
+    height: 20em;
+    margin: 1em 0 1em 2.5em;
+    border: 0.15em black solid; } }
 
 @media only screen and (min-width: 75em) {
   .heading {

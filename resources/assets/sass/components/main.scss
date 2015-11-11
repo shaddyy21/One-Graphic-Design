@@ -22,8 +22,8 @@ body{
 }
 
 .img-slider {
-    margin-left: 0.8em;
-    width: 24em;
+    margin-left: 2.5em;
+    width: 20.5em;
 //    border: thin darkblue solid;
 }
 
@@ -39,7 +39,7 @@ section{
 	height: 15em;
 //	position: relative;
 //    margin-top: 10em;
-    margin: 0 1em 0 0.5em;
+    margin: 0 1em 0 -0.7em;
 }
 
 // #Home{
@@ -55,19 +55,19 @@ section{
 }
 .display{
     display: flex;
-    border: orange thin solid;
+//    border: orange thin solid;
 //    margin-left: 2em;
 }
 
 .paper,.logo,.packaging{
     flex: 1 0 auto;
-    border: thin red solid;
+//    border: thin red solid;
     width: 18em;
     img{
-        width: 10em;
-        height: 10em;
-        margin-left: 1em;
-        margin-bottom: 1em;
+        width: 8.5em;
+        height: 8.5em;
+        margin-left: 2.8em;
+        margin-bottom: 3em;
         border: 0.15em black solid;
     }
 }
@@ -106,11 +106,18 @@ section{
     cursor: pointer;
 }
 
+#About{
+    p{
+        width: 19em;
+        margin: auto;
+    }
+}
+
 .form{
 //   border: thin red solid;
     #Form{
 //        border: thin green solid;
-        width: 23em;
+        width: 20.5em;
         margin: auto;
         
         label{
@@ -123,11 +130,10 @@ section{
         
         input{
 //            border: thin orange solid;
-            width: 17em;
+            width: 15em;
             height: 2em;
-            margin-top: -2.5em;
-//            margin-bottom: 1.2em;
-            margin-left: 5.2em;
+            margin-top: -2em;
+            margin-left: 5em;
             display: inline-block;
         }
         
@@ -140,15 +146,15 @@ section{
         }
         
         #Message{
-            margin-top: -2em;
-            width: 17em;
-            margin-left: 5.2em;
+            margin-top: -1.2em;
+            width: 15em;
+            margin-left: 5em;
         }
         
         #Send{
             height: 3em;
-            width: 100%;
-            margin: 1em 0 0 -0.7em;
+            width: 10em;
+            margin: 1em 0 1em 6em;
             background-color: $primary-back-color;
             border: none;
         }

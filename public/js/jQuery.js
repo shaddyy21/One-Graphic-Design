@@ -7,14 +7,7 @@ $(function (){
         $('#Bars').on('click', function(event){
             event.preventDefault();
             scroll(0,0);
-            if(isOpen == false){
-                $('#Nav').show(650);
-                isOpen = true;
-            }else{
-                $('#Nav').hide(600);
-                isOpen = false;
-            }
-//            $('#Nav').toggleClass("show");
+            $('#Nav').toggleClass('show');
         });
     /*============================================================*/
     
@@ -22,9 +15,19 @@ $(function (){
     /*============================================================*/
     /*             Hides navigation on link click                 */
     /*============================================================*/
-        $('#Nav a').on('click', function(){
-            $('#Nav').toggleClass("show");
-        });
+//         var isOpen = false;    
+//        $('#Nav ul li a').on('click', function(){
+//            $('#Nav').toggleClass('hide');
+//            if(isOpen == true){
+//                 $('#Nav').toggleClass('show');
+//                isOpen = false;
+//                
+//            }
+////            else{
+////                 $('#nav').hide(500);
+////                isOpen = false;   
+////            }
+//        });
     /*============================================================*/
     
     

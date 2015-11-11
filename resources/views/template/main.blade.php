@@ -25,11 +25,11 @@
         
         <nav id="Nav">
             <ul>
-                <a class="linkUnderline" href="#Home"><li>Home</li></a>
-                <a class="linkUnderline-two" href="#Portfolio"><li>Portfolio</li></a>
-                <a class="linkUnderline-three" href="#About"><li>About</li></a>
-                <a class="linkUnderline-four" href="#Contact"><li>Contact Us</li></a>
-                <a class="linkUnderline-five" href="#Other"><li>Other Art</li></a>
+                <li><a class="linkUnderline" href="#Home">Home</a></li>
+                <li><a class="linkUnderline-two" href="#Portfolio">Portfolio</a></li>
+                <li><a class="linkUnderline-three" href="#About">About</a></li>
+                <li><a class="linkUnderline-four" href="#Contact">Contact Us</a></li>
+                <li><a class="linkUnderline-five" href="#Other">Other Art</a></li>
             </ul>
         </nav>
     </header>
@@ -149,7 +149,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
    
-    <script src="{{asset('js/jQuery.min.js')}}"></script>
+    <script src="{{asset('js/jQuery.js')}}"></script>
     <script src="{{asset('slick/slick.js')}}"></script>
     <script src="{{asset('slick/slick.min.js')}}"></script>    
 </body>

@@ -1,9 +1,15 @@
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+    .container{
+        border: orange thin solid;
+    }
+    
     .heading{
+        position: relative;
         background-color: $secondary-back-color;
         height: 10.5em;
-        max-width: 54.88em;
+        width: 100%;
+//        max-width: 54.88em;
         z-index: 2000;
     
         img{
@@ -17,12 +23,13 @@
         
         #Bars {
             font-size: 3em;
-            margin-top: 0.5em;
+            margin-top: 1em;
         }
     }
     
     #Nav {
-        margin-top: 5.5em;
+        margin:auto;
+        margin-top: 1.5em;
         
         li{
             font-size: 1.5em;
@@ -32,12 +39,12 @@
     #Home,#Portfolio,#About,#Contact,#Other {
         h1{
             font-size: 4em;
-            margin:2em 0 1em 1.5em;
+            margin: auto;
         }
     }
     
     .img-slider {
-        margin-left:13em;
+        margin:auto;
         width: 28em;
         height: 28em;
 //        border: thin darkblue solid;
@@ -113,6 +120,9 @@
     }
     
     .paper,.logo,.packaging{
+//        border: cyan solid thin;
+        width: 25em;
+        margin: auto;
         p{
             color: black;
             text-align: center;
@@ -126,6 +136,7 @@
             width: 20em;
             height: 20em;
             margin: 1em 0 1em 2.5em;
+//            margin: auto;
             border: 0.15em black solid;
         }
     }
@@ -133,66 +144,268 @@
     #About{
         p{
             font-size: 1.8em;
-            width: 25em;
+            width: 20em;
             margin: auto;
+            text-align: justify;
         }
     }
     
         .form{
-       border: thin red solid;
+//       border: thin red solid;
         #Form{
-            border: thin green solid;
-            width: 35em;
+//            border: thin green solid;
+            width: 34em;
+            font-size: 1.35em;
+//            margin-left: 1em;
             margin: auto;
 
             label{
-                border: thin blue solid;
+//                border: thin blue solid;
                 width: 8em;
-                margin-left: 2em;
+                margin-left: 1em;
                 margin-top: 2em;
                 text-align: center;
-                 // float: left;
-                 // clear:both;
-                  display: inline-block;
+                display: inline-block;
             }
 
             input{
     //            border: thin orange solid;
-                width: 22em;
+                width: 21.5em;
+                max-width: 22em;
                 margin-top: 1.5em;
-    //            margin-bottom: 1.2em;
-                margin-left: 1.2em;
+                margin-left: 0.3em;
                 display: inline-block;
             }
-
+            
             #Email{
                 margin-left: 2.75em;
             }
-
+            
             #Subject{
                 margin-left: 2.5em;
             }
-
+            
             #Message{
-                width: 22em;
+                width: 21.5em;
+                max-width: 22em;
                 margin-top: 2em;
-                margin-left: 1.2em;
+                margin-left: 0.3em;
             }
-
+            
             #Send{
-                height: 3em;
-                width: 100%;
-                margin-top: 2em;
-                background-color: $primary-back-color;
-                border: none;
+                height: 2em;
+                width: 50%;
+                margin-top: 1em;
+                margin-bottom: 1em;
+                margin-left: 7em;
+                font-size: 1.8em;
+                text-align: center;
+//                border: aqua solid thin;
+                border-radius: 1em;
             }
         }
     }
+    
+    footer{
+        p{
+            font-size: 1.5em;
+        }
+    }
 }
+/*==========================================================================================*/
+/*                             Second Breakpoint                                            */
+/*==========================================================================================*/
+    @media only screen and (min-width: 55em) {
+       .heading{
+            background-color: $secondary-back-color;
+            height: 10.5em;
+            max-width: 54.88em;
+            z-index: 2000;
 
-@media only screen and (min-width: 55em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+            img{
+                width: 8em;
+                height: 8em;
+            }
+
+            h1{
+                font-size: 4em;
+            }
+
+            #Bars {
+                font-size: 3em;
+                margin-top: 1em;
+            }
+        }
+
+        #Nav {
+            margin-top: 5.5em;
+
+            li{
+                font-size: 1.5em;
+            }
+        }
+
+        #Home,#Portfolio,#About,#Contact,#Other {
+            h1{
+                font-size: 4em;
+                margin:2em 0 1em 1.5em;
+            }
+        }
+
+        .img-slider {
+            margin-left:13em;
+            width: 28em;
+            height: 28em;
+    //        border: thin darkblue solid;
+        }
+
+        .image-slider{   
+            display: block;
+            width: 100%;
+            height: 100%;
+        //	position: relative;
+        //    margin-top: 10em;
+            margin: 0 1em 0 0.5em;
+    //        border: red solid thin;
+        }
+
+       .slick-slide{
+            display: none;
+            float: left;
+            margin-left: 0;
+        //    width: 100%;
+            height: 100%;
+            min-height: 1px;
+    //        border: black thin solid;
+        }
+
+        .slick-slider .slick-track,
+        .slick-slider .slick-list
+        {
+            height: 100%;
+            width: 100%;
+            margin-left: 2px;
+    //        border: orange solid thin;
+        }
+
+        .slick-prev,
+        .slick-next {
+            margin-right: -60px;
+            margin-left: -50px;
+        }
+
+        .slick-prev:before,
+        .slick-next:before{
+            font-size: 40px;
+            line-height: 0;
+        }
+
+        .info{
+            height: 40em;
+            p{
+                font-size: 1.8em;
+                width: 22em;
+                margin-left: 3em;
+            }
+            img{
+                width: 25em;
+                height: 25em;
+                margin: 1.5em 0 1.5em 13em;
+            }
+            .cls{
+                width: 5em;
+                margin: 2em 0 0 24em;
+            }
+        }
+
+        .work{
+            p{
+                color: black;
+                font-family: Agency FB;
+                font-weight: normal;
+                font-size: 2.5em;
+                margin-bottom: 1em;
+            }
+        }
+
+        .paper,.logo,.packaging{
+            border: white thick dotted;
+            p{
+                color: black;
+                text-align: center;
+                font-family: Agency FB;
+                font-weight: normal;
+                font-size: 3.5em;
+                margin-top: 1em;
+            }
+
+            img{
+                width: 20em;
+                height: 20em;
+                margin: 1em 0 1em 2.5em;
+                border: 0.15em black solid;
+            }
+        }
+
+        #About{
+            p{
+                font-size: 1.8em;
+                width: 25em;
+                margin: auto;
+            }
+        }
+
+            .form{
+    //       border: thin red solid;
+            #Form{
+    //            border: thin green solid;
+                width: 35em;
+                margin: auto;
+
+                label{
+    //                border: thin blue solid;
+                    width: 8em;
+                    margin-left: 2em;
+                    margin-top: 2em;
+                    text-align: center;
+                     // float: left;
+                     // clear:both;
+                      display: inline-block;
+                }
+
+                input{
+        //            border: thin orange solid;
+                    width: 22em;
+                    margin-top: 1.5em;
+                    margin-left: 1.2em;
+                    display: inline-block;
+                }
+
+                #Email{
+                    margin-left: 2.75em;
+                }
+
+                #Subject{
+                    margin-left: 2.5em;
+                }
+
+                #Message{
+                    width: 22em;
+                    margin-top: 2em;
+                    margin-left: 1.2em;
+                }
+
+                #Send{
+                    height: 3em;
+                    width: 100%;
+                    margin-top: 2em;
+                    font-size: 1.8em;
+                    text-align: center;
+                }
+            }
+        }
+    }
+/*==========================================================================================*/
 
 @media only screen and (min-width: 75em) {
     .heading{

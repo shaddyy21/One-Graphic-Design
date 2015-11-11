@@ -55,13 +55,14 @@ section{
 }
 .display{
     display: flex;
-    margin-left: 2em;
+    border: orange thin solid;
+//    margin-left: 2em;
 }
 
 .paper,.logo,.packaging{
-    flex: 1 0 100%;
-//    border: thin red solid;
-    width: 23.5em;
+    flex: 1 0 auto;
+    border: thin red solid;
+    width: 18em;
     img{
         width: 10em;
         height: 10em;

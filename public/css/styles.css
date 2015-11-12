@@ -211,6 +211,9 @@ h1 {
   text-align: center;
   font-family: Agency FB;
   font-weight: normal; }
+  h1 a {
+    text-decoration: none;
+    color: black; }
 
 .heading #Bars {
   font-family: Agency FB;
@@ -286,9 +289,9 @@ footer p {
   left: 0; }
   .heading h1 {
     margin: auto;
-    -webkit-flex: 1 1 content;
-    -ms-flex: 1 1 content;
-    flex: 1 1 content;
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center; }
@@ -310,11 +313,9 @@ footer p {
   #Nav a:hover {
     text-decoration: underline; }
   #Nav ul {
-    width: 100%;
     margin: 0;
     padding: 0; }
     #Nav ul li {
-      width: 100%;
       margin: auto;
       text-align: center; }
   #Nav.show {
@@ -756,6 +757,10 @@ section {
     font-weight: normal;
     font-size: 2.5em;
     margin-bottom: 1em; }
+  .imgContainer {
+    border: white solid thin;
+    width: 93.5%;
+    margin: auto; }
   .paper, .logo, .packaging {
     width: 25em;
     margin-left: 2em; }
@@ -769,7 +774,7 @@ section {
     .paper img, .logo img, .packaging img {
       width: 20em;
       height: 20em;
-      margin: 1em 0 1em 2.5em;
+      margin: 1em 1em 1em 2.15em;
       border: 0.15em black solid; }
   #About p {
     font-size: 1.8em;
@@ -815,6 +820,8 @@ section {
 /*                             Second Breakpoint                                            */
 /*==========================================================================================*/
 @media only screen and (min-width: 55em) {
+  .container {
+    border: cyan thin solid; }
   .heading {
     background-color: #6E6E6E;
     height: 10.5em; }
@@ -822,26 +829,43 @@ section {
       width: 8em;
       height: 8em; }
     .heading h1 {
-      font-size: 5.5em; }
-    .heading #Bars {
-      font-size: 4em;
-      margin-top: 0.68em; }
+      font-size: 5em; }
+  #Bars {
+    display: none; }
   #Nav {
-    margin-top: 5.5em; }
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    margin-top: 5em;
+    margin-bottom: -8em;
+    background-color: #6E6E6E; }
+    #Nav ul {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
     #Nav li {
-      font-size: 1.5em; }
+      font-size: 1.5em;
+      text-align: center; }
+  section {
+    padding-top: 7em; }
   #Home h1, #Portfolio h1, #About h1, #Contact h1, #Other h1 {
     font-size: 4em;
-    margin: 2em 0 1em 1.5em; }
+    margin: auto;
+    margin-top: 2em;
+    text-align: center; }
   .img-slider {
-    margin-left: 13em;
-    width: 28em;
-    height: 28em; }
+    margin: auto;
+    width: 30em;
+    height: 30em;
+    border: thin darkblue solid; }
   .image-slider {
     display: block;
     width: 100%;
     height: 100%;
-    margin: 0 1em 0 0.5em; }
+    margin: 0 1em 0 -0.1em;
+    border: red solid thin; }
   .slick-slide {
     display: none;
     float: left;
@@ -880,6 +904,10 @@ section {
     font-weight: normal;
     font-size: 2.5em;
     margin-bottom: 1em; }
+  .imgContainer {
+    border: limegreen thin solid;
+    width: 75%;
+    margin: auto; }
   .paper, .logo, .packaging {
     border: white thick dotted; }
     .paper p, .logo p, .packaging p {
@@ -892,7 +920,7 @@ section {
     .paper img, .logo img, .packaging img {
       width: 20em;
       height: 20em;
-      margin: 1em 0 1em 2.5em;
+      margin: 1em 1.5em 1em 2.5em;
       border: 0.15em black solid; }
   #About p {
     font-size: 1.8em;
@@ -932,7 +960,7 @@ section {
   .heading {
     margin: 0 0 1em 0;
     width: 100%;
-    height: 7em; }
+    height: 10em; }
     .heading h1 {
       margin: auto;
       display: block; }
@@ -945,20 +973,22 @@ section {
     top: 0;
     left: 0;
     background-color: #6E6E6E;
-    margin-top: 3.5em;
+    margin-top: 4em;
     width: 100%;
-    height: 2.5em; }
+    height: 3.5em; }
     #Nav ul {
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      margin: 1em 0 0 2.5em; }
       #Nav ul li {
         width: auto;
-        margin-left: 5em;
+        margin-left: 0;
         text-align: center;
         -webkit-flex: 1 1 content;
         -ms-flex: 1 1 content;
-        flex: 1 1 content; }
+        flex: 1 1 content;
+        border: red thin solid; }
   section {
     padding-top: 15em; } }
 

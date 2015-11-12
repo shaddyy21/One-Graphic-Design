@@ -14,7 +14,7 @@
     
     h1{
         margin: auto;
-        flex: 1 1 content;
+        flex: 1 1 100%;
         align-content: center;
     }
     
@@ -48,12 +48,12 @@
     }
     
     ul{
-        width: 100%;
+//        width: 100%;
         margin: 0;
         padding: 0;
         
         li{
-            width: 100%;
+//            width: 100%;
             margin: auto;
             text-align: center;
         }

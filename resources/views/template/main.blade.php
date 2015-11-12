@@ -15,11 +15,11 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">    
 </head>
 <body>
-   <div class="container">
+   <div class="container" #Top>
     <header>
         <div class="heading">
             <img src="{{asset('img/logo.png')}}" alt="logo">
-            <h1>One Graphic Design</h1>
+            <h1><a href="#Top">One Graphic Design</h1></a>
             <p id="Bars"><i class="fa fa-bars"></i></p>
         </div>
         
@@ -57,25 +57,31 @@
                 <div class="display">
                    <div class="paper">
                       <p>Paper Art</p>
-                       <img class="pic1" src="{{asset('img/_MG_8841.jpg')}}" alt="">
-                       <img class="pic1" src="{{asset('img/_MG_8850.jpg')}}" alt="">
-                       <img class="pic1" src="{{asset('img/flagTwoSided.jpg')}}" alt="">
-                       <img class="pic1" src="{{asset('img/wholeMilk.jpg')}}" alt="">
+                      <div class="imgContainer">
+                           <img class="pic1" src="{{asset('img/_MG_8841.jpg')}}" alt="">
+                           <img class="pic1" src="{{asset('img/_MG_8850.jpg')}}" alt="">
+                           <img class="pic1" src="{{asset('img/flagTwoSided.jpg')}}" alt="">
+                           <img class="pic1" src="{{asset('img/wholeMilk.jpg')}}" alt="">
+                      </div>
                    </div>
                    
                    <div class="logo">
                        <p>Logo</p>
-                       <img class="pic2" src="{{asset('img/naturyoLogo.png')}}" alt="">
-                       <img class="pic2" src="{{asset('img/naturyoLogo1.png')}}" alt="">
+                       <div class="imgContainer">
+                           <img class="pic2" src="{{asset('img/naturyoLogo.png')}}" alt="">
+                           <img class="pic2" src="{{asset('img/naturyoLogo1.png')}}" alt="">
+                       </div>
                    </div>
                    
                    <div class="packaging">
                       <p>Packaging</p>
-                      <img class="pic3" src="{{asset('img/_MG_8841.jpg')}}" alt="">
-                      <img class="pic3" src="{{asset('img/flagTwoSided.jpg')}}" alt="">
-                      <img class="pic3" src="{{asset('img/sachet.jpg')}}" alt="">
-                      <img class="pic3" src="{{asset('img/SkimMilk.jpg')}}" alt="">
-                      <img class="pic3" src="{{asset('img/wholeMilk.jpg')}}" alt="">
+                      <div class="imgContainer">
+                          <img class="pic3" src="{{asset('img/_MG_8841.jpg')}}" alt="">
+                          <img class="pic3" src="{{asset('img/flagTwoSided.jpg')}}" alt="">
+                          <img class="pic3" src="{{asset('img/sachet.jpg')}}" alt="">
+                          <img class="pic3" src="{{asset('img/SkimMilk.jpg')}}" alt="">
+                          <img class="pic3" src="{{asset('img/wholeMilk.jpg')}}" alt="">
+                      </div>
                    </div>
                 </div>
                 <div class="info hide">
@@ -151,6 +157,6 @@
    
     <script src="{{asset('js/jQuery.js')}}"></script>
     <script src="{{asset('slick/slick.js')}}"></script>
-    <script src="{{asset('slick/slick.min.js')}}"></script>    
+    <script src="{{asset('slick/slick.min.js')}}"></script>
 </body>
 </html>

@@ -50,7 +50,7 @@
     }
     
     .img-slider {
-        margin:auto;
+        margin: auto;
         width: 28em;
         height: 28em;
 //        border: thin darkblue solid;
@@ -124,6 +124,12 @@
         }
     }
     
+    .imgContainer{
+        border: white solid thin;
+        width: 93.5%;
+        margin: auto;
+    }
+    
     .paper,.logo,.packaging{
 //        border: cyan solid thin;
         width: 25em;
@@ -140,7 +146,7 @@
         img{
             width: 20em;
             height: 20em;
-            margin: 1em 0 1em 2.5em;
+            margin: 1em 1em 1em 2.15em;
             border: 0.15em black solid;
         }
     }
@@ -219,45 +225,67 @@
 /*                             Second Breakpoint                                            */
 /*==========================================================================================*/
     @media only screen and (min-width: 55em) {
+        .container{
+            border: cyan thin solid;
+        }
+        
        .heading{
             background-color: $secondary-back-color;
             height: 10.5em;
-
+           
             img{
                 width: 8em;
                 height: 8em;
             }
-
+           
             h1{
-                font-size: 5.5em;
-            }
-
-            #Bars {
-                font-size: 4em;
-                margin-top: 0.68em;
+                font-size: 5em;
             }
         }
-
+        
+        #Bars{
+            display: none;
+        }
+        
         #Nav {
-            margin-top: 5.5em;
-
+            display: block;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            margin-top: 5em;
+            margin-bottom: -8em;
+            background-color: $secondary-back-color;
+            
+            ul{
+                display: flex;
+            }
+            
             li{
                 font-size: 1.5em;
+                text-align: center;
             }
         }
-
+        
+        section{
+            padding-top: 7em;
+        }
+        
         #Home,#Portfolio,#About,#Contact,#Other {
             h1{
                 font-size: 4em;
-                margin:2em 0 1em 1.5em;
+//                margin:2em 0 1em 1.5em;
+                margin: auto;
+                margin-top: 2em;
+                text-align: center;
             }
         }
 
         .img-slider {
-            margin-left:13em;
-            width: 28em;
-            height: 28em;
-    //        border: thin darkblue solid;
+            margin: auto;
+            width: 30em;
+            height: 30em;
+            border: thin darkblue solid;
         }
 
         .image-slider{   
@@ -266,8 +294,8 @@
             height: 100%;
         //	position: relative;
         //    margin-top: 10em;
-            margin: 0 1em 0 0.5em;
-    //        border: red solid thin;
+            margin: 0 1em 0 -0.1em;
+            border: red solid thin;
         }
 
        .slick-slide{
@@ -328,6 +356,12 @@
                 margin-bottom: 1em;
             }
         }
+        
+        .imgContainer{
+            border: limegreen thin solid;
+            width: 75%;
+            margin: auto;
+        }
 
         .paper,.logo,.packaging{
             border: white thick dotted;
@@ -343,7 +377,7 @@
             img{
                 width: 20em;
                 height: 20em;
-                margin: 1em 0 1em 2.5em;
+                margin: 1em 1.5em 1em 2.5em;
                 border: 0.15em black solid;
             }
         }
@@ -412,7 +446,7 @@
     .heading{
        margin: 0 0 1em 0;
         width: 100%;
-        height: 7em;
+        height: 10em;
 //        border: thin red solid;
         h1{
             margin: auto;
@@ -431,17 +465,18 @@
         top: 0;
         left: 0;
         background-color: $secondary-back-color;
-        margin-top: 3.5em;
+        margin-top: 4em;
         width: 100%;
-        height: 2.5em;
+        height: 3.5em;
         ul{
             display: flex;
+            margin: 1em 0 0 2.5em;
                 li{
                     width: auto;
-                    margin-left: 5em;
+                    margin-left: 0;
                     text-align: center;
                     flex: 1 1 content;
-//                    border: red thin solid;
+                    border: red thin solid;
                 }
         }
     }

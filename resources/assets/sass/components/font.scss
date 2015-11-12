@@ -1,90 +1,93 @@
-h1{
-    color: black;
-    text-align: center;
-    font-family: Agency FB;
-    font-weight: normal;
-}
-
-.heading{
-    
-    #Bars{
-        font-family: Agency FB;
-        font-weight: normal;
-        font-size: 2em;
-    }
-}
-
-#Nav {
-    font-family: Agency FB;
-    font-weight: normal;
-    font-size: 2em;
-    
-    a{
-        color: black;
-    }
-}
-
-#Home,#Portfolio,#About,#Contact,#Other {
+/*=======================================================*/
+/*                    Font                               */
+/*=======================================================*/
     h1{
         color: black;
         text-align: center;
         font-family: Agency FB;
         font-weight: normal;
-        font-size: 2.5em;
-        margin-top: 1em;
     }
-}
 
-.work{
-    p{
-        color: black;
-        font-family: Agency FB;
-        font-weight: normal;
-        font-size: 1.4em;
+    .heading{
+        #Bars{
+            font-family: Agency FB;
+            font-weight: normal;
+            font-size: 2em;
+        }
     }
-}
 
-.paper,.logo,.packaging{
-    p{
-        color: black;
-        text-align: center;
+    #Nav {
         font-family: Agency FB;
         font-weight: normal;
         font-size: 2em;
+        
+        a{
+            color: black;
+        }
     }
-}
 
-#About{
-    p{
+    #Home,#Portfolio,#About,#Contact,#Other {
+        h1{
+            color: black;
+            text-align: center;
+            font-family: Agency FB;
+            font-weight: normal;
+            font-size: 2.5em;
+            margin-top: 1em;
+        }
+    }
+
+    .work{
+        p{
+            color: black;
+            font-family: Agency FB;
+            font-weight: normal;
+            font-size: 1.4em;
+        }
+    }
+
+    .paper,.logo,.packaging{
+        p{
+            color: black;
+            text-align: center;
+            font-family: Agency FB;
+            font-weight: normal;
+            font-size: 2em;
+        }
+    }
+
+    #About{
+        p{
+            color: black;
+            font-family: Agency FB;
+            font-weight: normal;
+            font-size: 1.15em;
+            text-align: left;
+        }
+    }
+
+    .info {
+        p{
+            color: black;
+            font-family: Agency FB;
+            font-weight: normal;
+            font-size: 1.3em;
+            text-align: left;
+        }
+    }
+
+    footer{
+        p{
+            color: black;
+            text-align: center;
+            font-family: Agency FB;
+            font-weight: normal;
+            font-size: 1.4em;
+        }
+    }
+
+    #Form{
         color: black;
-        font-family: Agency FB;
-        font-weight: normal;
-        font-size: 1.2em;
-        text-align: left;
+        font-size: 1em;
     }
-}
-
-.info {
-    p{
-        color: black;
-        font-family: Agency FB;
-        font-weight: normal;
-        font-size: 1.3em;
-        text-align: left;
-    }
-}
-
-footer{
-    p{
-        color: black;
-        text-align: center;
-        font-family: Agency FB;
-        font-weight: normal;
-        font-size: 1.4em;
-    }
-}
-
-#Form{
-    color: black;
-    font-size: 1em;
-}
+/*=======================================================*/

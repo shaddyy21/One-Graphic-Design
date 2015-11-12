@@ -1,16 +1,19 @@
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
     .container{
+        width: 100%;
+        overflow: hidden;
         border: orange thin solid;
     }
     
     .heading{
-        position: relative;
+//        position: relative;
+        position: fixed;
         background-color: $secondary-back-color;
         height: 10.5em;
         width: 100%;
 //        max-width: 54.88em;
-        z-index: 2000;
+        z-index: 1000;
     
         img{
             width: 8em;
@@ -26,10 +29,13 @@
             margin-top: 1em;
         }
     }
+    section{
+        padding-top: 11em;
+    }
     
     #Nav {
         margin:auto;
-        margin-top: 1.5em;
+        margin-top: 5.5em;
         
         li{
             font-size: 1.5em;
@@ -92,7 +98,6 @@
     }
     
     .info{
-        height: 40em;
         p{
             font-size: 1.8em;
             width: 22em;
@@ -101,7 +106,7 @@
         img{
             width: 25em;
             height: 25em;
-            margin: 1.5em 0 1.5em 13em;
+            margin: 1.5em 8.5em 1.5em 8.5em;
         }
         .cls{
             width: 5em;
@@ -122,7 +127,7 @@
     .paper,.logo,.packaging{
 //        border: cyan solid thin;
         width: 25em;
-        margin: auto;
+        margin-left: 2em;
         p{
             color: black;
             text-align: center;
@@ -136,7 +141,6 @@
             width: 20em;
             height: 20em;
             margin: 1em 0 1em 2.5em;
-//            margin: auto;
             border: 0.15em black solid;
         }
     }
@@ -154,18 +158,17 @@
 //       border: thin red solid;
         #Form{
 //            border: thin green solid;
-            width: 34em;
+            width: 32em;
             font-size: 1.35em;
-//            margin-left: 1em;
             margin: auto;
 
             label{
 //                border: thin blue solid;
                 width: 8em;
-                margin-left: 1em;
+                margin-left: -0.5em;
                 margin-top: 2em;
                 text-align: center;
-                display: inline-block;
+//                display: inline-block;
             }
 
             input{
@@ -174,7 +177,7 @@
                 max-width: 22em;
                 margin-top: 1.5em;
                 margin-left: 0.3em;
-                display: inline-block;
+//                display: inline-block;
             }
             
             #Email{
@@ -197,7 +200,7 @@
                 width: 50%;
                 margin-top: 1em;
                 margin-bottom: 1em;
-                margin-left: 7em;
+                margin-left: 5em;
                 font-size: 1.8em;
                 text-align: center;
 //                border: aqua solid thin;
@@ -219,8 +222,6 @@
        .heading{
             background-color: $secondary-back-color;
             height: 10.5em;
-            max-width: 54.88em;
-            z-index: 2000;
 
             img{
                 width: 8em;
@@ -228,12 +229,12 @@
             }
 
             h1{
-                font-size: 4em;
+                font-size: 5.5em;
             }
 
             #Bars {
-                font-size: 3em;
-                margin-top: 1em;
+                font-size: 4em;
+                margin-top: 0.68em;
             }
         }
 

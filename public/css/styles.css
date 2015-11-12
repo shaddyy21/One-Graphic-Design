@@ -371,6 +371,10 @@ section {
   display: -ms-flexbox;
   display: flex; }
 
+.imgContainer {
+  margin: auto;
+  width: 28em; }
+
 .paper, .logo, .packaging {
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -379,8 +383,7 @@ section {
   .paper img, .logo img, .packaging img {
     width: 8.5em;
     height: 8.5em;
-    margin-left: 3.5em;
-    margin-bottom: 3em;
+    margin: 1em 2.5em 1em 2.5em;
     border: 0.15em black solid; }
 
 .dim {
@@ -389,7 +392,7 @@ section {
 .info {
   opacity: 1;
   height: auto;
-  width: 95%;
+  width: 100%;
   margin: auto;
   background-color: #9E9E9E; }
   .info p {
@@ -398,7 +401,7 @@ section {
   .info img {
     width: 20em;
     height: 20em;
-    margin: 1.5em 3.5em 1.5em 3.5em;
+    margin: 1.5em 3.5em 1.5em 4em;
     border: none; }
   .info .cls {
     position: relative;
@@ -698,10 +701,10 @@ section {
       width: 8em;
       height: 8em; }
     .heading h1 {
-      font-size: 4em; }
+      font-size: 3.5em; }
     .heading #Bars {
       font-size: 3em;
-      margin-top: 1em; }
+      margin-top: 1.1em; }
   section {
     padding-top: 11em; }
   #Nav {
@@ -745,12 +748,12 @@ section {
     width: 22em;
     margin-left: 3em; }
   .info img {
-    width: 25em;
-    height: 25em;
-    margin: 1.5em 8.5em 1.5em 8.5em; }
+    width: 18em;
+    height: 18em;
+    margin: 1.5em 13.5em 1.5em 13em; }
   .info .cls {
     width: 5em;
-    margin: 2em 0 0 24em; }
+    margin: 2em 0 0 21em; }
   .work p {
     color: black;
     font-family: Agency FB;
@@ -759,7 +762,7 @@ section {
     margin-bottom: 1em; }
   .imgContainer {
     border: white solid thin;
-    width: 93.5%;
+    width: 34.5em;
     margin: auto; }
   .paper, .logo, .packaging {
     width: 25em;
@@ -772,9 +775,9 @@ section {
       font-size: 3.5em;
       margin-top: 1em; }
     .paper img, .logo img, .packaging img {
-      width: 20em;
-      height: 20em;
-      margin: 1em 1em 1em 2.15em;
+      width: 15em;
+      height: 15em;
+      margin: 1em 0.5em 1em 1em;
       border: 0.15em black solid; }
   #About p {
     font-size: 1.8em;
@@ -898,15 +901,17 @@ section {
     .info .cls {
       width: 5em;
       margin: 2em 0 0 24em; }
-  .work p {
-    color: black;
-    font-family: Agency FB;
-    font-weight: normal;
-    font-size: 2.5em;
-    margin-bottom: 1em; }
+  .work {
+    margin-left: 6em; }
+    .work p {
+      color: black;
+      font-family: Agency FB;
+      font-weight: normal;
+      font-size: 2.5em;
+      margin-bottom: 1em; }
   .imgContainer {
     border: limegreen thin solid;
-    width: 75%;
+    width: 50em;
     margin: auto; }
   .paper, .logo, .packaging {
     border: white thick dotted; }

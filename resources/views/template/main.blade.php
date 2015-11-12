@@ -123,7 +123,7 @@
                                 {!! Form::textarea('message',null,array('id' => 'Message')) !!}
                             </div>
                             
-                            {!! Form::submit('Send',array('id' => 'Send')),FA::icon('fa-paper-plane') !!}
+                            {!! Form::button('<i class="fa fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;Send',array('id' => 'Send','type'=>'submit')) !!}
                         {!! Form::close() !!}
                     </fieldset>
                     <!--<form action="#" id="Form">

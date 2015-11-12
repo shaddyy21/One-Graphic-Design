@@ -99,19 +99,20 @@
     }
     
     .info{
+        width: 40em;
         p{
-            font-size: 1.8em;
+            font-size: 1.7em;
             width: 22em;
-            margin-left: 3em;
+            margin-left: 1.5em;
         }
         img{
             width: 18em;
             height: 18em;
-            margin: 1.5em 13.5em 1.5em 13em;
+            margin: 1.5em 11em 1.5em 11em;
         }
         .cls{
             width: 5em;
-            margin: 2em 0 0 21em;
+            margin: 2em 0 0 18.5em;
         }
     }
     
@@ -126,7 +127,7 @@
     }
     
     .imgContainer{
-        border: white solid thin;
+//        border: white solid thin;
         width: 34.5em;
         margin: auto;
     }
@@ -134,7 +135,6 @@
     .paper,.logo,.packaging{
 //        border: cyan solid thin;
         width: 25em;
-        margin-left: 2em;
         p{
             color: black;
             text-align: center;
@@ -181,7 +181,7 @@
             input{
     //            border: thin orange solid;
                 width: 21.5em;
-                max-width: 22em;
+//                max-width: 22em;
                 margin-top: 1.5em;
                 margin-left: 0.3em;
 //                display: inline-block;
@@ -197,7 +197,6 @@
             
             #Message{
                 width: 21.5em;
-                max-width: 22em;
                 margin-top: 2em;
                 margin-left: 0.3em;
             }
@@ -286,7 +285,7 @@
             margin: auto;
             width: 30em;
             height: 30em;
-            border: thin darkblue solid;
+//            border: thin darkblue solid;
         }
 
         .image-slider{   
@@ -296,7 +295,7 @@
         //	position: relative;
         //    margin-top: 10em;
             margin: 0 1em 0 -0.1em;
-            border: red solid thin;
+//            border: red solid thin;
         }
 
        .slick-slide{
@@ -331,7 +330,8 @@
         }
 
         .info{
-            height: 40em;
+            height: 45em;
+            width: 50em;
             p{
                 font-size: 1.8em;
                 width: 22em;
@@ -343,8 +343,8 @@
                 margin: 1.5em 0 1.5em 13em;
             }
             .cls{
-                width: 5em;
-                margin: 2em 0 0 24em;
+                width: 3em;
+                margin: 4em 0 0 24em;
             }
         }
 
@@ -360,13 +360,13 @@
         }
         
         .imgContainer{
-            border: limegreen thin solid;
+//            border: limegreen thin solid;
             width: 50em;
             margin: auto;
         }
 
         .paper,.logo,.packaging{
-            border: white thick dotted;
+//            border: white thick dotted;
             p{
                 color: black;
                 text-align: center;
@@ -393,28 +393,23 @@
         }
 
             .form{
-    //       border: thin red solid;
+//           border: thin red solid;
             #Form{
-    //            border: thin green solid;
-                width: 35em;
+//                border: thin green solid;
+                width: 38em;
                 margin: auto;
 
                 label{
-    //                border: thin blue solid;
+//                    border: thin blue solid;
                     width: 8em;
-                    margin-left: 2em;
-                    margin-top: 2em;
-                    text-align: center;
-                     // float: left;
-                     // clear:both;
-                      display: inline-block;
+                    margin: 1.3em 0 0 1em;
+                    display: inline-block;
                 }
 
                 input{
-        //            border: thin orange solid;
-                    width: 22em;
-                    margin-top: 1.5em;
-                    margin-left: 1.2em;
+//                    border: thin orange solid;
+                    width: 25em;
+                    margin: 1.5em 0 0 1.5em;
                     display: inline-block;
                 }
 
@@ -427,18 +422,23 @@
                 }
 
                 #Message{
-                    width: 22em;
-                    margin-top: 2em;
-                    margin-left: 1.2em;
+                    width: 25em;
+                    margin: 1.5em 0 0 1.5em;
                 }
 
                 #Send{
                     height: 3em;
-                    width: 100%;
-                    margin-top: 2em;
-                    font-size: 1.8em;
+                    width: 50%;
+                    margin-left: 6.5em;
+                    font-size: 2em;
                     text-align: center;
                 }
+            }
+        }
+        
+        footer{
+            p{
+                font-size: 2em;
             }
         }
     }

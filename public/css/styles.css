@@ -272,6 +272,8 @@ footer p {
 #Form {
   color: black;
   font-size: 1em; }
+  #Form #Send {
+    font-size: 1.5em; }
 
 /*=======================================================*/
 .heading {
@@ -392,16 +394,16 @@ section {
 .info {
   opacity: 1;
   height: auto;
-  width: 100%;
+  width: 26em;
   margin: auto;
   background-color: #9E9E9E; }
   .info p {
-    width: 15em;
-    margin-left: 3.5em; }
+    width: 16em;
+    margin-left: 2em; }
   .info img {
-    width: 20em;
-    height: 20em;
-    margin: 1.5em 3.5em 1.5em 4em;
+    width: 17em;
+    height: 17em;
+    margin: 1.5em 4.8em 1.5em 4.8em;
     border: none; }
   .info .cls {
     position: relative;
@@ -411,7 +413,7 @@ section {
 .logo, .packaging {
   display: none; }
 
-.pic1, .pic2, .pic3, #Paperart, #Logo, #Pack, .cls {
+.pic1, .pic2, .pic3, #Paperart, #Logo, #Pack, .cls, #Send {
   cursor: pointer; }
 
 #About p {
@@ -440,8 +442,8 @@ section {
     margin-left: 5em; }
   .form #Form #Send {
     height: 3em;
-    width: 10em;
-    margin: 1em 0 1em 6em;
+    width: 50%;
+    margin: 1em 0 1em 4.5em;
     background-color: #9E9E9E;
     border: none; }
 
@@ -743,17 +745,19 @@ section {
   .slick-next:before {
     font-size: 40px;
     line-height: 0; }
-  .info p {
-    font-size: 1.8em;
-    width: 22em;
-    margin-left: 3em; }
-  .info img {
-    width: 18em;
-    height: 18em;
-    margin: 1.5em 13.5em 1.5em 13em; }
-  .info .cls {
-    width: 5em;
-    margin: 2em 0 0 21em; }
+  .info {
+    width: 40em; }
+    .info p {
+      font-size: 1.7em;
+      width: 22em;
+      margin-left: 1.5em; }
+    .info img {
+      width: 18em;
+      height: 18em;
+      margin: 1.5em 11em 1.5em 11em; }
+    .info .cls {
+      width: 5em;
+      margin: 2em 0 0 18.5em; }
   .work p {
     color: black;
     font-family: Agency FB;
@@ -761,12 +765,10 @@ section {
     font-size: 2.5em;
     margin-bottom: 1em; }
   .imgContainer {
-    border: white solid thin;
     width: 34.5em;
     margin: auto; }
   .paper, .logo, .packaging {
-    width: 25em;
-    margin-left: 2em; }
+    width: 25em; }
     .paper p, .logo p, .packaging p {
       color: black;
       text-align: center;
@@ -795,7 +797,6 @@ section {
       text-align: center; }
     .form #Form input {
       width: 21.5em;
-      max-width: 22em;
       margin-top: 1.5em;
       margin-left: 0.3em; }
     .form #Form #Email {
@@ -804,7 +805,6 @@ section {
       margin-left: 2.5em; }
     .form #Form #Message {
       width: 21.5em;
-      max-width: 22em;
       margin-top: 2em;
       margin-left: 0.3em; }
     .form #Form #Send {
@@ -861,14 +861,12 @@ section {
   .img-slider {
     margin: auto;
     width: 30em;
-    height: 30em;
-    border: thin darkblue solid; }
+    height: 30em; }
   .image-slider {
     display: block;
     width: 100%;
     height: 100%;
-    margin: 0 1em 0 -0.1em;
-    border: red solid thin; }
+    margin: 0 1em 0 -0.1em; }
   .slick-slide {
     display: none;
     float: left;
@@ -889,7 +887,8 @@ section {
     font-size: 40px;
     line-height: 0; }
   .info {
-    height: 40em; }
+    height: 45em;
+    width: 50em; }
     .info p {
       font-size: 1.8em;
       width: 22em;
@@ -899,8 +898,8 @@ section {
       height: 25em;
       margin: 1.5em 0 1.5em 13em; }
     .info .cls {
-      width: 5em;
-      margin: 2em 0 0 24em; }
+      width: 3em;
+      margin: 4em 0 0 24em; }
   .work {
     margin-left: 6em; }
     .work p {
@@ -910,55 +909,50 @@ section {
       font-size: 2.5em;
       margin-bottom: 1em; }
   .imgContainer {
-    border: limegreen thin solid;
     width: 50em;
     margin: auto; }
-  .paper, .logo, .packaging {
-    border: white thick dotted; }
-    .paper p, .logo p, .packaging p {
-      color: black;
-      text-align: center;
-      font-family: Agency FB;
-      font-weight: normal;
-      font-size: 3.5em;
-      margin-top: 1em; }
-    .paper img, .logo img, .packaging img {
-      width: 20em;
-      height: 20em;
-      margin: 1em 1.5em 1em 2.5em;
-      border: 0.15em black solid; }
+  .paper p, .logo p, .packaging p {
+    color: black;
+    text-align: center;
+    font-family: Agency FB;
+    font-weight: normal;
+    font-size: 3.5em;
+    margin-top: 1em; }
+  .paper img, .logo img, .packaging img {
+    width: 20em;
+    height: 20em;
+    margin: 1em 1.5em 1em 2.5em;
+    border: 0.15em black solid; }
   #About p {
     font-size: 1.8em;
     width: 25em;
     margin: auto; }
   .form #Form {
-    width: 35em;
+    width: 38em;
     margin: auto; }
     .form #Form label {
       width: 8em;
-      margin-left: 2em;
-      margin-top: 2em;
-      text-align: center;
+      margin: 1.3em 0 0 1em;
       display: inline-block; }
     .form #Form input {
-      width: 22em;
-      margin-top: 1.5em;
-      margin-left: 1.2em;
+      width: 25em;
+      margin: 1.5em 0 0 1.5em;
       display: inline-block; }
     .form #Form #Email {
       margin-left: 2.75em; }
     .form #Form #Subject {
       margin-left: 2.5em; }
     .form #Form #Message {
-      width: 22em;
-      margin-top: 2em;
-      margin-left: 1.2em; }
+      width: 25em;
+      margin: 1.5em 0 0 1.5em; }
     .form #Form #Send {
       height: 3em;
-      width: 100%;
-      margin-top: 2em;
-      font-size: 1.8em;
-      text-align: center; } }
+      width: 50%;
+      margin-left: 6.5em;
+      font-size: 2em;
+      text-align: center; }
+  footer p {
+    font-size: 2em; } }
 
 /*==========================================================================================*/
 @media only screen and (min-width: 75em) {

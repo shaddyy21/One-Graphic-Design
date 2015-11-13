@@ -34,7 +34,7 @@ $(function (){
     /*============================================================*/
     /*                    Active Link                             */
     /*============================================================*/
-        $("nav a[class^='linkUnderline']").on('click', function(){
+        $(".link a[class^='linkUnderline']").on('click', function(){
             $(this).siblings().addClass('linkUnderline');
             $(this).siblings().removeClass('linkUnderline');
             $(this).toggleClass('linkUnderline');

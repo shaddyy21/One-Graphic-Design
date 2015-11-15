@@ -35,6 +35,14 @@
            <h1>Paper Art</h1>
             <div class="paperAd">
                 <img src="{{asset('img/_MG_8841.jpg')}}" alt="">
+                <p class="pInfo">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi labore praesentium quae nihil, reprehenderit a maxime officia optio atque expedita!.
+                </p>
+                <div class="status">
+                    <span>Status:</span>
+                    <span>Active</span>
+                    <span class="hide">Deactive</span>
+                </div>
             </div>
         </section>
         

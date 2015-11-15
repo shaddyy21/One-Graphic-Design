@@ -19,11 +19,35 @@
     }
 
     .paperAd{
+        display: flex;
         border: red solid thin;
         margin-top: 5em;
         img{
             width: 10em;
             height: 10em;
+            margin: 1em;
+            border: 0.15em black solid;
+//            display: inline-block;
+        }
+        .pInfo{
+            display: inline-block;
+            width: 35em;
+            border: green thin solid;
+        }
+        
+        .status{
+            border: blue thin solid;
+            height: 1.2em;
+            margin: 0.65em 0 0 1em;
+            font-size: 1.5em;
+            
+            span:nth-child(2){
+                color: darkgreen;
+            } 
+            
+            span:nth-child(3){
+                color: red;
+            }
         }
     }
 

@@ -27,7 +27,6 @@
             height: 10em;
             margin: 1em;
             border: 0.15em black solid;
-//            display: inline-block;
         }
         .pInfo{
             display: inline-block;
@@ -36,25 +35,65 @@
         }
         
         .status{
-            border: blue thin solid;
-            height: 1.2em;
-            margin: 0.65em 0 0 1em;
+//            border: blue thin solid;
+            height: 1.5em;
+            width: 9em;
+            margin: 0.65em 0 0 2.5em;
             font-size: 1.5em;
             
             span:nth-child(2){
                 color: darkgreen;
+                margin-top: -1.35em;
+                margin-left: 3.5em;
             } 
             
             span:nth-child(3){
                 color: red;
+                margin-top: -1.35em;
+                margin-left: 3.5em;
             }
         }
         
-        .buttons{
+        .buttonsStat{
             border: orange solid thin;
-            margin: 0.97em 0 0 1em;
-            min-width: 2em;
-            max-height: 2em;
+            margin: 3.9em 0 0 -14em;
+            height: 2em;
+            width: 13.3em;
+            
+            button:nth-child(1){
+                border: darkred solid thin;
+                color: green;
+                width: 6em;
+                height: 2em;
+            }
+            
+            button:nth-child(2){
+                border: darkred solid thin;
+                color: red;
+                width: 7em;
+                height: 2em;
+            }
+        }
+        
+        .buttonsEdit{
+            border: cyan solid thin;
+            margin: 2em 0 0 5em;
+            
+            button:nth-child(1){
+                border: darkred solid thin;
+                margin-top: 2em;
+                margin-left: -2em;
+                color: red;
+                width: 7em;
+                height: 2em;
+            }
+            
+            button:nth-child(2){
+                border: darkred solid thin;
+                color: red;
+                width: 8em;
+                height: 2em;
+            }
         }
     }
 

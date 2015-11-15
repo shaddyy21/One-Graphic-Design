@@ -40,11 +40,17 @@
                 </p>
                 <div class="status">
                     <span>Status:</span>
-                    <span>Active</span>
+                    <span class="show">Active</span>
                     <span class="hide">Deactive</span>
                 </div>
-                <div class="buttons">
-                    
+                <div class="buttonsStat">
+                    <button>{!! FA::icon('check'),'&nbsp;&nbsp;Activate' !!}</button>
+                    <button>{!! FA::icon('times'),'&nbsp;&nbsp;Deactivate' !!}</button>                
+                </div>
+                
+                <div class="buttonsEdit hide">
+                    <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</button>
+                    <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Image' !!}</button>
                 </div>
             </div>
         </section>

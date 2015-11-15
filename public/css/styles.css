@@ -687,6 +687,29 @@ section {
 .slick-arrow.slick-hidden {
   display: none; }
 
+/*==============================================================*/
+/*                          Admin                               */
+/*==============================================================*/
+#Admin {
+  margin-right: 5em; }
+
+#Nav-admin {
+  display: block; }
+
+#Paper h1 {
+  margin-top: 1.5em;
+  font-size: 4em;
+  text-align: center;
+  color: black; }
+
+.paperAd {
+  border: red solid thin;
+  margin-top: 5em; }
+  .paperAd img {
+    width: 10em;
+    height: 10em; }
+
+/*==============================================================*/
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
   .container {

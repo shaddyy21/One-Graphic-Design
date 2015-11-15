@@ -726,6 +726,11 @@ section {
       color: darkgreen; }
     .paperAd .status span:nth-child(3) {
       color: red; }
+  .paperAd .buttons {
+    border: orange solid thin;
+    margin: 0.97em 0 0 1em;
+    min-width: 2em;
+    max-height: 2em; }
 
 /*==============================================================*/
 @media only screen and (min-width: 35em) {

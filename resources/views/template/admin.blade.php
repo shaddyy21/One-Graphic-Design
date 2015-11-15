@@ -43,6 +43,9 @@
                     <span>Active</span>
                     <span class="hide">Deactive</span>
                 </div>
+                <div class="buttons">
+                    
+                </div>
             </div>
         </section>
         

@@ -2,14 +2,20 @@
 /*                          Admin                               */
 /*==============================================================*/
     #Admin{
+        margin-right: 1em;
+    }
+
+    #Logout{
         margin-right: 5em;
+        width: 7em;
+        height: 1.5em;
     }
 
     #Nav-admin{
         display: block;
     }
     
-    #Paper{
+    #PaperAd,#LogoAd,#PackAd{
         h1{
             margin-top: 1.5em;
             font-size: 4em;
@@ -20,7 +26,7 @@
 
     .paperAd{
         display: flex;
-        border: red solid thin;
+        border-bottom: $secondary-back-color solid thin;
         margin-top: 5em;
         img{
             width: 10em;
@@ -31,7 +37,7 @@
         .pInfo{
             display: inline-block;
             width: 35em;
-            border: green thin solid;
+//            border: green thin solid;
         }
         
         .status{
@@ -55,46 +61,87 @@
         }
         
         .buttonsStat{
-            border: orange solid thin;
+//            border: orange solid thin;
             margin: 3.9em 0 0 -14em;
             height: 2em;
-            width: 13.3em;
+            width: 15.3em;
             
             button:nth-child(1){
-                border: darkred solid thin;
+//                border: darkred solid thin;
                 color: green;
-                width: 6em;
-                height: 2em;
-            }
-            
-            button:nth-child(2){
-                border: darkred solid thin;
-                color: red;
-                width: 7em;
-                height: 2em;
-            }
-        }
-        
-        .buttonsEdit{
-            border: cyan solid thin;
-            margin: 2em 0 0 5em;
-            
-            button:nth-child(1){
-                border: darkred solid thin;
-                margin-top: 2em;
-                margin-left: -2em;
-                color: red;
                 width: 7em;
                 height: 2em;
             }
             
             button:nth-child(2){
-                border: darkred solid thin;
+//                border: darkred solid thin;
                 color: red;
                 width: 8em;
                 height: 2em;
             }
         }
+        
+        .buttonsEdit{
+//            border: cyan solid thin;
+            width: 16.5em;
+            height: 2em;
+            margin: 6em 0 0 -15.3em;
+            
+            button:nth-child(1){
+//                border: darkred solid thin;
+                width: 7em;
+                height: 2em;
+            }
+            
+            button:nth-child(2){
+//                border: darkred solid thin;
+                width: 8em;
+                height: 2em;
+            }
+        }
+    }
+
+    .loginForm{
+//        border: red thin solid;
+        height: 26em;
+        width: 22em;
+        margin: 10em auto;
+//        margin-top: 5em;
+    }
+
+    .label{
+        width: 5.5em;
+        font-size: 2em;
+        margin-left: 3em;
+        margin-top: 1em;
+        display: inline-block;
+//        border: green thin solid;
+    }
+
+    .input{
+        width: 22em;
+        height: 2em;
+        margin-top: 0.5em;
+        display: inline-block;
+//        border: blue thin solid;
+    }
+
+    .main-heading{
+        h2{
+            color: black;
+            text-align: center;
+            font-family: Agency FB;
+            font-weight: normal;
+            font-size: 3em;
+            margin-top: 0.2em;
+        }
+    }
+
+    #Login{
+//        border: orange thin solid;
+        height: 3em;
+        margin-left: 7.5em;
+        margin-top: 2em;
     }
 
 

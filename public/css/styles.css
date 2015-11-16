@@ -691,12 +691,17 @@ section {
 /*                          Admin                               */
 /*==============================================================*/
 #Admin {
-  margin-right: 5em; }
+  margin-right: 1em; }
+
+#Logout {
+  margin-right: 5em;
+  width: 7em;
+  height: 1.5em; }
 
 #Nav-admin {
   display: block; }
 
-#Paper h1 {
+#PaperAd h1, #LogoAd h1, #PackAd h1 {
   margin-top: 1.5em;
   font-size: 4em;
   text-align: center;
@@ -706,7 +711,7 @@ section {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  border: red solid thin;
+  border-bottom: #6E6E6E solid thin;
   margin-top: 5em; }
   .paperAd img {
     width: 10em;
@@ -715,8 +720,7 @@ section {
     border: 0.15em black solid; }
   .paperAd .pInfo {
     display: inline-block;
-    width: 35em;
-    border: green thin solid; }
+    width: 35em; }
   .paperAd .status {
     height: 1.5em;
     width: 9em;
@@ -731,43 +735,65 @@ section {
       margin-top: -1.35em;
       margin-left: 3.5em; }
   .paperAd .buttonsStat {
-    border: orange solid thin;
     margin: 3.9em 0 0 -14em;
     height: 2em;
-    width: 13.3em; }
+    width: 15.3em; }
     .paperAd .buttonsStat button:nth-child(1) {
-      border: darkred solid thin;
       color: green;
-      width: 6em;
+      width: 7em;
       height: 2em; }
     .paperAd .buttonsStat button:nth-child(2) {
-      border: darkred solid thin;
-      color: red;
-      width: 7em;
-      height: 2em; }
-  .paperAd .buttonsEdit {
-    border: cyan solid thin;
-    margin: 2em 0 0 5em; }
-    .paperAd .buttonsEdit button:nth-child(1) {
-      border: darkred solid thin;
-      margin-top: 2em;
-      margin-left: -2em;
-      color: red;
-      width: 7em;
-      height: 2em; }
-    .paperAd .buttonsEdit button:nth-child(2) {
-      border: darkred solid thin;
       color: red;
       width: 8em;
       height: 2em; }
+  .paperAd .buttonsEdit {
+    width: 16.5em;
+    height: 2em;
+    margin: 6em 0 0 -15.3em; }
+    .paperAd .buttonsEdit button:nth-child(1) {
+      width: 7em;
+      height: 2em; }
+    .paperAd .buttonsEdit button:nth-child(2) {
+      width: 8em;
+      height: 2em; }
+
+.loginForm {
+  height: 26em;
+  width: 22em;
+  margin: 10em auto; }
+
+.label {
+  width: 5.5em;
+  font-size: 2em;
+  margin-left: 3em;
+  margin-top: 1em;
+  display: inline-block; }
+
+.input {
+  width: 22em;
+  height: 2em;
+  margin-top: 0.5em;
+  display: inline-block; }
+
+.main-heading h2 {
+  color: black;
+  text-align: center;
+  font-family: Agency FB;
+  font-weight: normal;
+  font-size: 3em;
+  margin-top: 0.2em; }
+
+#Login {
+  height: 3em;
+  margin-left: 7.5em;
+  margin-top: 2em; }
 
 /*==============================================================*/
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
   .container {
     width: 100%;
-    overflow: hidden;
-    border: orange thin solid; }
+    overflow: hidden; }
   .heading {
     background-color: #6E6E6E;
     height: 10.5em;
@@ -897,8 +923,6 @@ section {
 /*                             Second Breakpoint                                            */
 /*==========================================================================================*/
 @media only screen and (min-width: 55em) {
-  .container {
-    border: cyan thin solid; }
   .heading {
     height: 11em; }
     .heading img {

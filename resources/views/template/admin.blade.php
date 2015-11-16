@@ -17,22 +17,45 @@
             <div class="heading">
                 <img src="{{asset('img/logo.png')}}" alt="logo">
                 <h1><a href="#Top">One Graphic Design</h1></a>
-                <p id="Admin">Admin</i></p>
+                <p id="Admin">Admin</p>
+                <p id="Logout">{!! FA::icon('sign-out')!!}&nbsp;&nbsp;Logout</p>
             </div>
             
             <nav id="Nav" class="adminNav">
                 <ul>
-                    <li class="link"><a class="linkUnderline-one" href="#Home">Home</a></li>
-                    <li class="link"><a class="linkUnderline-two" href="#Portfolio">Portfolio</a></li>
-                    <li class="link"><a class="linkUnderline-three" href="#About">About</a></li>
-                    <li class="link"><a class="linkUnderline-four" href="#Contact">Contact Us</a></li>
-                    <li class="link"><a class="linkUnderline-five" href="#Other">Other Art</a></li>
+                    <li class="link"><a class="linkUnderline-one" href="#PaperAd">Paper Art</a></li>
+                    <li class="link"><a class="linkUnderline-two" href="#LogoAd">Logo</a></li>
+                    <li class="link"><a class="linkUnderline-three" href="#PackAd">Packaging</a></li>
                 </ul>
             </nav>
         </header>
     <main>
-        <section id="Paper">
+        <section id="PaperAd">
            <h1>Paper Art</h1>
+            <div class="paperAd">
+                <img src="{{asset('img/_MG_8841.jpg')}}" alt="">
+                <p class="pInfo">
+                    {{$About->content}}
+                </p>
+                <div class="status">
+                    <span>Status:</span>
+                    <span class="show">Active</span>
+                    <span class="hide">Deactive</span>
+                </div>
+                <div class="buttonsStat">
+                    <button>{!! FA::icon('check'),'&nbsp;&nbsp;Activate' !!}</button>
+                    <button>{!! FA::icon('times'),'&nbsp;&nbsp;Deactivate' !!}</button>                
+                </div>
+                
+                <div class="buttonsEdit">
+                    <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</button>
+                    <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Image' !!}</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="LogoAd">
+            <h1>Logo</h1>
             <div class="paperAd">
                 <img src="{{asset('img/_MG_8841.jpg')}}" alt="">
                 <p class="pInfo">
@@ -48,19 +71,35 @@
                     <button>{!! FA::icon('times'),'&nbsp;&nbsp;Deactivate' !!}</button>                
                 </div>
                 
-                <div class="buttonsEdit hide">
+                <div class="buttonsEdit">
                     <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</button>
                     <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Image' !!}</button>
                 </div>
             </div>
         </section>
         
-        <section id="#LogoAd">
-            
-        </section>
-        
-        <section id="Pack">
-            
+        <section id="PackAd">
+            <h1>Packaging</h1>
+            <div class="paperAd">
+                <img src="{{asset('img/_MG_8841.jpg')}}" alt="">
+                <p class="pInfo">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi labore praesentium quae nihil, reprehenderit a maxime officia optio atque expedita!.
+                </p>
+                <div class="status">
+                    <span>Status:</span>
+                    <span class="show">Active</span>
+                    <span class="hide">Deactive</span>
+                </div>
+                <div class="buttonsStat">
+                    <button>{!! FA::icon('check'),'&nbsp;&nbsp;Activate' !!}</button>
+                    <button>{!! FA::icon('times'),'&nbsp;&nbsp;Deactivate' !!}</button>                
+                </div>
+                
+                <div class="buttonsEdit">
+                    <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</button>
+                    <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Image' !!}</button>
+                </div>
+            </div>
         </section>
         
         <section id="AboutAd"></section>

@@ -15,6 +15,15 @@ Route::get('/', function () {
     return view('template/main');
 });
 
-Route::get('admin', function () {
-    return view('template/admin');
+//Route::get('admin', function () {
+//    return view('template/form');
+//});
+
+Route::get('login', function () {
+    return view('login');
 });
+
+   Route::get('about',function(){
+        $about = \App\Models\About::all();
+        return $about;
+    });

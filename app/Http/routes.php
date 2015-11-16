@@ -19,11 +19,11 @@ Route::get('/', function () {
 //    return view('template/form');
 //});
 
-Route::get('login', function () {
-    return view('login');
+Route::get('admin', function () {
+    return view('template/admin');
 });
 
-   Route::get('about',function(){
-        $about = \App\Models\About::all();
-        return $about;
-    });
+
+Route::get('createPaper',function(){
+    return view('createPaper');
+});

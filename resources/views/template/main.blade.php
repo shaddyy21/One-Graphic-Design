@@ -91,7 +91,21 @@
             <section id="About">
                 <h1>About</h1>
                 <div class="text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In reprehenderit eius delectus ad consectetur unde, dolorum minima odio, provident, architecto facere nulla aut libero ratione magni laudantium dolores commodi. Porro asperiores numquam praesentium placeat suscipit itaque, eius nulla neque voluptate! Veniam, enim dignissimos, quibusdam maxime hic temporibus perferendis aperiam cupiditate omnis incidunt cum ducimus dolores debitis delectus est iste quia porro libero nam, at aspernatur ratione. Exercitationem incidunt necessitatibus provident ratione aspernatur, doloribus fugiat perspiciatis sed! Eum inventore, veniam ratione natus quis, maiores voluptate numquam corporis doloremque dolorum odit nemo est, laudantium dolores voluptatum. Voluptates, provident sapiente dolor magni excepturi.</p>
+                    <p>One Graphic Design is about communication.<br><br>
+
+We ensure that we connect with you from the start and that we understand your needs. That means that we need to spend some time together talking about what your requirements are.<br><br>
+
+One Graphic Design is about getting it done.<br><br>
+
+We pride ourselves on meeting the deadline, no-matter-what. We ensure that the work is done on time to the best standard possible. No excuses.<br><br>
+
+One Graphic Design is about doing it right the first time.<br><br>
+
+This might mean having to meet and discuss things at length.<br><br>
+
+One Graphic Design is about giving you what you need.<br><br>
+
+We will discuss your needs rather than doing something that is just eye-candy. That might mean some time explaining how everything works.</p>
                 </div>
             </section>
             

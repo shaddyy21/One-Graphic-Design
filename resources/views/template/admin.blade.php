@@ -32,10 +32,12 @@
     <main>
         <section id="PaperAd">
            <h1>Paper Art</h1>
+           <p class="new">Add new</p>
             <div class="paperAd">
                 <img src="{{asset('img/_MG_8841.jpg')}}" alt="">
                 <p class="pInfo">
-                    {{$About->content}}
+                 
+                   
                 </p>
                 <div class="status">
                     <span>Status:</span>
@@ -56,6 +58,7 @@
         
         <section id="LogoAd">
             <h1>Logo</h1>
+            <p class="new">Add new</p>
             <div class="paperAd">
                 <img src="{{asset('img/_MG_8841.jpg')}}" alt="">
                 <p class="pInfo">
@@ -80,10 +83,14 @@
         
         <section id="PackAd">
             <h1>Packaging</h1>
+            <p class="new">Add new</p>
+               @foreach(\App\Models\Pack::all() as $pack)
             <div class="paperAd">
-                <img src="{{asset('img/_MG_8841.jpg')}}" alt="">
+                <img src="{{asset('img/'.$pack->path)}}" alt="">
                 <p class="pInfo">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi labore praesentium quae nihil, reprehenderit a maxime officia optio atque expedita!.
+                    
+                {{$pack->description}}
+                
                 </p>
                 <div class="status">
                     <span>Status:</span>
@@ -100,6 +107,7 @@
                     <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Image' !!}</button>
                 </div>
             </div>
+               @endforeach
         </section>
         
         <section id="AboutAd"></section>

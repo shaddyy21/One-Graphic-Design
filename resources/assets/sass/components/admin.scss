@@ -17,17 +17,27 @@
     
     #PaperAd,#LogoAd,#PackAd{
         h1{
-            margin-top: 1.5em;
+            display: inline-block;
+            margin: 1.5em 0 0 9em;
             font-size: 4em;
             text-align: center;
             color: black;
         }
     }
 
+    .new{
+        font-size: 1.5em;
+        width: 4.2em;
+        margin-left: 10em;
+        display: inline-block;
+//        border: red thin solid;
+        
+    }
+
     .paperAd{
         display: flex;
         border-bottom: $secondary-back-color solid thin;
-        margin-top: 5em;
+        margin-top: 3em;
         img{
             width: 10em;
             height: 10em;

@@ -702,17 +702,24 @@ section {
   display: block; }
 
 #PaperAd h1, #LogoAd h1, #PackAd h1 {
-  margin-top: 1.5em;
+  display: inline-block;
+  margin: 1.5em 0 0 9em;
   font-size: 4em;
   text-align: center;
   color: black; }
+
+.new {
+  font-size: 1.5em;
+  width: 4.2em;
+  margin-left: 10em;
+  display: inline-block; }
 
 .paperAd {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   border-bottom: #6E6E6E solid thin;
-  margin-top: 5em; }
+  margin-top: 3em; }
   .paperAd img {
     width: 10em;
     height: 10em;

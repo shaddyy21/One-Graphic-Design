@@ -298,13 +298,10 @@ footer p {
     -ms-flex-line-pack: center;
     align-content: center; }
   .heading p {
-    margin-right: 1em;
-    margin-top: 1em; }
+    margin: auto; }
   .heading img {
-    width: 5em;
-    height: 5em;
-    margin-top: 1em;
-    margin-left: 1em; }
+    width: 26em;
+    margin: auto; }
 
 #Nav {
   width: 100%;
@@ -807,13 +804,13 @@ section {
     width: 100%;
     z-index: 1000; }
     .heading img {
-      width: 8em;
-      height: 8em; }
-    .heading h1 {
-      font-size: 3.5em; }
+      width: 85%;
+      margin: auto; }
+    .heading p {
+      margin: auto;
+      margin-top: 1em; }
     .heading #Bars {
-      font-size: 3em;
-      margin-top: 1.1em; }
+      font-size: 3em; }
   section {
     padding-top: 12em; }
   #Nav {
@@ -933,10 +930,8 @@ section {
   .heading {
     height: 11em; }
     .heading img {
-      width: 9em;
-      height: 9em; }
-    .heading h1 {
-      font-size: 5em; }
+      width: 90%;
+      margin: auto; }
   #Bars {
     display: none; }
   #Nav {
@@ -1063,9 +1058,9 @@ section {
     margin: 0 0 1em 0;
     width: 100%;
     height: 10.5em; }
-    .heading h1 {
-      margin: auto;
-      display: block; }
+    .heading img {
+      width: 60%;
+      margin: auto; }
   #Bars {
     display: none; }
   #Nav {

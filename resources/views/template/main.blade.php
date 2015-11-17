@@ -15,8 +15,7 @@
    <div class="container" #Top>
     <header>
         <div class="heading">
-            <img src="{{asset('img/logo.png')}}" alt="logo">
-            <h1><a href="#Top">One Graphic Design</h1></a>
+            <img src="{{asset('img/logo(2).png')}}" alt="logo">
             <p id="Bars"><i class="fa fa-bars"></i></p>
         </div>
         

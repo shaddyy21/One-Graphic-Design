@@ -6,26 +6,27 @@
 
 @section('content') 
         <div class="createForm">
-               <div class="main-heading">
+            <div class="main-heading">
                     <h2>Log-in</h2>
-                </div>
-                <div class="formAdmin form pure-form pure-form-aligned">
-                    <fieldset>
-                        {!! Form::open(array('url' => 'login', 'id'=>'Form')) !!}
-                            <div class="pure-control-group">
-                                {!! Form::label('username', 'User Name') !!}
-                                {!! Form::text('username') !!}
-                                {!! $errors->first('username','<p class="error">:message</p>')!!}
-                            </div>
-                            
-                            <div class="pure-control-group">
-                                {!! Form::label('password', 'Password') !!}
-                                {!! Form::password('password') !!}
-                                {!! $errors->first('password','<p class="error">:message</p>')!!}
-                            </div>
-                             
-                            {!! Form::button('<i class="fa fa-sign-in"></i> Log-in',array('id' => 'Send','type'=>'submit')) !!}
-                        {!! Form::close() !!}
-                    </fieldset>
             </div>
+            <div class="formAdmin form pure-form pure-form-aligned">
+                <fieldset>
+                    {!! Form::open(array('url' => 'login', 'id'=>'Form')) !!}
+                        <div class="pure-control-group">
+                            {!! Form::label('username', 'User Name') !!}
+                            {!! Form::text('username') !!}
+                            {!! $errors->first('username','<p class="error">:message</p>')!!}
+                        </div>
+
+                        <div class="pure-control-group">
+                            {!! Form::label('password', 'Password') !!}
+                            {!! Form::password('password') !!}
+                            {!! $errors->first('password','<p class="error">:message</p>')!!}
+                        </div>
+
+                        {!! Form::button('<i class="fa fa-sign-in"></i> Log-in',array('id' => 'Send','type'=>'submit')) !!}
+                    {!! Form::close() !!}
+                </fieldset>
+            </div>
+        </div>
 @stop

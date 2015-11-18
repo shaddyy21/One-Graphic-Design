@@ -17,7 +17,7 @@
             <div class="heading">
                 <img src="{{asset('img/logo(2).png')}}" alt="logo">
                 <p id="Admin">Admin</p>
-                <p id="Logout">{!! FA::icon('sign-out')!!}&nbsp;&nbsp;Logout</p>
+                <p id="Logout"><a href="{{url('logout')}}">{!! FA::icon('sign-out')!!}&nbsp;&nbsp;Logout</p></a>
             </div>
             
             <nav id="Nav" class="adminNav">

@@ -22,8 +22,7 @@ class LoginController extends Controller
         $credential = $request->only('username', 'password');
         
         if($auth->attempt($credential)){
-//            return "Yeah!";
-            return redirect()->intended('user');
+            return redirect()->intended('admin');
         }else{
             return redirect('login')->with('message','Incorrect username or password. Please try again!');
         }
@@ -31,7 +30,7 @@ class LoginController extends Controller
     
     public function logout(\Illuminate\Contracts\Auth\Guard $auth){
         $auth->logout();
-        return redirect('template/main');
+        return redirect('/');
     }
 }
 

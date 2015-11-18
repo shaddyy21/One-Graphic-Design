@@ -28,8 +28,9 @@
                             </div>
                             
                             <div class="pure-control-group">
-                                {!! Form::label('message', 'Message') !!}
-                                {!! Form::textarea('message',null,array('id' => 'Message')) !!}
+                                {!! Form::label('path', 'Photo') !!}
+                                {!! Form::file('path') !!}
+                                {!! $errors->first('photo','<p class="error">:message</p>')!!}
                             </div>
                             
                             {!! Form::button('<i class="fa fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;Send',array('id' => 'Send','type'=>'submit')) !!}

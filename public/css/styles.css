@@ -694,6 +694,9 @@ section {
   margin-right: 5em;
   width: 7em;
   height: 1.5em; }
+  #Logout a {
+    text-decoration: none;
+    color: black; }
 
 #Nav-admin {
   display: block; }

@@ -16,8 +16,18 @@
         <header>
             <div class="heading">
                 <img src="{{asset('img/logo(2).png')}}" alt="logo">
-                <h1><a href="#Top">One Graphic Design</h1></a>
             </div>
+            
+            
+        <nav id="Nav">
+            <ul>
+                <li class="link"><a class="linkUnderline-one" href="#Home">Home</a></li>
+                <li class="link"><a class="linkUnderline-two" href="#Portfolio">Portfolio</a></li>
+                <li class="link"><a class="linkUnderline-three" href="#About">About</a></li>
+                <li class="link"><a class="linkUnderline-four" href="#Contact">Contact Us</a></li>
+                <li class="link"><a class="linkUnderline-five" href="#Other">Other Art</a></li>
+            </ul>
+        </nav>
         </header>
     <main>
         <section id="Forms">

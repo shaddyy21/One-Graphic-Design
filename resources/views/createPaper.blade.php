@@ -4,11 +4,12 @@
     Create Paper Art
 @stop      
 
-@section('content') 
+@section('content')
+            <div class="createForm">
                <div class="main-heading">
                     <h2>Create Paper Art</h2>
                 </div>
-                <div class="form pure-form pure-form-aligned">
+                <div class="formAdmin form pure-form pure-form-aligned">
                     <fieldset>
                         {!! Form::open(array('url' => 'foo/bar', 'id'=>'Form')) !!}
                             <div class="pure-control-group">
@@ -33,5 +34,6 @@
                             
                             {!! Form::button('<i class="fa fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;Send',array('id' => 'Send','type'=>'submit')) !!}
                         {!! Form::close() !!}
-                    </fieldset
+                    </fieldset>
+            </div>
 @stop

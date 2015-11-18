@@ -785,12 +785,35 @@ section {
   font-family: Agency FB;
   font-weight: normal;
   font-size: 3em;
+  margin: auto;
   margin-top: 0.2em; }
 
 #Login {
   height: 3em;
   margin-left: 7.5em;
   margin-top: 2em; }
+
+.createForm {
+  margin-top: 6em; }
+
+.formAdmin {
+  margin-right: 8em; }
+
+.profile {
+  margin: auto;
+  font-size: 1.5em; }
+  .profile h3 {
+    margin-right: 15em;
+    text-align: center; }
+  .profile h4 {
+    margin-top: -2.5em;
+    margin-left: 10em;
+    text-align: center; }
+
+.error {
+  color: red;
+  text-align: center;
+  margin-left: 7em; }
 
 /*==============================================================*/
 @media only screen and (min-width: 35em) {

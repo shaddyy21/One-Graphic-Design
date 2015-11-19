@@ -713,6 +713,9 @@ section {
   width: 4.2em;
   margin-left: 10em;
   display: inline-block; }
+  .new a {
+    text-decoration: none;
+    color: black; }
 
 .paperAd {
   display: -webkit-flex;
@@ -1058,7 +1061,7 @@ section {
       width: 8em;
       margin: 1.3em 0 0 1em;
       display: inline-block; }
-    .form #Form input {
+    .form #Form input, .form #Form select {
       width: 25em;
       margin: 1.5em 0 0 1.5em;
       display: inline-block; }

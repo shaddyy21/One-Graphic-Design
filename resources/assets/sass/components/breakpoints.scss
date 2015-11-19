@@ -397,11 +397,12 @@
                     display: inline-block;
                 }
 
-                input{
+                input,select{
 //                    border: thin orange solid;
                     width: 25em;
                     margin: 1.5em 0 0 1.5em;
                     display: inline-block;
+//                    border: blue thin solid;
                 }
 
                 #Email{

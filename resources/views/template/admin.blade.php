@@ -32,7 +32,7 @@
     <main>
         <section id="PaperAd">
            <h1>Paper Art</h1>
-           <p class="new">Add new</p>
+           <p class="new"><a href="{{url('item/create')}}">Add new</p></a>
             <div class="paperAd">
                 <img src="{{asset('img/_MG_8841.jpg')}}" alt="">
                 <p class="pInfo">
@@ -58,7 +58,7 @@
         
         <section id="LogoAd">
             <h1>Logo</h1>
-            <p class="new">Add new</p>
+            <p class="new"><a href="{{url('item/create')}}">Add new</p></a>
             <div class="paperAd">
                 <img src="{{asset('img/_MG_8841.jpg')}}" alt="">
                 <p class="pInfo">
@@ -83,7 +83,7 @@
         
         <section id="PackAd">
             <h1>Packaging</h1>
-            <p class="new">Add new</p>
+            <p class="new"><a href="{{url('pack/create')}}">Add new</p></a>
                @foreach(\App\Models\Pack::all() as $pack)
             <div class="paperAd">
                 <img src="{{asset('img/'.$pack->path)}}" alt="">
@@ -113,5 +113,9 @@
         <section id="AboutAd"></section>
     </main>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="{{asset('js/jQuery.js')}}"></script>
+    <script src="{{asset('slick/slick.js')}}"></script>
+    <script src="{{asset('slick/slick.min.js')}}"></script>
 </body>
 </html>

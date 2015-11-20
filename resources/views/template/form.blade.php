@@ -21,11 +21,11 @@
             
         <nav id="Nav">
             <ul>
-                <li class="link"><a class="linkUnderline-one" href="#Home">Home</a></li>
-                <li class="link"><a class="linkUnderline-two" href="#Portfolio">Portfolio</a></li>
-                <li class="link"><a class="linkUnderline-three" href="#About">About</a></li>
-                <li class="link"><a class="linkUnderline-four" href="#Contact">Contact Us</a></li>
-                <li class="link"><a class="linkUnderline-five" href="#Other">Other Art</a></li>
+                <li class="link"><a class="linkUnderline-one" href="{{url('/#Home')}}">Home</a></li>
+                <li class="link"><a class="linkUnderline-two" href="{{url('/#Portfolio')}}">Portfolio</a></li>
+                <li class="link"><a class="linkUnderline-three" href="{{url('/#About')}}">About</a></li>
+                <li class="link"><a class="linkUnderline-four" href="{{url('/#Contact')}}">Contact Us</a></li>
+                <li class="link"><a class="linkUnderline-five" href="{{url('/#Other')}}">Other Art</a></li>
             </ul>
         </nav>
         </header>

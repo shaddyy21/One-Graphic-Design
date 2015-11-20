@@ -12,11 +12,12 @@
         width: 100%;
         z-index: 1000;
     
-        img{
+        img,.headImg{
             width: 85%;
 //            height: 5em;
             margin: auto;
         }
+        
         
         p{
             margin: auto;
@@ -230,7 +231,6 @@
            
             img{
                 width: 90%;
-//                height: 5.5em;
                 margin: auto;
             }
         }
@@ -443,11 +443,10 @@
         height: 10.5em;
 //        border: thin red solid;
         
-        img{
-            width: 60%;
-//            height: 5.5em;
-            margin: auto;
-        }
+            img{
+                width: 60%;
+                margin: auto;
+            }
     }
     
     #Bars{

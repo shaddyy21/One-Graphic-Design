@@ -54,7 +54,8 @@ class PacksController extends Controller
      */
     public function show($id)
     {
-        //
+        $pack = \App\Models\Pack::find($id);
+        return view('pack',compact('pack'));
     }
 
     /**
@@ -65,7 +66,8 @@ class PacksController extends Controller
      */
     public function edit($id)
     {
-        //
+        $pack = \App\Models\Pack::find($id);
+        return view('editPack',compact('pack'));
     }
 
     /**
@@ -75,9 +77,15 @@ class PacksController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(\App\Http\Requests\UpdatePackRequest $request, $id)
     {
-        //
+        $pack = \App\Models\Pack::find($id);
+        $pack->fill($request->all());
+        $fileName = \Carbon\Carbon::now()->timestamp."_editpack.jpg";
+        $request->file('path')->move('img', $fileName);
+        $pack->path = $fileName;
+        $pack->save();
+        return redirect('admin#PackAd/'.$pack->id);
     }
 
     /**

@@ -299,7 +299,7 @@ footer p {
     align-content: center; }
   .heading p {
     margin: auto; }
-  .heading img {
+  .heading a img {
     width: 26em;
     margin: auto; }
 
@@ -692,7 +692,7 @@ section {
 
 #Logout {
   margin-right: 5em;
-  width: 7em;
+  width: 50em;
   height: 1.5em; }
   #Logout a {
     text-decoration: none;
@@ -821,6 +821,9 @@ section {
   text-align: center;
   margin-left: 7em; }
 
+.items {
+  margin-top: 9em; }
+
 /*==============================================================*/
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
@@ -832,7 +835,7 @@ section {
     height: 10.5em;
     width: 100%;
     z-index: 1000; }
-    .heading img {
+    .heading img, .heading .headImg {
       width: 85%;
       margin: auto; }
     .heading p {

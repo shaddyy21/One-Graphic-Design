@@ -16,11 +16,11 @@
     <div class="container" id="Top">
         <header>
             <div class="heading">
-                <img src="{{asset('img/logo(2).png')}}" alt="logo">
+                <a href="{{url('/')}}"><img class="headImg" src="{{asset('img/logo(2).png')}}" alt="logo"></a>
                 <p id="Admin">Admin</p>
                 <p id="Logout"><a href="{{url('logout')}}">{!! FA::icon('sign-out')!!}&nbsp;&nbsp;Logout</p></a>
             </div>
-            
+
             <nav id="Nav" class="adminNav">
                 <ul>
                     <li class="link"><a class="linkUnderline-one" href="#PaperAd">Paper Art</a></li>
@@ -28,6 +28,7 @@
                     <li class="link"><a class="linkUnderline-three" href="#PackAd">Packaging</a></li>
                 </ul>
             </nav>
+            
         </header>
     <main>
         <section id="PaperAd">
@@ -103,13 +104,14 @@
                 </div>
                 
                 <div class="buttonsEdit">
-                    <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</button>
+                   <a href="{{url('pack/'.$pack->id/edit)}}">{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit' !!}</a>
+                    
                     <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Image' !!}</button>
                 </div>
             </div>
                @endforeach
         </section>
-        
+        <div id="token" hidden>{{ csrf_token() }}</div>
         <section id="AboutAd"></section>
     </main>
     </div>

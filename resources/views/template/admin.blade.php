@@ -104,7 +104,7 @@
                 </div>
                 
                 <div class="buttonsEdit">
-                   <a href="{{url('pack/'.$pack->id/edit)}}">{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit' !!}</a>
+                   <a href="{{url('pack/'.$pack->id.'/edit')}}">{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</a>
                     
                     <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Image' !!}</button>
                 </div>

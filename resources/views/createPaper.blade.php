@@ -1,17 +1,17 @@
 @extends('template.form') 
   
 @section('title')
-    Edit Packaging
+    Create Paper
 @stop      
 
 @section('content')
             <div class="createForm">
                <div class="main-heading">
-                    <h2>Edit Packaging</h2>
+                    <h2>Create Paper</h2>
                 </div>
                 <div class="formAdmin form pure-form pure-form-aligned">
                     <fieldset>
-                        {!! Form::model($pack,array('url' => 'pack/'.$pack->id, 'method' => 'put','files'=>true, 'id'=>'Form')) !!}
+                        {!! Form::open(array('url' => 'paper', 'files'=>true, 'id'=>'Form')) !!}
                             <div class="pure-control-group">
                                 {!! Form::label('description', 'Description') !!}
                                 {!! Form::textarea('description') !!}
@@ -24,7 +24,7 @@
                                 {!! $errors->first('path','<p class="error">:message</p>')!!}
                             </div>
                             
-                            {!! Form::button('<i class="fa fa-floppy-o"></i>&nbsp;&nbsp;&nbsp;Update',array('id' => 'Send','type'=>'submit')) !!}
+                            {!! Form::button('<i class="fa fa-plus-circle"></i>&nbsp;&nbsp;&nbsp;Create',array('id' => 'Send','type'=>'submit')) !!}
                         {!! Form::close() !!}
                     </fieldset>
             </div>

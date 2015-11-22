@@ -67,8 +67,11 @@
                    <div class="logo">
                        <p>Logo</p>
                        <div class="imgContainer">
-                           <img class="pic2" src="{{asset('img/naturyoLogo.png')}}" alt="">
-                           <img class="pic2" src="{{asset('img/naturyoLogo1.png')}}" alt="">
+                          @foreach(\App\Models\Logo::all() as $logo)
+                          @if($logo->active == 1)
+                               <img class="pic2" src="{{asset('img/'.$logo->path)}}" alt="">
+                          @endif
+                          @endforeach
                        </div>
                    </div>
                    
@@ -77,14 +80,14 @@
                       <div class="imgContainer">
                          @foreach(\App\Models\Pack::all() as $pack)
                          @if($pack->active == 1)
-                            <a href="{{url()}}"><img class="pic3" src="{{asset('img/'.$pack->path)}}" alt=""></a>
+                            <a href="{{url('pack/'.$pack->id)}}"><img class="pic3" src="{{asset('img/'.$pack->path)}}" alt=""></a>
                          @endif
                           @endforeach
                       </div>
                    </div>
                 </div>
                 <div class="info hide">
-                           <img src="{{asset('img/'.$pack->path)}}" alt="">
+                           <img src="{{asset('img/'.$logo->path)}}" alt="">
                            <p>{{$pack->description}}</p>
                            <p class="cls"><i class="fa fa-times"></i>&nbsp;&nbsp; Close</p>
                        </div>

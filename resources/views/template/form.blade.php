@@ -16,6 +16,7 @@
         <header>
             <div class="heading">
                 <img src="{{asset('img/logo(2).png')}}" alt="logo">
+                <p class="admin"><a href="{{url('admin')}}">Admin</a></p>
             </div>
             
             

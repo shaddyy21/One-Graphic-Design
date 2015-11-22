@@ -10,6 +10,10 @@ use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
 class LogosController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth',['only' => ['create','edit','store','update']]);
+    }
+    
     /**
      * Display a listing of the resource.
      *
@@ -67,7 +71,7 @@ class LogosController extends Controller
     public function edit($id)
     {
         $logo = \App\Models\Logo::find($id);
-        return view('editlogo',compact('logo'));
+        return view('editLogo',compact('logo'));
     }
 
     /**
@@ -77,7 +81,7 @@ class LogosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(\App\Http\Requests\UpdatelogoRequest $request, $id)
+    public function update(\App\Http\Requests\UpdateLogoRequest $request, $id)
     {
         $logo = \App\Models\Logo::find($id);
         $logo->fill($request->all());
@@ -85,7 +89,7 @@ class LogosController extends Controller
         $request->file('path')->move('img', $fileName);
         $logo->path = $fileName;
         $logo->save();
-        return redirect('admin#logoAd/'.$logo->id);
+        return redirect('admin#LogoAd');
     }
     
 

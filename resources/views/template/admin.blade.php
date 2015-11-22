@@ -64,20 +64,23 @@
                 <div class="paperAd">
                     <img src="{{asset('img/'.$logo->path)}}" alt="">
                     <p class="pInfo">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi labore praesentium quae nihil, reprehenderit a maxime officia optio atque expedita!.
+                        {{$logo->description}}
                     </p>
                     <div class="status">
                         <span>Status:</span>
-                        <span class="show">Active</span>
-                        <span class="hide">Deactive</span>
+                        @if($logo->active == 1)
+                            <span class="active">Active</span>
+                        @else
+                            <span class="deactive">Deactive</span>
+                        @endif
                     </div>
                     <div class="buttonsStat">
-                        <button>{!! FA::icon('check'),'&nbsp;&nbsp;Activate' !!}</button>
-                        <button>{!! FA::icon('times'),'&nbsp;&nbsp;Deactivate' !!}</button>                
+                        <a href="{{url('logos/'.$logo->id.'/active')}}">{!! FA::icon('check'),'&nbsp;&nbsp;Activate' !!}</a>
+                        <a class="deactiveBtn" href="{{url('logos/'.$logo->id.'/deactive')}}">{!! FA::icon('times'),'&nbsp;&nbsp;Deactivate' !!}</a>             
                     </div>
 
                     <div class="buttonsEdit">
-                        <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</button>
+                        <a href="{{url('logo/'.$logo->id.'/edit')}}">{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</a>
                         <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Image' !!}</button>
                     </div>
                 </div>
@@ -126,4 +129,6 @@
         <script src="{{asset('slick/slick.min.js')}}"></script>
     </body>
     </html>
+    @else
+    {!! redirect('login'); !!}
 @endif

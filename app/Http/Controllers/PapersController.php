@@ -8,7 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
-class PacksController extends Controller
+class PapersController extends Controller
 {
     public function __construct(){
         $this->middleware('auth',['only' => ['create','edit','store','update']]);
@@ -30,7 +30,7 @@ class PacksController extends Controller
      */
     public function create()
     {
-        return view('createPack');
+        return view('createPaper');
     }
 
     /**
@@ -39,14 +39,14 @@ class PacksController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(\App\Http\Requests\CreatePackRequest $request)
+    public function store(\App\Http\Requests\CreatePaperRequest $request)
     {
-      $pack = \App\Models\Pack::create($request->all());
-      $fileName = \Carbon\Carbon::now()->timestamp."_pack.jpg";
+      $paper = \App\Models\Paper::create($request->all());
+      $fileName = \Carbon\Carbon::now()->timestamp."_paper.jpg";
       $request->file('path')->move('img', $fileName);
-      $pack->path = $fileName;
-      $pack->save();
-      return redirect('admin#PackAd');
+      $paper->path = $fileName;
+      $paper->save();
+      return redirect('admin#PaperAd');
     }
 
     /**
@@ -57,8 +57,8 @@ class PacksController extends Controller
      */
     public function show($id)
     {
-        $pack = \App\Models\Pack::find($id);
-        return view('pack',compact('pack'));
+        $paper = \App\Models\Paper::find($id);
+        return view('paper',compact('paper'));
     }
 
     /**
@@ -69,8 +69,8 @@ class PacksController extends Controller
      */
     public function edit($id)
     {
-        $pack = \App\Models\Pack::find($id);
-        return view('editPack',compact('pack'));
+        $paper = \App\Models\Paper::find($id);
+        return view('editPaper',compact('paper'));
     }
 
     /**
@@ -80,15 +80,15 @@ class PacksController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(\App\Http\Requests\UpdatePackRequest $request, $id)
+    public function update(\App\Http\Requests\UpdatePaperRequest $request, $id)
     {
-        $pack = \App\Models\Pack::find($id);
-        $pack->fill($request->all());
+        $paper = \App\Models\Paper::find($id);
+        $paper->fill($request->all());
         $fileName = \Carbon\Carbon::now()->timestamp."_editpack.jpg";
         $request->file('path')->move('img', $fileName);
-        $pack->path = $fileName;
-        $pack->save();
-        return redirect('admin#PackAd/'.$pack->id);
+        $paper->path = $fileName;
+        $paper->save();
+        return redirect('admin#PaperAd');
     }
     
 

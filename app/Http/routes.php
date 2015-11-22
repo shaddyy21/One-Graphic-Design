@@ -27,19 +27,61 @@ Route::get('createPaper',function(){
     return view('createPaper');
 });
 
-Route::get('packs/{id}/active', function ($id) {
-    $pack = \App\Models\pack::find($id);
-    $pack->active = "1";
-    $pack->save();
-    return redirect('admin#PackAd/'.$pack->id);
-});
+/*=========================================================*/
+/*               Pack Activate and Deactivate              */
+/*=========================================================*/
+    Route::get('packs/{id}/active', function ($id) {
+        $pack = \App\Models\Pack::find($id);
+        $pack->active = "1";
+        $pack->save();
+        return redirect('admin#PackAd');
+    });
 
-Route::get('packs/{id}/deactive', function ($id) {
-    $pack = \App\Models\pack::find($id);
-    $pack->active = "0";
-    $pack->save();
-    return redirect('admin#PackAd/'.$pack->id);
-});
+    Route::get('packs/{id}/deactive', function ($id) {
+        $pack = \App\Models\Pack::find($id);
+        $pack->active = "0";
+        $pack->save();
+        return redirect('admin#PackAd');
+    });
+/*=========================================================*/
+
+
+/*=========================================================*/
+/*               Logo Activate and Deactivate              */
+/*=========================================================*/
+    Route::get('logos/{id}/active', function ($id) {
+        $logo = \App\Models\Logo::find($id);
+        $logo->active = "1";
+        $logo->save();
+        return redirect('admin#LogoAd');
+    });
+
+    Route::get('logos/{id}/deactive', function ($id) {
+        $logo = \App\Models\Logo::find($id);
+        $logo->active = "0";
+        $logo->save();
+        return redirect('admin#LogoAd');
+    });
+/*=========================================================*/
+
+
+/*=========================================================*/
+/*               Paper Activate and Deactivate              */
+/*=========================================================*/
+    Route::get('papers/{id}/active', function ($id) {
+        $paper = \App\Models\Paper::find($id);
+        $paper->active = "1";
+        $paper->save();
+        return redirect('admin#PaperAd');
+    });
+
+    Route::get('papers/{id}/deactive', function ($id) {
+        $paper = \App\Models\Paper::find($id);
+        $paper->active = "0";
+        $paper->save();
+        return redirect('admin#PaperAd');
+    });
+/*=========================================================*/
 
 
 
@@ -62,6 +104,12 @@ Route::get('packs/{id}/deactive', function ($id) {
 /*                        Logo Controller Mapping                           */
 /*===========================================================================*/
     Route::resource('logo','LogosController');
+/*===========================================================================*/
+
+/*===========================================================================*/
+/*                        Paper Controller Mapping                           */
+/*===========================================================================*/
+    Route::resource('paper','PapersController');
 /*===========================================================================*/
 
 /*===========================================================================*/

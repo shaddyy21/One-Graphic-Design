@@ -298,10 +298,14 @@ footer p {
     -ms-flex-line-pack: center;
     align-content: center; }
   .heading p {
+    text-decoration: none;
     margin: auto; }
   .heading a img {
     width: 26em;
     margin: auto; }
+  .heading .admin a {
+    color: black;
+    text-decoration: none; }
 
 #Nav {
   width: 100%;
@@ -863,6 +867,7 @@ section {
       width: 85%;
       margin: auto; }
     .heading p {
+      text-decoration: none;
       margin: auto;
       margin-top: 1em; }
     .heading #Bars {

@@ -15,7 +15,7 @@
                         <div class="pure-control-group">
                             {!! Form::label('username', 'User Name') !!}
                             {!! Form::text('username') !!}
-                            {!! $errors->first('username','<p class="error">:message</p>')!!}
+                            {!! $errors->first('usernamel','<p class="error">:message</p>')!!}
                         </div>
 
                         <div class="pure-control-group">

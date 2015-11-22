@@ -27,6 +27,23 @@ Route::get('createPaper',function(){
     return view('createPaper');
 });
 
+Route::get('packs/{id}/active', function ($id) {
+    $pack = \App\Models\pack::find($id);
+    $pack->active = "1";
+    $pack->save();
+    return redirect('admin#PackAd/'.$pack->id);
+});
+
+Route::get('packs/{id}/deactive', function ($id) {
+    $pack = \App\Models\pack::find($id);
+    $pack->active = "0";
+    $pack->save();
+    return redirect('admin#PackAd/'.$pack->id);
+});
+
+
+
+
 /*===========================================================================*/
 /*                        Users Controller Mapping                           */
 /*===========================================================================*/
@@ -35,9 +52,16 @@ Route::get('createPaper',function(){
 
 
 /*===========================================================================*/
-/*                        Items Controller Mapping                           */
+/*                        Packaging Controller Mapping                       */
 /*===========================================================================*/
     Route::resource('pack','PacksController');
+/*===========================================================================*/
+
+
+/*===========================================================================*/
+/*                        Logo Controller Mapping                           */
+/*===========================================================================*/
+    Route::resource('logo','LogosController');
 /*===========================================================================*/
 
 /*===========================================================================*/

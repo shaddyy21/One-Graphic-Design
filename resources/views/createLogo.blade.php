@@ -1,17 +1,17 @@
 @extends('template.form') 
   
 @section('title')
-    Create Packaging
+    Create Logo
 @stop      
 
 @section('content')
             <div class="createForm">
                <div class="main-heading">
-                    <h2>Create Packaging</h2>
+                    <h2>Create Logo</h2>
                 </div>
                 <div class="formAdmin form pure-form pure-form-aligned">
                     <fieldset>
-                        {!! Form::open(array('url' => 'pack', 'files'=>true, 'id'=>'Form')) !!}
+                        {!! Form::open(array('url' => 'logo', 'files'=>true, 'id'=>'Form')) !!}
                             <div class="pure-control-group">
                                 {!! Form::label('description', 'Description') !!}
                                 {!! Form::textarea('description') !!}

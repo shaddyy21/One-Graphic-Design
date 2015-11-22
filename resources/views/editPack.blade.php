@@ -24,7 +24,7 @@
                                 {!! $errors->first('path','<p class="error">:message</p>')!!}
                             </div>
                             
-                            {!! Form::button('<i class="fa fa-plus-circle"></i>&nbsp;&nbsp;&nbsp;Create',array('id' => 'Send','type'=>'submit')) !!}
+                            {!! Form::button('<i class="fa fa-floppy-o"></i>&nbsp;&nbsp;&nbsp;Create',array('id' => 'Send','type'=>'submit')) !!}
                         {!! Form::close() !!}
                     </fieldset>
             </div>

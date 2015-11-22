@@ -8,11 +8,8 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
-class PacksController extends Controller
+class LogosController extends Controller
 {
-    public function __construct(){
-        $this->middleware('auth',['only' => ['create','edit','store','update']]);
-    }
     /**
      * Display a listing of the resource.
      *
@@ -30,7 +27,7 @@ class PacksController extends Controller
      */
     public function create()
     {
-        return view('createPack');
+        return view('createLogo');
     }
 
     /**
@@ -39,14 +36,14 @@ class PacksController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(\App\Http\Requests\CreatePackRequest $request)
+    public function store(\App\Http\Requests\CreateLogoRequest $request)
     {
-      $pack = \App\Models\Pack::create($request->all());
-      $fileName = \Carbon\Carbon::now()->timestamp."_pack.jpg";
+      $logo = \App\Models\Logo::create($request->all());
+      $fileName = \Carbon\Carbon::now()->timestamp."_logo.jpg";
       $request->file('path')->move('img', $fileName);
-      $pack->path = $fileName;
-      $pack->save();
-      return redirect('admin#PackAd');
+      $logo->path = $fileName;
+      $logo->save();
+      return redirect('admin#logoAd');
     }
 
     /**
@@ -57,7 +54,7 @@ class PacksController extends Controller
      */
     public function show($id)
     {
-        $pack = \App\Models\Pack::find($id);
+        $logo = \App\Models\Logo::find($id);
         return view('.info');
     }
 
@@ -69,8 +66,8 @@ class PacksController extends Controller
      */
     public function edit($id)
     {
-        $pack = \App\Models\Pack::find($id);
-        return view('editPack',compact('pack'));
+        $logo = \App\Models\Logo::find($id);
+        return view('editlogo',compact('logo'));
     }
 
     /**
@@ -80,15 +77,15 @@ class PacksController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(\App\Http\Requests\UpdatePackRequest $request, $id)
+    public function update(\App\Http\Requests\UpdatelogoRequest $request, $id)
     {
-        $pack = \App\Models\Pack::find($id);
-        $pack->fill($request->all());
-        $fileName = \Carbon\Carbon::now()->timestamp."_editpack.jpg";
+        $logo = \App\Models\Logo::find($id);
+        $logo->fill($request->all());
+        $fileName = \Carbon\Carbon::now()->timestamp."_editlogo.jpg";
         $request->file('path')->move('img', $fileName);
-        $pack->path = $fileName;
-        $pack->save();
-        return redirect('admin#PackAd/'.$pack->id);
+        $logo->path = $fileName;
+        $logo->save();
+        return redirect('admin#logoAd/'.$logo->id);
     }
     
 

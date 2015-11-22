@@ -75,17 +75,17 @@
                    <div class="packaging">
                       <p>Packaging</p>
                       <div class="imgContainer">
-                          <img class="pic3" src="{{asset('img/_MG_8841.jpg')}}" alt="">
-                          <img class="pic3" src="{{asset('img/flagTwoSided.jpg')}}" alt="">
-                          <img class="pic3" src="{{asset('img/sachet.jpg')}}" alt="">
-                          <img class="pic3" src="{{asset('img/SkimMilk.jpg')}}" alt="">
-                          <img class="pic3" src="{{asset('img/wholeMilk.jpg')}}" alt="">
+                         @foreach(\App\Models\Pack::all() as $pack)
+                         @if($pack->active == 1)
+                            <a href="{{url()}}"><img class="pic3" src="{{asset('img/'.$pack->path)}}" alt=""></a>
+                         @endif
+                          @endforeach
                       </div>
                    </div>
                 </div>
                 <div class="info hide">
-                           <img src="{{asset('img/_MG_8841.jpg')}}" alt="">
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque magnam, qui placeat vitae alias commodi saepe quos sit sint error?</p>
+                           <img src="{{asset('img/'.$pack->path)}}" alt="">
+                           <p>{{$pack->description}}</p>
                            <p class="cls"><i class="fa fa-times"></i>&nbsp;&nbsp; Close</p>
                        </div>
             </section>

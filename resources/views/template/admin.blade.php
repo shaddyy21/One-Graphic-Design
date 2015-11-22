@@ -33,28 +33,32 @@
         <main>
             <section id="PaperAd">
                <h1>Paper Art</h1>
-               <p class="new"><a href="{{url('item/create')}}">Add new</p></a>
-                <div class="paperAd">
-                    <img src="{{asset('img/_MG_8841.jpg')}}" alt="">
-                    <p class="pInfo">
+               <p class="new"><a href="{{url('paper/create')}}">Add new</p></a>
+                @foreach(\App\Models\Paper::all() as $paper)
+                   <div class="paperAd">
+                        <img src="{{asset('img/'.$paper->path)}}" alt="">
+                        <p class="pInfo">
+                            {{$paper->description}}
+                        </p>
+                        <div class="status">
+                            <span>Status:</span>
+                        @if($logo->active == 1)
+                            <span class="active">Active</span>
+                        @else
+                            <span class="deactive">Deactive</span>
+                        @endif
+                        </div>
+                        <div class="buttonsStat">
+                            <a href="{{url('paper/'.$paper->id.'/active')}}">{!! FA::icon('check'),'&nbsp;&nbsp;Activate' !!}</a>
+                            <a class="deactiveBtn" href="{{url('papers/'.$paper->id.'/deactive')}}">{!!                                                                   FA::icon('times'),'&nbsp;&nbsp;Deactivate' !!}</a>                           
+                        </div>
 
-
-                    </p>
-                    <div class="status">
-                        <span>Status:</span>
-                        <span class="show">Active</span>
-                        <span class="hide">Deactive</span>
+                        <div class="buttonsEdit">
+                            <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</button>
+                            <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Image' !!}</button>
+                        </div>
                     </div>
-                    <div class="buttonsStat">
-                        <button>{!! FA::icon('check'),'&nbsp;&nbsp;Activate' !!}</button>
-                        <button>{!! FA::icon('times'),'&nbsp;&nbsp;Deactivate' !!}</button>                
-                    </div>
-
-                    <div class="buttonsEdit">
-                        <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</button>
-                        <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Image' !!}</button>
-                    </div>
-                </div>
+                @endforeach
             </section>
 
             <section id="LogoAd">

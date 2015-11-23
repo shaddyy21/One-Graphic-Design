@@ -81,7 +81,7 @@
                       <p>Packaging</p>
                       <div class="imgContainer">
                        
-                       <?php $paginator = \App\Models\Pack::paginate(2);?>
+                       <?php $paginator = \App\Models\Pack::paginate(4);?>
                         
                          @foreach($paginator as $pack)
                          @if($pack->active == 1)

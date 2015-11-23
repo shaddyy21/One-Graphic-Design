@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class UpdatePackRequest extends Request
+class ContactFormRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,7 +24,10 @@ class UpdatePackRequest extends Request
     public function rules()
     {
         return [
-            "description" => "required"
+            "name" => "required",
+            "email" => "required|email",
+            "subject" => "required",
+            "message" => "required"
         ];
     }
 }

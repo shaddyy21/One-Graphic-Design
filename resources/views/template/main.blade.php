@@ -59,6 +59,7 @@
                       <div class="imgContainer">
                          @foreach(\App\Models\Paper::all() as $paper)
                           @if($logo->active == 1)
+                              
                                <a href="{{url('paper/'.$paper->id)}}"><img class="pic1" src="{{asset('img/'.$paper->path)}}" alt=""></a>
                           @endif
                           @endforeach
@@ -79,11 +80,17 @@
                    <div class="packaging">
                       <p>Packaging</p>
                       <div class="imgContainer">
-                         @foreach(\App\Models\Pack::all() as $pack)
+                       
+                       <?php $paginator = \App\Models\Pack::paginate(2);?>
+                        
+                         @foreach($paginator as $pack)
                          @if($pack->active == 1)
+                          
+            
                             <a href="{{url('pack/'.$pack->id)}}"><img class="pic3" src="{{asset('img/'.$pack->path)}}" alt=""></a>
                          @endif
                           @endforeach
+                           {!! $paginator->render() !!}
                       </div>
                    </div>
                 </div>
@@ -114,7 +121,7 @@ We will discuss your needs rather than doing something that is just eye-candy. T
                 <h1>Contact Us</h1>
                 <div class="form pure-form pure-form-aligned">
                     <fieldset>
-                        {!! Form::open(array('url' => 'foo/bar', 'id'=>'Form')) !!}
+                        {!! Form::open(array('url' => 'sendmail', 'id'=>'Form')) !!}
                             <div class="pure-control-group">
                                 {!! Form::label('name', 'Full Name') !!}
                                 {!! Form::text('name') !!}

@@ -57,10 +57,11 @@
                    <div class="paper">
                       <p>Paper Art</p>
                       <div class="imgContainer">
-                           <img class="pic1" src="{{asset('img/_MG_8841.jpg')}}" alt="">
-                           <img class="pic1" src="{{asset('img/_MG_8850.jpg')}}" alt="">
-                           <img class="pic1" src="{{asset('img/flagTwoSided.jpg')}}" alt="">
-                           <img class="pic1" src="{{asset('img/wholeMilk.jpg')}}" alt="">
+                         @foreach(\App\Models\Paper::all() as $paper)
+                          @if($logo->active == 1)
+                               <a href="{{url('paper/'.$paper->id)}}"><img class="pic1" src="{{asset('img/'.$paper->path)}}" alt=""></a>
+                          @endif
+                          @endforeach
                       </div>
                    </div>
                    
@@ -69,7 +70,7 @@
                        <div class="imgContainer">
                           @foreach(\App\Models\Logo::all() as $logo)
                           @if($logo->active == 1)
-                               <img class="pic2" src="{{asset('img/'.$logo->path)}}" alt="">
+                               <a href="{{url('logo/'.$logo->id)}}"><img class="pic2" src="{{asset('img/'.$logo->path)}}" alt=""></a>
                           @endif
                           @endforeach
                        </div>
@@ -86,11 +87,6 @@
                       </div>
                    </div>
                 </div>
-                <div class="info hide">
-                           <img src="{{asset('img/'.$logo->path)}}" alt="">
-                           <p>{{$pack->description}}</p>
-                           <p class="cls"><i class="fa fa-times"></i>&nbsp;&nbsp; Close</p>
-                       </div>
             </section>
             
             <section id="About">
@@ -133,7 +129,7 @@ We will discuss your needs rather than doing something that is just eye-candy. T
                                 {!! Form::label('subject', 'Subject') !!}
                                 {!! Form::text('subject') !!}
                             </div>
-                            
+                        
                             <div class="pure-control-group">
                                 {!! Form::label('message', 'Message') !!}
                                 {!! Form::textarea('message',null,array('id' => 'Message')) !!}

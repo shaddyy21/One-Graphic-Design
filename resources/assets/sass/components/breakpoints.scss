@@ -97,7 +97,7 @@
         line-height: 0;
     }
     
-    .info{
+    .info,.desp{
         width: 40em;
         p{
             font-size: 1.7em;
@@ -321,13 +321,15 @@
             line-height: 0;
         }
 
-        .info{
-            height: 45em;
+        .desp{
+            height: auto;
             width: 50em;
             p{
                 font-size: 1.8em;
                 width: 22em;
-                margin-left: 3em;
+                margin: auto;
+                text-align: left;
+//                border: red solid thin;
             }
             img{
                 width: 25em;
@@ -335,8 +337,9 @@
                 margin: 1.5em 0 1.5em 13em;
             }
             .cls{
-                width: 3em;
-                margin: 4em 0 0 24em;
+//                border: blue thin solid;
+                width: 4.5em;
+                margin: 0.5em 0 0 23em;
             }
         }
 

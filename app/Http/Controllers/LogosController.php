@@ -59,7 +59,7 @@ class LogosController extends Controller
     public function show($id)
     {
         $logo = \App\Models\Logo::find($id);
-        return view('.info');
+        return view('logo',compact('logo'));
     }
 
     /**
@@ -85,9 +85,11 @@ class LogosController extends Controller
     {
         $logo = \App\Models\Logo::find($id);
         $logo->fill($request->all());
-        $fileName = \Carbon\Carbon::now()->timestamp."_editlogo.jpg";
-        $request->file('path')->move('img', $fileName);
-        $logo->path = $fileName;
+        if($request->hasFile("img")){
+            $fileName = \Carbon\Carbon::now()->timestamp."_editlogo.jpg";
+            $request->file('path')->move('img', $fileName);
+            $logo->path = $fileName;  
+        }
         $logo->save();
         return redirect('admin#LogoAd');
     }

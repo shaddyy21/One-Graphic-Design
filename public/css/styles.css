@@ -392,24 +392,27 @@ section {
 .dim {
   background-color: rgba(0, 0, 0, 0.9); }
 
-.info {
+.desp {
   opacity: 1;
   height: auto;
   width: 26em;
   margin: auto;
   background-color: #9E9E9E; }
-  .info p {
+  .desp p {
     width: 16em;
     margin-left: 2em; }
-  .info img {
+  .desp img {
     width: 17em;
     height: 17em;
     margin: 1.5em 4.8em 1.5em 4.8em;
     border: 0.15em black solid; }
-  .info .cls {
+  .desp .cls {
     position: relative;
     width: 5em;
     margin: 1em 0 0 15em; }
+  .desp a {
+    text-decoration: none;
+    color: black; }
 
 .logo, .packaging {
   display: none; }
@@ -776,16 +779,13 @@ section {
     width: 16.5em;
     height: 2em;
     margin: 6em 0 0 -15.3em; }
-    .paperAd .buttonsEdit button:nth-child(1) {
-      width: 7em;
-      height: 2em; }
-    .paperAd .buttonsEdit button:nth-child(2) {
-      width: 8em;
-      height: 2em; }
     .paperAd .buttonsEdit a {
-      display: inline-block;
+      display: block;
       margin-top: 0.5em;
+      margin-left: -0.85em;
+      width: 12.85em;
       font-size: 1.1em;
+      text-align: center;
       text-decoration: none;
       background-color: #EEEEEE;
       color: #333333;
@@ -849,8 +849,8 @@ section {
   text-align: center;
   margin-left: 7em; }
 
-.items {
-  margin-top: 9em; }
+.desp {
+  margin: 12em auto; }
 
 /*==============================================================*/
 @media only screen and (min-width: 35em) {
@@ -910,17 +910,17 @@ section {
   .slick-next:before {
     font-size: 40px;
     line-height: 0; }
-  .info {
+  .info, .desp {
     width: 40em; }
-    .info p {
+    .info p, .desp p {
       font-size: 1.7em;
       width: 22em;
       margin-left: 1.5em; }
-    .info img {
+    .info img, .desp img {
       width: 18em;
       height: 18em;
       margin: 1.5em 11em 1.5em 11em; }
-    .info .cls {
+    .info .cls, .desp .cls {
       width: 5em;
       margin: 2em 0 0 18.5em; }
   .work p {
@@ -1045,20 +1045,21 @@ section {
   .slick-next:before {
     font-size: 40px;
     line-height: 0; }
-  .info {
-    height: 45em;
+  .desp {
+    height: auto;
     width: 50em; }
-    .info p {
+    .desp p {
       font-size: 1.8em;
       width: 22em;
-      margin-left: 3em; }
-    .info img {
+      margin: auto;
+      text-align: left; }
+    .desp img {
       width: 25em;
       height: 25em;
       margin: 1.5em 0 1.5em 13em; }
-    .info .cls {
-      width: 3em;
-      margin: 4em 0 0 24em; }
+    .desp .cls {
+      width: 4.5em;
+      margin: 0.5em 0 0 23em; }
   .work {
     margin-left: 6em; }
     .work p {

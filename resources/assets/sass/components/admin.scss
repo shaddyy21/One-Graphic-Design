@@ -114,23 +114,14 @@
             width: 16.5em;
             height: 2em;
             margin: 6em 0 0 -15.3em;
-            
-            button:nth-child(1){
-//                border: darkred solid thin;
-                width: 7em;
-                height: 2em;
-            }
-            
-            button:nth-child(2){
-//                border: darkred solid thin;
-                width: 8em;
-                height: 2em;
-            }
-            
+        
             a{
-                display: inline-block;
+                display: block;
                 margin-top: 0.5em;
+                margin-left: -0.85em;
+                width: 12.85em;
                 font-size: 1.1em;
+                text-align: center;
                 text-decoration: none;
                 background-color: #EEEEEE;
                 color: #333333;
@@ -217,8 +208,9 @@
         margin-left: 7em;
     }
 
-    .items{
-        margin-top: 9em;
+    .desp{
+        margin: 12em auto;
+//        width: 
     }
 
 

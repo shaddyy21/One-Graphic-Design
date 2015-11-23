@@ -54,8 +54,7 @@
                         </div>
 
                         <div class="buttonsEdit">
-                            <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</button>
-                            <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Image' !!}</button>
+                            <a href="{{url('paper/'.$paper->id.'/edit')}}">{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</a>
                         </div>
                     </div>
                 @endforeach
@@ -85,7 +84,6 @@
 
                     <div class="buttonsEdit">
                         <a href="{{url('logo/'.$logo->id.'/edit')}}">{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</a>
-                        <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Image' !!}</button>
                     </div>
                 </div>
             @endforeach
@@ -117,8 +115,6 @@
 
                     <div class="buttonsEdit">
                        <a href="{{url('pack/'.$pack->id.'/edit')}}">{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</a>
-
-                        <button>{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Image' !!}</button>
                     </div>
                 </div>
                    @endforeach

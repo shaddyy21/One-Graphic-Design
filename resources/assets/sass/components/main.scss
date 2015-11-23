@@ -82,7 +82,7 @@ section{
    background-color: rgba(0,0,0,0.9);
 }
 
-.info{
+.desp{
     opacity: 1;
 //    border: thin black solid;
     height: auto;
@@ -103,6 +103,11 @@ section{
         position: relative;
         width: 5em;
         margin: 1em 0 0 15em;
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
     }
 }
 

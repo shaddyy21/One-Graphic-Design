@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">    
 </head>
 <body>
-    <div class="containerForm" id="Top">
+    <div class="container dim" id="Top">
         <header>
             <div class="heading">
                 <img src="{{asset('img/logo(2).png')}}" alt="logo">

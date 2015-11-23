@@ -84,11 +84,13 @@ class PacksController extends Controller
     {
         $pack = \App\Models\Pack::find($id);
         $pack->fill($request->all());
-        $fileName = \Carbon\Carbon::now()->timestamp."_editpack.jpg";
-        $request->file('path')->move('img', $fileName);
-        $pack->path = $fileName;
+        if($request->hasFile("img")){
+            $fileName = \Carbon\Carbon::now()->timestamp."_editpack.jpg";
+            $request->file('path')->move('img', $fileName);
+            $pack->path = $fileName;  
+        }
         $pack->save();
-        return redirect('admin#PackAd/'.$pack->id);
+        return redirect('admin#PackAd');
     }
     
 

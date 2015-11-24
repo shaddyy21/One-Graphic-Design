@@ -300,8 +300,8 @@ footer p {
   .heading p {
     text-decoration: none;
     margin: auto; }
-  .heading a img {
-    width: 26em;
+  .heading img {
+    width: 80%;
     margin: auto; }
   .heading .admin a {
     color: black;
@@ -344,7 +344,7 @@ body {
   width: 100%; }
 
 .img-slider {
-  margin-left: 3.5em;
+  margin-left: 6.5em;
   width: 20.5em; }
 
 section {
@@ -434,7 +434,7 @@ section {
     width: 15em;
     height: 2em;
     margin-top: -2em;
-    margin-left: 5em;
+    margin-left: 6em;
     display: inline-block; }
   .form #Form #Email {
     margin-left: 2.75em; }
@@ -443,13 +443,20 @@ section {
   .form #Form #Message {
     margin-top: -1.2em;
     width: 15em;
-    margin-left: 5em; }
+    margin-left: 6em; }
   .form #Form #Send {
     height: 3em;
     width: 50%;
     margin: 1em 0 1em 4.5em;
     background-color: #9E9E9E;
     border: none; }
+
+.pagination {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .pagination li {
+    margin-left: 2em; }
 
 /* Slider */
 .slick-loading .slick-list {
@@ -961,17 +968,17 @@ section {
       margin-top: 2em;
       text-align: center; }
     .form #Form input {
-      width: 21.5em;
-      margin-top: 1.5em;
-      margin-left: 0.3em; }
+      width: 60%;
+      margin-top: 2.5em;
+      margin-left: -2em; }
     .form #Form #Email {
       margin-left: 2.75em; }
     .form #Form #Subject {
       margin-left: 2.5em; }
     .form #Form #Message {
-      width: 21.5em;
-      margin-top: 2em;
-      margin-left: 0.3em; }
+      width: 60%;
+      margin-top: 2.5em;
+      margin-left: -2em; }
     .form #Form #Send {
       height: 2em;
       width: 50%;
@@ -1144,6 +1151,14 @@ section {
         -ms-flex: 1 1 content;
         flex: 1 1 content; }
   section {
-    padding-top: 10em; } }
+    padding-top: 10em; }
+  .pagination {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2em 0 0 7.9em;
+    font-size: 1.5em; }
+    .pagination li {
+      margin-left: 2em; } }
 
 /*# sourceMappingURL=styles.css.map */

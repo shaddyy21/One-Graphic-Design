@@ -22,7 +22,7 @@ body{
 }
 
 .img-slider {
-    margin-left: 3.5em;
+    margin-left: 6.5em;
     width: 20.5em;
 //    border: thin darkblue solid;
 }
@@ -146,7 +146,7 @@ section{
             width: 15em;
             height: 2em;
             margin-top: -2em;
-            margin-left: 5em;
+            margin-left: 6em;
             display: inline-block;
         }
         
@@ -161,7 +161,7 @@ section{
         #Message{
             margin-top: -1.2em;
             width: 15em;
-            margin-left: 5em;
+            margin-left: 6em;
         }
         
         #Send{
@@ -171,5 +171,13 @@ section{
             background-color: $primary-back-color;
             border: none;
         }
+    }
+}
+
+.pagination{
+    display: flex;
+     
+    li{
+        margin-left: 2em; 
     }
 }

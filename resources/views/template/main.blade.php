@@ -15,7 +15,7 @@
    <div class="container" #Top>
     <header>
         <div class="heading">
-            <img src="{{asset('img/logo(2).png')}}" alt="logo">
+        <img src="{{asset('img/logo(2).png')}}" alt="logo">
             <p id="Bars"><i class="fa fa-bars"></i></p>
             @if(Auth::check())
             <p class="admin"><a href="{{url('admin')}}">Admin</a></p>
@@ -53,6 +53,7 @@
                     <p id="Logo" class="linkUnderline-two">Logo</p>
                     <p id="Pack" class="linkUnderline-three">Packaging</p>
                 </div>
+            @if(Request::ajax() == false)
                 <div class="display">
                    <div class="paper">
                       <p>Paper Art</p>
@@ -81,7 +82,12 @@
                       <p>Packaging</p>
                       <div class="imgContainer">
                        
-                       <?php $paginator = \App\Models\Pack::paginate(4);?>
+                       <?php 
+                          
+                          $paginator = \App\Models\Pack::paginate(2);
+                          $paginator->appends("slide","packing");
+                          
+                        ?>
                         
                          @foreach($paginator as $pack)
                          @if($pack->active == 1)
@@ -94,6 +100,7 @@
                       </div>
                    </div>
                 </div>
+            @endif
             </section>
             
             <section id="About">
@@ -177,5 +184,7 @@ We will discuss your needs rather than doing something that is just eye-candy. T
     <script src="{{asset('js/jQuery.js')}}"></script>
     <script src="{{asset('slick/slick.js')}}"></script>
     <script src="{{asset('slick/slick.min.js')}}"></script>
+    <script src="{{asset('js/Spin.js')}}"></script>
+    <script src="{{asset('js/jquery.history.js')}}"></script>
 </body>
 </html>

@@ -12,4 +12,8 @@ class Pack extends Model
     protected $dates = ['deleted_at']; 
     
     protected $fillable = ['description', 'path', 'active'];
+    
+    public function Sortby(){
+        $pack = $this->pack()->orderBy('created_at','desc')->get(); 
+    }
 }

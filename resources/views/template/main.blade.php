@@ -56,47 +56,50 @@
             @if(Request::ajax() == false)
                 <div class="display">
                    <div class="paper">
-                      <p>Paper Art</p>
-                      <div class="imgContainer">
-                         @foreach(\App\Models\Paper::all() as $paper)
-                          @if($logo->active == 1)
-                              
-                               <a href="{{url('paper/'.$paper->id)}}"><img class="pic1" src="{{asset('img/'.$paper->path)}}" alt=""></a>
-                          @endif
-                          @endforeach
+                        <p>Paper Art</p>
+                        <div class="imgContainer">
+                        <?php 
+                          $paginator = \App\Models\Paper::paginate(2);
+                          $paginator->appends("slide","paper");
+                        ?>
+                        @foreach(\App\Models\Paper::all() as $paper)
+                        @if($logo->active == 1) 
+                            <a href="{{url('paper/'.$paper->id)}}"><img class="pic1" src="{{asset('img/'.$paper->path)}}" alt=""></a>
+                        @endif
+                        @endforeach
+                        {!! $paginator->render() !!}
                       </div>
                    </div>
                    
                    <div class="logo">
-                       <p>Logo</p>
-                       <div class="imgContainer">
-                          @foreach(\App\Models\Logo::all() as $logo)
-                          @if($logo->active == 1)
-                               <a href="{{url('logo/'.$logo->id)}}"><img class="pic2" src="{{asset('img/'.$logo->path)}}" alt=""></a>
-                          @endif
-                          @endforeach
+                        <p>Logo</p>
+                        <div class="imgContainer">
+                        <?php 
+                          $paginator = \App\Models\Logo::paginate(2);
+                          $paginator->appends("slide","logo");
+                        ?>
+                        @foreach(\App\Models\Logo::all() as $logo)
+                        @if($logo->active == 1)
+                            <a href="{{url('logo/'.$logo->id)}}"><img class="pic2" src="{{asset('img/'.$logo->path)}}" alt=""></a>
+                        @endif
+                        @endforeach
+                        {!! $paginator->render() !!}
                        </div>
                    </div>
                    
                    <div class="packaging">
-                      <p>Packaging</p>
-                      <div class="imgContainer">
-                       
-                       <?php 
-                          
-                          $paginator = \App\Models\Pack::paginate(2);
-                          $paginator->appends("slide","packing");
-                          
+                        <p>Packaging</p>
+                        <div class="imgContainer">
+                        <?php 
+                            $paginator = \App\Models\Pack::paginate(2);
+                            $paginator->appends("slide","packaging");   
                         ?>
-                        
-                         @foreach($paginator as $pack)
-                         @if($pack->active == 1)
-                          
-            
+                        @foreach($paginator as $pack)
+                        @if($pack->active == 1)
                             <a href="{{url('pack/'.$pack->id)}}"><img class="pic3" src="{{asset('img/'.$pack->path)}}" alt=""></a>
-                         @endif
-                          @endforeach
-                           {!! $paginator->render() !!}
+                        @endif
+                        @endforeach
+                        {!! $paginator->render() !!}
                       </div>
                    </div>
                 </div>
@@ -108,19 +111,23 @@
                 <div class="text">
                     <p>One Graphic Design is about communication.<br><br>
 
-We ensure that we connect with you from the start and that we understand your needs. That means that we need to spend some time together talking about what your requirements are.<br><br>
+                        We ensure that we connect with you from the start and that we understand your needs. 
+                        That means that we need to spend some time together talking about what your requirements are.<br><br>
 
-One Graphic Design is about getting it done.<br><br>
+                        One Graphic Design is about getting it done.<br><br>
 
-We pride ourselves on meeting the deadline, no-matter-what. We ensure that the work is done on time to the best standard possible. No excuses.<br><br>
+                        We pride ourselves on meeting the deadline, no-matter-what. 
+                        We ensure that the work is done on time to the best standard possible. No excuses.<br><br>
 
-One Graphic Design is about doing it right the first time.<br><br>
+                        One Graphic Design is about doing it right the first time.<br><br>
 
-This might mean having to meet and discuss things at length.<br><br>
+                        This might mean having to meet and discuss things at length.<br><br>
 
-One Graphic Design is about giving you what you need.<br><br>
+                        One Graphic Design is about giving you what you need.<br><br>
 
-We will discuss your needs rather than doing something that is just eye-candy. That might mean some time explaining how everything works.</p>
+                        We will discuss your needs rather than doing something that is just eye-candy. 
+                       That might mean some time explaining how everything works.
+                    </p>
                 </div>
             </section>
             
@@ -152,21 +159,6 @@ We will discuss your needs rather than doing something that is just eye-candy. T
                             {!! Form::button('<i class="fa fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;Send',array('id' => 'Send','type'=>'submit')) !!}
                         {!! Form::close() !!}
                     </fieldset>
-                    <!--<form action="#" id="Form">
-                        <label for="Name">Full Name</label>
-                        <input id="Name" type="text">
-                        
-                        <label for="Email">E-mail</label>
-                        <input id="Email" type="text">
-                        
-                        <label for="Subject">Subject</label>
-                        <input  id="Subject" type="text">
-                        
-                        <label for="Message">Message</label>
-                        <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Enter Message Here"></textarea>
-                        
-                        <button id="Send"><i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Send</button>
-                    </form>-->
                 </div>
             </section>
             

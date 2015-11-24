@@ -13,25 +13,6 @@ $(function (){
     
     
     /*============================================================*/
-    /*             Hides navigation on link click                 */
-    /*============================================================*/
-//         var isOpen = false;    
-//        $('#Nav ul li a').on('click', function(){
-//            $('#Nav').toggleClass('hide');
-//            if(isOpen == true){
-//                 $('#Nav').toggleClass('show');
-//                isOpen = false;
-//                
-//            }
-////            else{
-////                 $('#nav').hide(500);
-////                isOpen = false;   
-////            }
-//        });
-    /*============================================================*/
-    
-    
-    /*============================================================*/
     /*                    Active Link                             */
     /*============================================================*/
         $(".link a[class^='linkUnderline']").on('click', function(){
@@ -70,6 +51,29 @@ $(function (){
     /*============================================================*/
     /*                   Paper Art                                */
     /*============================================================*/
+        function getQueryString(sParam){
+         
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++){
+                var sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] == sParam) 
+                {
+                    return sParameterName[1];
+                }
+            }
+        }
+
+        if(getQueryString("slide")=="paper"){
+            $('.logo').hide(550);
+            $('.packaging').hide(650);
+            $('.paper').show(1);       
+            
+            var pack_pos = $(".paper").offset();
+            $("html, body").animate({ scrollTop: pack_pos.top-200 }, "fast");
+        }
+    
+    
         $('#Paperart').on('click', function(){
             $('.logo').hide(550);
             $('.packaging').hide(650);
@@ -81,6 +85,28 @@ $(function (){
     /*============================================================*/
     /*                        Logo                                */
     /*============================================================*/
+    function getQueryString(sParam){
+         
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++){
+                var sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] == sParam) 
+                {
+                    return sParameterName[1];
+                }
+            }
+        }
+
+        if(getQueryString("slide")=="logo"){
+            $('.packaging').hide(650);
+            $('.paper').hide(550);
+            $('.logo').show(1);        
+            
+            var pack_pos = $(".logo").offset();
+            $("html, body").animate({ scrollTop: pack_pos.top-200 }, "fast");
+        }
+    
         $('#Logo').on('click', function(){
             $('.packaging').hide(650);
             $('.paper').hide(550);
@@ -92,13 +118,11 @@ $(function (){
     /*============================================================*/
     /*                        Packaging                           */
     /*============================================================*/
-    
-        function getQueryString(sParam)
-        {
+        function getQueryString(sParam){
+         
             var sPageURL = window.location.search.substring(1);
             var sURLVariables = sPageURL.split('&');
-            for (var i = 0; i < sURLVariables.length; i++) 
-            {
+            for (var i = 0; i < sURLVariables.length; i++){
                 var sParameterName = sURLVariables[i].split('=');
                 if (sParameterName[0] == sParam) 
                 {
@@ -107,18 +131,15 @@ $(function (){
             }
         }
 
-        if(getQueryString("slide")=="packing"){
+        if(getQueryString("slide")=="packaging"){
             $('.paper').hide(550);
             $('.logo').hide(550);
-            $('.packaging').show(650);
+            $('.packaging').show(1);
             
             var pack_pos = $(".packaging").offset();
             $("html, body").animate({ scrollTop: pack_pos.top-200 }, "fast");
-            
-
         }
-
-
+    
         $('#Pack').on('click', function(){
                 $('.paper').hide(550);
                 $('.logo').hide(550);

@@ -26,7 +26,7 @@
             <ul>
                 <li class="link"><a class="linkUnderline-one" href="#Home">Home</a></li>
                 <li class="link"><a class="linkUnderline-two" href="#Portfolio">Portfolio</a></li>
-                <li class="link"><a class="linkUnderline-three" href="#About">About</a></li>
+                <li class="link"><a class="linkUnderline-three" href="{{url('#About'}}">About</a></li>
                 <li class="link"><a class="linkUnderline-four" href="#Contact">Contact Us</a></li>
                 <li class="link"><a class="linkUnderline-five" href="#Other">Other Art</a></li>
             </ul>
@@ -78,7 +78,7 @@
                           $paginator = \App\Models\Logo::paginate(2);
                           $paginator->appends("slide","logo");
                         ?>
-                        @foreach(\App\Models\Logo::all() as $logo)
+                        @foreach($paginator as $logo)
                         @if($logo->active == 1)
                             <a href="{{url('logo/'.$logo->id)}}"><img class="pic2" src="{{asset('img/'.$logo->path)}}" alt=""></a>
                         @endif
@@ -94,6 +94,7 @@
                             $paginator = \App\Models\Pack::paginate(2);
                             $paginator->appends("slide","packaging");   
                         ?>
+                        
                         @foreach($paginator as $pack)
                         @if($pack->active == 1)
                             <a href="{{url('pack/'.$pack->id)}}"><img class="pic3" src="{{asset('img/'.$pack->path)}}" alt=""></a>

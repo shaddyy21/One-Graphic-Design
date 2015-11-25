@@ -338,7 +338,9 @@ footer p {
 body {
   margin: 0;
   padding: 0;
-  background-color: #9E9E9E; }
+  background-color: #9E9E9E;
+  font-family: Agency FB;
+  font-weight: normal; }
 
 .container {
   width: 100%; }
@@ -1059,7 +1061,9 @@ section {
       font-size: 1.8em;
       width: 22em;
       margin: auto;
-      text-align: left; }
+      text-align: left;
+      font-family: Agency FB;
+      font-weight: normal; }
     .desp img {
       width: 25em;
       height: 25em;

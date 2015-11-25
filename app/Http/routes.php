@@ -84,7 +84,7 @@ Route::get('createPaper',function(){
 /*=========================================================*/
 
 
-Route::post("sendmail",function(){
+Route::post("sendmail",function(\App\Http\Requests\ContactFormRequest $request){
     
     //Send email using Laravel send function
     
@@ -94,9 +94,10 @@ Route::post("sendmail",function(){
         //email 'From' field: Get users email add and name
         $message->from("admin@gmail.com" , "Admin");
         //email 'To' field: cahnge this to emails that you want to be notified.                    
-        $message->to('shadrak_anthony@yahoo.co.nz', 'my name')->subject('contact request');
+        $message->to('shadrak_anthony@yahoo.co.nz', 'One Graphic Design')->subject('contact request');
     });
- 
+    
+    return redirect('/');
 });
 
 /*===========================================================================*/

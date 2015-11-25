@@ -1,4 +1,4 @@
-@extends('template.form') 
+@extends('template.mail') 
   
 @section('title')
    Mail
@@ -11,11 +11,11 @@
                     <h1>We been contacted by.... </h1>
 
                     <p>
-                        Name: <br>
-                        Email address:  <br>
-                        Subject:<br>
+                        Name: {{$name}}<br>
+                        Email address: {{$emailC}} <br>
+                        Subject:{{$subject}}<br>
                         Message: {{$content}}<br>
-                        Date: <br>
+                        Date:{{$}} <br>
                       
                     </p>
             </div>

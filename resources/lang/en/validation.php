@@ -132,6 +132,28 @@ return [
             ], 
         
         /*============================================================================*/
+        
+        
+        /*============================================================================*/
+        /*                          Contact error messages                            */
+        /*============================================================================*/
+            'name' => [
+                'required' => '*Please fill in name field.'
+            ],
+        
+            'emailC' => [
+                'required' => '*Please fill in e-mail field.', 'email' => '*Please enter a valid e-mail.',
+            ],
+        
+            'subject' => [
+                'required' => '*Please fill in subject field.',
+            ],
+        
+            'content' => [
+                'required' => '*Please fill in message field.',
+            ],
+        
+        /*============================================================================*/
     ],
 
     /*

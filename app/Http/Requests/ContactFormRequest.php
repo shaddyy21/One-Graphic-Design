@@ -25,9 +25,9 @@ class ContactFormRequest extends Request
     {
         return [
             "name" => "required",
-            "email" => "required|email",
+            "emailC" => "required|email",
             "subject" => "required",
-            "message" => "required"
+            "content" => "required"
         ];
     }
 }

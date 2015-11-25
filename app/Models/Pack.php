@@ -14,6 +14,6 @@ class Pack extends Model
     protected $fillable = ['description', 'path', 'active'];
     
     public function Sortby(){
-        $pack = $this->pack()->orderBy('created_at','desc')->get(); 
+        $packs = $this->packs()->orderBy('created_at','desc')->get(); 
     }
 }

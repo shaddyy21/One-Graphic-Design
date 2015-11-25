@@ -84,7 +84,20 @@ Route::get('createPaper',function(){
 /*=========================================================*/
 
 
-
+Route::post("sendmail",function(){
+    
+    //Send email using Laravel send function
+    
+    $data = Request::all();
+    
+    Mail::send('viewMail', $data, function($message){
+        //email 'From' field: Get users email add and name
+        $message->from("admin@gmail.com" , "Admin");
+        //email 'To' field: cahnge this to emails that you want to be notified.                    
+        $message->to('shadrak_anthony@yahoo.co.nz', 'my name')->subject('contact request');
+    });
+ 
+});
 
 /*===========================================================================*/
 /*                        Users Controller Mapping                           */

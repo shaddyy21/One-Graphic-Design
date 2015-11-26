@@ -24,11 +24,12 @@
         
         <nav id="Nav">
             <ul>
-                <li class="link"><a class="linkUnderline-one" href="#Home">Home</a></li>
                 <li class="link"><a class="linkUnderline-two" href="#Portfolio">Portfolio</a></li>
-                <li class="link"><a class="linkUnderline-three" href="{{url('#About'}}">About</a></li>
-                <li class="link"><a class="linkUnderline-four" href="#Contact">Contact Us</a></li>
-                <li class="link"><a class="linkUnderline-five" href="#Other">Other Art</a></li>
+                <li class="link"><a class="linkUnderline-one" href="{{url('/#Home')}}">Home</a></li>
+                <li class="link"><a class="linkUnderline-two" href="{{url('/#Portfolio')}}">Portfolio</a></li>
+                <li class="link"><a class="linkUnderline-three" href="{{url('/#About')}}">About</a></li>
+                <li class="link"><a class="linkUnderline-four" href="{{url('/#Contact')}}">Contact Us</a></li>
+                <li class="link"><a class="linkUnderline-five" href="{{url('/#Other')}}">Other Art</a></li>
             </ul>
         </nav>
     </header>
@@ -38,10 +39,9 @@
                <h1>Home</h1>
             <div class="img-slider">
 				<div class="image-slider">
-                    <img src="{{asset('img/_MG_8841.jpg')}}" alt=""/>
-                    <img src="{{asset('img/_MG_8850.jpg')}}" alt=""/>
-					<img src="{{asset('img/flagTwoSided.jpg')}}" alt=""/>
-					<img src="{{asset('img/wholeMilk.jpg')}}" alt=""/>
+                 @foreach(App\Models\Pack::all()->sortBy('desc') as $pack)
+                    <a href="{{url('pack/'.$pack->id)}}"><img src="{{asset('img/'.$pack->path)}}" alt="Packaging"></a>
+                 @endforeach
 				</div>
 			</div>
             </section>
@@ -59,11 +59,11 @@
                         <p>Paper Art</p>
                         <div class="imgContainer">
                         <?php 
-                          $paginator = \App\Models\Paper::paginate(2);
+                          $paginator = \App\Models\Paper::paginate(4);
                           $paginator->appends("slide","paper");
                         ?>
-                        @foreach(\App\Models\Paper::all() as $paper)
-                        @if($logo->active == 1) 
+                        @foreach($paginator as $paper)
+                        @if($paper->active == 1) 
                             <a href="{{url('paper/'.$paper->id)}}"><img class="pic1" src="{{asset('img/'.$paper->path)}}" alt=""></a>
                         @endif
                         @endforeach
@@ -75,7 +75,7 @@
                         <p>Logo</p>
                         <div class="imgContainer">
                         <?php 
-                          $paginator = \App\Models\Logo::paginate(2);
+                          $paginator = \App\Models\Logo::paginate(4);
                           $paginator->appends("slide","logo");
                         ?>
                         @foreach($paginator as $logo)
@@ -91,7 +91,7 @@
                         <p>Packaging</p>
                         <div class="imgContainer">
                         <?php 
-                            $paginator = \App\Models\Pack::paginate(2);
+                            $paginator = \App\Models\Pack::paginate(4);
                             $paginator->appends("slide","packaging");   
                         ?>
                         

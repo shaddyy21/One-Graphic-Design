@@ -130,5 +130,5 @@
     </body>
     </html>
     @else
-    {!! redirect('login'); !!}
+    {!! view('login'); !!}
 @endif

@@ -35,7 +35,7 @@ section{
 //    margin-top: 20em;
 }
 
-.image-slider{   
+.image-slider a img{   
     flex: 1 1 100%;
 	width: 18.5em;
 	height: 15em;
@@ -44,10 +44,6 @@ section{
     margin: 0 1em 0 -0.7em;
 }
 
-// #Home{
-// //    margin-top: 8em;
-
-// }
 .work{
     display: flex;
     p{

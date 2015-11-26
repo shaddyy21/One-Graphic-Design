@@ -20,7 +20,8 @@ class PapersController extends Controller
      */
     public function index()
     {
-        //
+        $pack = \App\Models\Pack::all()->sortBy('create_at')->get();
+        return view('pack',compact('pack'));
     }
 
     /**

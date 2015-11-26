@@ -91,17 +91,17 @@
 {
     float: right;
 }
-.slick-slide img
+.slick-slide
 {
     display: block;
 }
-.slick-slide.slick-loading img
+.slick-slide.slick-loading 
 {
     display: none;
     margin-left: 16px;
 
 }
-.slick-slide.dragging img
+.slick-slide.dragging
 {
     pointer-events: none;
     margin-left: 16px;

@@ -13,7 +13,7 @@ class Pack extends Model
     
     protected $fillable = ['description', 'path', 'active'];
     
-//    public function Sortby(){
-//        $packs = $this->packs()->orderBy('created_at','desc')->get(); 
-//    }
+    public function Sortby(){
+        $packs = $this->packs()->orderBy('created_at','desc')->get(); 
+    }
 }

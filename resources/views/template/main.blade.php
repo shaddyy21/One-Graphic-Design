@@ -24,7 +24,6 @@
         
         <nav id="Nav">
             <ul>
-                <li class="link"><a class="linkUnderline-two" href="#Portfolio">Portfolio</a></li>
                 <li class="link"><a class="linkUnderline-one" href="{{url('/#Home')}}">Home</a></li>
                 <li class="link"><a class="linkUnderline-two" href="{{url('/#Portfolio')}}">Portfolio</a></li>
                 <li class="link"><a class="linkUnderline-three" href="{{url('/#About')}}">About</a></li>

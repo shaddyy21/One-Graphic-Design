@@ -14,7 +14,7 @@
                         {!! Form::open(array('url' => 'paper', 'files'=>true, 'id'=>'Form')) !!}
                             <div class="pure-control-group">
                                 {!! Form::label('description', 'Description') !!}
-                                {!! Form::textarea('description') !!}
+                                {!! Form::textarea('description', null ,['class' => 'description']) !!}
                                 {!! $errors->first('description','<p class="error">:message</p>')!!}
                             </div>
                             

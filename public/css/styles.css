@@ -742,11 +742,12 @@ section {
   .paperAd img {
     width: 10em;
     height: 10em;
-    margin: 1em;
+    margin: 1em 0 2em 7em;
     border: 0.15em black solid; }
   .paperAd .pInfo {
     display: inline-block;
-    width: 35em; }
+    width: 35em;
+    margin-left: 7em; }
   .paperAd .status {
     height: 1.5em;
     width: 9em;
@@ -764,7 +765,7 @@ section {
       display: inline-block;
       color: green;
       margin-top: 0.3em;
-      font-size: 1.1em;
+      font-size: 1.25em;
       text-decoration: none;
       background-color: #EEEEEE;
       padding: 0.13em 0.78em 0.13em 0.38em;
@@ -776,7 +777,7 @@ section {
       display: inline-block;
       color: red;
       margin-top: 0.3em;
-      font-size: 1.1em;
+      font-size: 1.25em;
       text-decoration: none;
       background-color: #EEEEEE;
       padding: 0.13em 0.78em 0.13em 0.38em;
@@ -792,8 +793,8 @@ section {
       display: block;
       margin-top: 0.5em;
       margin-left: -0.85em;
-      width: 12.85em;
-      font-size: 1.1em;
+      width: 9.8em;
+      font-size: 1.25em;
       text-align: center;
       text-decoration: none;
       background-color: #EEEEEE;
@@ -1154,7 +1155,7 @@ section {
       display: inline-block; }
     .form #Form input {
       width: 25em;
-      margin: 1.5em 0 0 1.5em;
+      margin: 1.8em 0 0 1.5em;
       display: inline-block; }
     .form #Form #Email {
       margin-left: 2.75em; }
@@ -1162,7 +1163,7 @@ section {
       margin-left: 2.5em; }
     .form #Form #Message {
       width: 25em;
-      margin: 1.5em 0 0 1.5em; }
+      margin: 1.5em 0 0 0em; }
     .form #Form #Send {
       height: 3em;
       width: 50%;
@@ -1267,22 +1268,21 @@ section {
       text-decoration: none;
       color: black;
       text-decoration: none;
+      font-size: 2.5em;
       text-align: center;
-      display: inline-block;
-      margin: 0 0em 0 -2em; }
+      margin: 1em -1em 0 0em; }
     .headingA a {
       margin: auto;
-      width: 100%; }
+      width: 80%; }
       .headingA a img {
         width: 100%;
         margin: auto; }
     .headingA .admin a {
       color: black;
       text-decoration: none;
-      font-size: 3em;
       text-align: center;
       display: inline-block;
-      margin: 0 0em 0 0; }
+      margin: 0 2em 0 1em; }
   .main-heading h2 {
     color: black;
     text-align: center;
@@ -1296,11 +1296,13 @@ section {
     font-size: 1.2em; }
   .form #Form label {
     font-size: 1.3em;
-    margin-top: -0.5em; }
+    margin-top: 0.5em; }
   .form #Form input {
     width: 25em;
-    margin: 1.5em 0 0 0em;
+    margin: 1em 0 0 0em;
     display: inline-block; }
+  .form #Form #Message {
+    margin: 1.2em 0 0 0em; }
   .form #Form .description {
     width: 26em;
     min-height: 5em;

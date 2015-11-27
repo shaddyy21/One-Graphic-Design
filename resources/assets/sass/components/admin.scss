@@ -49,12 +49,13 @@
         img{
             width: 10em;
             height: 10em;
-            margin: 1em;
+            margin: 1em 0 2em 7em;
             border: 0.15em black solid;
         }
         .pInfo{
             display: inline-block;
             width: 35em;
+            margin-left: 7em;
 //            border: green thin solid;
         }
         
@@ -84,7 +85,7 @@
                 display: inline-block;
                 color: green;
                 margin-top: 0.3em;
-                font-size: 1.1em;
+                font-size: 1.25em;
                 text-decoration: none;
                 background-color: #EEEEEE;
                 padding: 0.13em 0.78em 0.13em 0.38em;
@@ -98,7 +99,7 @@
                 display: inline-block;
                 color: red;
                 margin-top: 0.3em;
-                font-size: 1.1em;
+                font-size: 1.25em;
                 text-decoration: none;
                 background-color: #EEEEEE;
                 padding: 0.13em 0.78em 0.13em 0.38em;
@@ -119,8 +120,8 @@
                 display: block;
                 margin-top: 0.5em;
                 margin-left: -0.85em;
-                width: 12.85em;
-                font-size: 1.1em;
+                width: 9.8em;
+                font-size: 1.25em;
                 text-align: center;
                 text-decoration: none;
                 background-color: #EEEEEE;

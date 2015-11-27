@@ -426,9 +426,8 @@
                 }
 
                 input{
-//                    border: thin orange solid;
                     width: 25em;
-                    margin: 1.5em 0 0 1.5em;
+                    margin: 1.8em 0 0 1.5em;
                     display: inline-block;
                 }
 
@@ -442,7 +441,7 @@
 
                 #Message{
                     width: 25em;
-                    margin: 1.5em 0 0 1.5em;
+                    margin: 1.5em 0 0 0em;
                 }
 
                 #Send{
@@ -587,15 +586,15 @@
 //            margin: auto;
              color: black;
                 text-decoration: none;
-//                font-size: 3em;
+                font-size: 2.5em;
                 text-align: center;
-                display: inline-block;
-                margin: 0 0em 0 -2em;
+//                display: inline-block;
+                margin: 1em -1em 0 0em;
         }
 
         a{
             margin: auto;
-            width: 100%;
+            width: 80%;
             img{
                 width: 100%;
                 margin: auto;
@@ -606,10 +605,10 @@
             a{
                 color: black;
                 text-decoration: none;
-                font-size: 3em;
+//                font-size: 3em;
                 text-align: center;
                 display: inline-block;
-                margin: 0 0em 0 0;
+                margin: 0 2em 0 1em;
             }
         }
     }
@@ -633,13 +632,17 @@
         #Form{
             label{
                 font-size: 1.3em;
-                margin-top: -0.5em;
+                margin-top: 0.5em;
             }
             
             input{
                 width: 25em;
-                margin: 1.5em 0 0 0em;
+                margin: 1em 0 0 0em;
                 display: inline-block;
+            }
+            
+            #Message{
+                margin: 1.2em 0 0 0em;
             }
             
             .description{

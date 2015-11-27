@@ -14,23 +14,12 @@
 <body>
     <div class="containerForm" id="Top">
         <header>
-            <div class="heading">
-                <img src="{{asset('img/logo(2).png')}}" alt="logo">
+            <div class="headingF">
+                <a href="{{url('/')}}"><img class="headImg" src="{{asset('img/logo(2).png')}}" alt="logo"></a>
                 @if(Auth::check())
                     <p class="admin"><a href="{{url('admin')}}">Admin</a></p>
                 @endif
             </div>
-            
-            
-        <nav id="Nav">
-            <ul>
-                <li class="link"><a class="linkUnderline-one" href="{{url('/#Home')}}">Home</a></li>
-                <li class="link"><a class="linkUnderline-two" href="{{url('/#Portfolio')}}">Portfolio</a></li>
-                <li class="link"><a class="linkUnderline-three" href="{{url('/#About')}}">About</a></li>
-                <li class="link"><a class="linkUnderline-four" href="{{url('/#Contact')}}">Contact Us</a></li>
-                <li class="link"><a class="linkUnderline-five" href="{{url('/#Other')}}">Other Art</a></li>
-            </ul>
-        </nav>
         </header>
     <main>
         <section id="Forms">

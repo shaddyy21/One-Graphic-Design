@@ -15,7 +15,7 @@
    <div class="container" #Top>
     <header>
         <div class="heading">
-        <img src="{{asset('img/logo(2).png')}}" alt="logo">
+         <a href="{{url('/')}}"><img class="headImg" src="{{asset('img/logo(2).png')}}" alt="logo"></a>
             <p id="Bars"><i class="fa fa-bars"></i></p>
             @if(Auth::check())
             <p class="admin"><a href="{{url('admin')}}">Admin</a></p>

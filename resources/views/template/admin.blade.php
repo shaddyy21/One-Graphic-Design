@@ -15,10 +15,10 @@
     <body>
         <div class="container" id="Top">
             <header>
-                <div class="heading">
+                <div class="headingA">
                     <a href="{{url('/')}}"><img class="headImg" src="{{asset('img/logo(2).png')}}" alt="logo"></a>
-                    <p id="Admin">Admin</p>
-                    <p id="Logout"><a href="{{url('logout')}}">{!! FA::icon('sign-out')!!}&nbsp;&nbsp;Logout</p></a>
+                    <p class="admin">Admin</p>
+                    <p class="admin"><a href="{{url('logout')}}">{!! FA::icon('sign-out')!!}&nbsp;&nbsp;Logout</p></a>
                 </div>
 
                 <nav id="Nav" class="adminNav">

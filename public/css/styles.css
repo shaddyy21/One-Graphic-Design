@@ -811,10 +811,11 @@ section {
 
 .label {
   width: 5.5em;
-  font-size: 2em;
+  font-size: 2.5em;
   margin-left: 3em;
   margin-top: 1em;
-  display: inline-block; }
+  display: inline-block;
+  border: green thin solid; }
 
 .input {
   width: 22em;
@@ -829,7 +830,7 @@ section {
   font-weight: normal;
   font-size: 3em;
   margin: auto;
-  margin-top: 0.2em; }
+  margin-top: -0.8em; }
 
 #Login {
   height: 3em;
@@ -840,7 +841,7 @@ section {
   margin-top: 6em; }
 
 .formAdmin {
-  margin-right: 8em; }
+  margint: auto; }
 
 .profile {
   margin: auto;
@@ -861,6 +862,35 @@ section {
 .desp {
   margin: 12em auto; }
 
+.headingF {
+  background-color: #6E6E6E;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  height: 6.5em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0; }
+  .headingF p {
+    text-decoration: none;
+    margin: auto; }
+  .headingF a {
+    margin: auto;
+    width: 85%; }
+    .headingF a img {
+      width: 100%;
+      margin: auto; }
+  .headingF .admin a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    margin: 3em 1em 0 0; }
+
 /*==============================================================*/
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
@@ -872,13 +902,19 @@ section {
     height: 10.5em;
     width: 100%;
     z-index: 1000; }
-    .heading img, .heading .headImg {
-      width: 85%;
-      margin: auto; }
-    .heading p {
-      text-decoration: none;
+    .heading a {
       margin: auto;
-      margin-top: 1em; }
+      width: 75%; }
+      .heading a .headImg {
+        width: 100%;
+        margin: auto; }
+    .heading .admin a {
+      color: black;
+      font-size: 1.5em;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+      margin: 3.5em 0 0 0; }
     .heading #Bars {
       font-size: 3em; }
   section {
@@ -999,9 +1035,19 @@ section {
 @media only screen and (min-width: 55em) {
   .heading {
     height: 11em; }
-    .heading img {
-      width: 90%;
-      margin: auto; }
+    .heading a {
+      margin: auto;
+      width: 75%; }
+      .heading a .headImg {
+        width: 100%;
+        margin: auto; }
+    .heading .admin a {
+      color: black;
+      font-size: 2em;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+      margin: 1.5em 1em 0 0; }
   #Bars {
     display: none; }
   #Nav {
@@ -1010,7 +1056,7 @@ section {
     z-index: 1000;
     top: 0;
     left: 0;
-    margin-top: 5.25em;
+    margin-top: 5.2em;
     background-color: #6E6E6E; }
     #Nav ul {
       display: -webkit-flex;
@@ -1106,7 +1152,7 @@ section {
       width: 8em;
       margin: 1.3em 0 0 1em;
       display: inline-block; }
-    .form #Form input, .form #Form select {
+    .form #Form input {
       width: 25em;
       margin: 1.5em 0 0 1.5em;
       display: inline-block; }
@@ -1132,9 +1178,19 @@ section {
     margin: 0 0 1em 0;
     width: 100%;
     height: 10.5em; }
-    .heading img {
-      width: 60%;
-      margin: auto; }
+    .heading a {
+      margin: auto;
+      width: 85%; }
+      .heading a .headImg {
+        width: 100%;
+        margin: auto; }
+    .heading .admin a {
+      color: black;
+      font-size: 3em;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+      margin: 0.5em 1em 0 0; }
   #Bars {
     display: none; }
   #Nav {
@@ -1164,6 +1220,90 @@ section {
     margin: 2em 0 0 7.9em;
     font-size: 1.5em; }
     .pagination li {
-      margin-left: 2em; } }
+      margin-left: 2em; }
+  .headingF {
+    background-color: #6E6E6E;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 6.5em;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    top: 0;
+    left: 0; }
+    .headingF p {
+      text-decoration: none;
+      margin: auto; }
+    .headingF a {
+      margin: auto;
+      width: 85%; }
+      .headingF a img {
+        width: 100%;
+        margin: auto; }
+    .headingF .admin a {
+      color: black;
+      text-decoration: none;
+      font-size: 2em;
+      text-align: center;
+      display: inline-block;
+      margin: 0 1em 0 0; }
+  .headingA {
+    background-color: #6E6E6E;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 10.5em;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    top: 0;
+    left: 0; }
+    .headingA p {
+      text-decoration: none;
+      color: black;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+      margin: 0 0em 0 -2em; }
+    .headingA a {
+      margin: auto;
+      width: 100%; }
+      .headingA a img {
+        width: 100%;
+        margin: auto; }
+    .headingA .admin a {
+      color: black;
+      text-decoration: none;
+      font-size: 3em;
+      text-align: center;
+      display: inline-block;
+      margin: 0 0em 0 0; }
+  .main-heading h2 {
+    color: black;
+    text-align: center;
+    font-family: Agency FB;
+    font-weight: normal;
+    font-size: 5em;
+    margin: auto;
+    margin-top: -1.5em;
+    margin-bottom: 1em; }
+  label {
+    font-size: 1.2em; }
+  .form #Form label {
+    font-size: 1.3em;
+    margin-top: -0.5em; }
+  .form #Form input {
+    width: 25em;
+    margin: 1.5em 0 0 0em;
+    display: inline-block; }
+  .form #Form .description {
+    width: 26em;
+    min-height: 5em;
+    margin: -1.2em 0 0 12em; } }
 
 /*# sourceMappingURL=styles.css.map */

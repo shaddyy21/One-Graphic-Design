@@ -64,7 +64,8 @@ class UsersController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = \App\Models\User::find($id);
+        return view('editUser',compact('user'));
     }
 
     /**
@@ -74,9 +75,14 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,$id)
     {
-        //
+        $user = \App\Models\User::find($id);
+        $value = $request->input("value");
+        $field = $request->input("field");
+        $user->$field = $field;
+        $user->save();
+        return $value;
     }
 
     /**

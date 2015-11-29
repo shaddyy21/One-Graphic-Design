@@ -17,7 +17,7 @@
             <header>
                 <div class="headingA">
                     <a href="{{url('/')}}"><img class="headImg" src="{{asset('img/logo(2).png')}}" alt="logo"></a>
-                    <p>Admin</p>
+                    <p><a href="{{url('users/'.Auth::user()->id)}}">Admin</a></p>
                     <p class="admin"><a href="{{url('logout')}}">{!! FA::icon('sign-out')!!}&nbsp;&nbsp;Logout</p></a>
                 </div>
 

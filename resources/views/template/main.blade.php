@@ -28,7 +28,7 @@
                 <li class="link"><a class="linkUnderline-two" href="{{url('/#Portfolio')}}">Portfolio</a></li>
                 <li class="link"><a class="linkUnderline-three" href="{{url('/#About')}}">About</a></li>
                 <li class="link"><a class="linkUnderline-four" href="{{url('/#Contact')}}">Contact Us</a></li>
-                <li class="link"><a class="linkUnderline-five" href="{{url('/#Other')}}">Other Art</a></li>
+                <li  hidden="" class="link"><a class="linkUnderline-five" href="{{url('/#Other')}}">Other Art</a></li>
             </ul>
         </nav>
     </header>
@@ -168,7 +168,7 @@
                 </div>
             </section>
             
-            <section id="Other">
+            <section hidden="" id="Other">
                 <h1>Other Art</h1>
             </section>
         </main>

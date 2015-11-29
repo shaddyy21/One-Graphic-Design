@@ -848,12 +848,35 @@ section {
   margin: auto;
   font-size: 1.5em; }
   .profile h3 {
-    margin-right: 15em;
-    text-align: center; }
+    display: block;
+    margin-left: 15em;
+    text-align: center;
+    width: 5em; }
+  .profile #EmailUs {
+    margin-left: 14.16em; }
   .profile h4 {
-    margin-top: -2.5em;
-    margin-left: 10em;
+    display: block;
+    width: 15em;
+    height: 1.64em;
+    margin-top: -2.89em;
+    margin-left: 23.5em;
     text-align: center; }
+  .profile #EmailU {
+    margin-left: 26.8em; }
+  .profile a {
+    display: block;
+    margin: auto auto 1em auto;
+    width: 9.8em;
+    font-size: 1.25em;
+    text-align: center;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 0.13em 0.55em 0.13em 0.38em;
+    border-top: 0.06em solid #CCCCCC;
+    border-right: 0.06em solid #333333;
+    border-bottom: 0.06em solid #333333;
+    border-left: 0.06em solid #CCCCCC; }
 
 .error {
   color: red;

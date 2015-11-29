@@ -20,8 +20,10 @@
             <h3>User Name</h3>
             <h4 data-field="username">{!! $user->username !!}</h4>
             
-            <h3>E-mail</h3>
-            <h4 data-field="email">{!! $user->email !!}</h4>
+            <h3 id="EmailUs">E-mail</h3>
+            <h4 id="EmailU" data-field="email">{!! $user->email !!}</h4>
+            
+            <a href="{{url('users/'.Auth::user()->id.'/edit')}}">Edit Profile</a>
         </div>
     </div>    
     

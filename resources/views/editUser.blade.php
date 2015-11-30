@@ -11,7 +11,7 @@
                 </div>
                 <div class="formAdmin form pure-form pure-form-aligned">
                     <fieldset>
-                        {!! Form::model($user,array('url' => 'users/'.$user->id, 'method' => 'put', 'id'=>'Form')) !!}
+                        {!! Form::model($user,array('url' => 'user/'.$user->id, 'method' => 'put', 'id'=>'Form')) !!}
                             <div class="pure-control-group">
                                 {!! Form::label('firstname', 'First Name') !!}
                                 {!! Form::text('firstname') !!}

@@ -103,7 +103,7 @@ Route::post("sendmail",function(\App\Http\Requests\ContactFormRequest $request){
 /*===========================================================================*/
 /*                        Users Controller Mapping                           */
 /*===========================================================================*/
-    Route::resource('users','UsersController');
+    Route::resource('user','UsersController');
 /*===========================================================================*/
 
 

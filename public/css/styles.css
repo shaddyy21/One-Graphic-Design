@@ -720,12 +720,12 @@ section {
 #PaperAd h1, #LogoAd h1, #PackAd h1 {
   display: inline-block;
   margin: 1.5em 0 0 9em;
-  font-size: 4em;
+  font-size: 5em;
   text-align: center;
   color: black; }
 
 .new {
-  font-size: 1.5em;
+  font-size: 2em;
   width: 4.2em;
   margin-left: 10em;
   display: inline-block; }
@@ -739,71 +739,78 @@ section {
   display: flex;
   border-bottom: #6E6E6E solid thin;
   margin-top: 3em; }
-  .paperAd img {
-    width: 10em;
-    height: 10em;
-    margin: 1em 0 2em 7em;
-    border: 0.15em black solid; }
-  .paperAd .pInfo {
-    display: inline-block;
-    width: 35em;
-    margin-left: 7em; }
-  .paperAd .status {
-    height: 1.5em;
-    width: 9em;
-    margin: 0.65em 0 0 2.5em;
-    font-size: 1.5em; }
-    .paperAd .status .active {
-      color: darkgreen; }
-    .paperAd .status .deactive {
-      color: red; }
-  .paperAd .buttonsStat {
-    margin: 3.9em 0 0 -14em;
-    height: 2em;
-    width: 16.3em; }
-    .paperAd .buttonsStat a {
+  .paperAd .portAd {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto; }
+    .paperAd .portAd img {
+      width: 10em;
+      height: 10em;
+      margin: 1em 0 2em 0;
+      border: 0.15em black solid; }
+    .paperAd .portAd .pInfo {
       display: inline-block;
-      color: green;
-      margin-top: 0.3em;
-      font-size: 1.25em;
-      text-decoration: none;
-      background-color: #EEEEEE;
-      padding: 0.13em 0.78em 0.13em 0.38em;
-      border-top: 0.06em solid #CCCCCC;
-      border-right: 0.06em solid #333333;
-      border-bottom: 0.06em solid #333333;
-      border-left: 0.06em solid #CCCCCC; }
-    .paperAd .buttonsStat .deactiveBtn {
-      display: inline-block;
-      color: red;
-      margin-top: 0.3em;
-      font-size: 1.25em;
-      text-decoration: none;
-      background-color: #EEEEEE;
-      padding: 0.13em 0.78em 0.13em 0.38em;
-      border-top: 0.06em solid #CCCCCC;
-      border-right: 0.06em solid #333333;
-      border-bottom: 0.06em solid #333333;
-      border-left: 0.06em solid #CCCCCC; }
-  .paperAd .buttonsEdit {
-    width: 16.5em;
-    height: 2em;
-    margin: 6em 0 0 -15.3em; }
-    .paperAd .buttonsEdit a {
-      display: block;
-      margin-top: 0.5em;
-      margin-left: -0.85em;
-      width: 9.8em;
-      font-size: 1.25em;
-      text-align: center;
-      text-decoration: none;
-      background-color: #EEEEEE;
-      color: #333333;
-      padding: 0.13em 0.55em 0.13em 0.38em;
-      border-top: 0.06em solid #CCCCCC;
-      border-right: 0.06em solid #333333;
-      border-bottom: 0.06em solid #333333;
-      border-left: 0.06em solid #CCCCCC; }
+      width: 35em;
+      font-size: 2em;
+      margin-left: 8em;
+      margin-right: -8em; }
+    .paperAd .portAd .status {
+      height: 1.5em;
+      width: 9em;
+      margin: 0.65em 0 0 0em;
+      font-size: 1.5em; }
+      .paperAd .portAd .status .active {
+        color: darkgreen; }
+      .paperAd .portAd .status .deactive {
+        color: red; }
+    .paperAd .portAd .buttonsStat {
+      margin: 3.9em 0 0 -14em;
+      height: 2em;
+      width: 16.3em; }
+      .paperAd .portAd .buttonsStat a {
+        display: inline-block;
+        color: green;
+        margin-top: 0.3em;
+        font-size: 1.25em;
+        text-decoration: none;
+        background-color: #EEEEEE;
+        padding: 0.13em 0.78em 0.13em 0.38em;
+        border-top: 0.06em solid #CCCCCC;
+        border-right: 0.06em solid #333333;
+        border-bottom: 0.06em solid #333333;
+        border-left: 0.06em solid #CCCCCC; }
+      .paperAd .portAd .buttonsStat .deactiveBtn {
+        display: inline-block;
+        color: red;
+        margin-top: 0.3em;
+        font-size: 1.25em;
+        text-decoration: none;
+        background-color: #EEEEEE;
+        padding: 0.13em 0.78em 0.13em 0.38em;
+        border-top: 0.06em solid #CCCCCC;
+        border-right: 0.06em solid #333333;
+        border-bottom: 0.06em solid #333333;
+        border-left: 0.06em solid #CCCCCC; }
+    .paperAd .portAd .buttonsEdit {
+      width: 16.5em;
+      height: 2em;
+      margin: 6em 0 0 -15.3em; }
+      .paperAd .portAd .buttonsEdit a {
+        display: block;
+        margin-top: 0.5em;
+        margin-left: -0.85em;
+        width: 9.8em;
+        font-size: 1.25em;
+        text-align: center;
+        text-decoration: none;
+        background-color: #EEEEEE;
+        color: #333333;
+        padding: 0.13em 0.55em 0.13em 0.38em;
+        border-top: 0.06em solid #CCCCCC;
+        border-right: 0.06em solid #333333;
+        border-bottom: 0.06em solid #333333;
+        border-left: 0.06em solid #CCCCCC; }
 
 .loginForm {
   height: 26em;
@@ -847,41 +854,45 @@ section {
 .profile {
   margin: auto;
   font-size: 1.5em; }
-  .profile h3 {
-    display: block;
-    margin-left: 15em;
-    text-align: center;
-    width: 5em; }
-  .profile #EmailUs {
-    margin-left: 14.16em; }
-  .profile h4 {
-    display: block;
-    width: 15em;
-    height: 1.64em;
-    margin-top: -2.89em;
-    margin-left: 23.5em;
-    text-align: center; }
-  .profile #EmailU {
-    margin-left: 26.8em; }
-  .profile a {
-    display: block;
-    margin: auto auto 1em auto;
-    width: 9.8em;
-    font-size: 1.25em;
-    text-align: center;
-    text-decoration: none;
-    background-color: #EEEEEE;
-    color: #333333;
-    padding: 0.13em 0.55em 0.13em 0.38em;
-    border-top: 0.06em solid #CCCCCC;
-    border-right: 0.06em solid #333333;
-    border-bottom: 0.06em solid #333333;
-    border-left: 0.06em solid #CCCCCC; }
+  .profile .pro {
+    margin: 0 14em 0 14em; }
+    .profile .pro h3 {
+      display: block;
+      margin-left: 15em;
+      text-align: center;
+      width: 5em; }
+    .profile .pro #EmailUs {
+      margin-left: 14.16em; }
+    .profile .pro h4 {
+      display: block;
+      width: 15em;
+      height: 1.64em;
+      margin-top: -2.89em;
+      margin-left: 23.5em;
+      text-align: center; }
+    .profile .pro #EmailU {
+      margin-left: 26.8em; }
+    .profile .pro a {
+      display: block;
+      margin: 2em auto 1em auto;
+      width: 9.8em;
+      font-size: 1.25em;
+      text-align: center;
+      text-decoration: none;
+      background-color: #EEEEEE;
+      color: #333333;
+      padding: 0.13em 0.55em 0.13em 0.38em;
+      border-top: 0.06em solid #CCCCCC;
+      border-right: 0.06em solid #333333;
+      border-bottom: 0.06em solid #333333;
+      border-left: 0.06em solid #CCCCCC; }
 
 .error {
   color: red;
   text-align: center;
-  margin-left: 7em; }
+  margin-right: -1em;
+  margin-left: 7em;
+  font-size: 1.3em; }
 
 .desp {
   margin: 12em auto; }
@@ -914,6 +925,10 @@ section {
     text-align: center;
     display: inline-block;
     margin: 3em 1em 0 0; }
+
+.form, .pure-form, .pure-form-aligned {
+  margin-right: -3em;
+  margin-left: -12em; }
 
 /*==============================================================*/
 @media only screen and (min-width: 35em) {
@@ -1235,8 +1250,12 @@ section {
         -webkit-flex: 1 1 content;
         -ms-flex: 1 1 content;
         flex: 1 1 content; }
+  .adminNav {
+    margin-top: 4em; }
   section {
     padding-top: 10em; }
+  #Forms {
+    padding-top: 13em; }
   .pagination {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1252,7 +1271,7 @@ section {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    height: 6.5em;
+    height: 10.5em;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1294,6 +1313,9 @@ section {
       font-size: 2.5em;
       text-align: center;
       margin: 1em -1em 0 0em; }
+      .headingA p a {
+        text-decoration: none;
+        color: black; }
     .headingA a {
       margin: auto;
       width: 80%; }

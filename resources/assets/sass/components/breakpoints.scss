@@ -515,8 +515,16 @@
         }
     }
     
+    .adminNav{
+        margin-top: 4em;
+    }
+    
     section{
         padding-top: 10em;
+    }
+    
+    #Forms{
+        padding-top: 13em;
     }
     
     .pagination{
@@ -536,7 +544,7 @@
         position: fixed;
         width: 100%;
         z-index: 1000;
-        height: 6.5em;
+        height: 10.5em;
         display: flex;
         top: 0;
         left: 0;
@@ -590,6 +598,11 @@
                 text-align: center;
 //                display: inline-block;
                 margin: 1em -1em 0 0em;
+            
+            a{
+                text-decoration: none;
+                color: black;
+            }
         }
 
         a{

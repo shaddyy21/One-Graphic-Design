@@ -17,7 +17,7 @@
             <header>
                 <div class="headingA">
                     <a href="{{url('/')}}"><img class="headImg" src="{{asset('img/logo(2).png')}}" alt="logo"></a>
-                    <p><a href="{{url('users/'.Auth::user()->id)}}">Admin</a></p>
+                    <p><a href="{{url('user/'.Auth::user()->id)}}">Admin</a></p>
                     <p class="admin"><a href="{{url('logout')}}">{!! FA::icon('sign-out')!!}&nbsp;&nbsp;Logout</p></a>
                 </div>
 
@@ -36,26 +36,28 @@
                <p class="new"><a href="{{url('paper/create')}}">Add new</p></a>
                 @foreach(\App\Models\Paper::all() as $paper)
                    <div class="paperAd">
-                        <img src="{{asset('img/'.$paper->path)}}" alt="">
-                        <p class="pInfo">
-                            {{$paper->description}}
-                        </p>
-                        <div class="status">
-                            <span>Status:</span>
-                        @if($logo->active == 1)
-                            <span class="active">Active</span>
-                        @else
-                            <span class="deactive">Deactive</span>
-                        @endif
-                        </div>
-                        <div class="buttonsStat">
-                            <a href="{{url('paper/'.$paper->id.'/active')}}">{!! FA::icon('check'),'&nbsp;&nbsp;Activate' !!}</a>
-                            <a class="deactiveBtn" href="{{url('papers/'.$paper->id.'/deactive')}}">{!!                                                                   FA::icon('times'),'&nbsp;&nbsp;Deactivate' !!}</a>                           
-                        </div>
+                       <div class="portAd">
+                            <img src="{{asset('img/'.$paper->path)}}" alt="">
+                            <p class="pInfo">
+                                {{$paper->description}}
+                            </p>
+                            <div class="status">
+                                <span>Status:</span>
+                            @if($logo->active == 1)
+                                <span class="active">Active</span>
+                            @else
+                                <span class="deactive">Deactive</span>
+                            @endif
+                            </div>
+                            <div class="buttonsStat">
+                                <a href="{{url('paper/'.$paper->id.'/active')}}">{!! FA::icon('check'),'&nbsp;&nbsp;Activate' !!}</a>
+                                <a class="deactiveBtn" href="{{url('papers/'.$paper->id.'/deactive')}}">{!!                                                                   FA::icon('times'),'&nbsp;&nbsp;Deactivate' !!}</a>                           
+                            </div>
 
-                        <div class="buttonsEdit">
-                            <a href="{{url('paper/'.$paper->id.'/edit')}}">{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</a>
-                        </div>
+                            <div class="buttonsEdit">
+                                <a href="{{url('paper/'.$paper->id.'/edit')}}">{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</a>
+                            </div>
+                       </div>
                     </div>
                 @endforeach
             </section>
@@ -65,26 +67,28 @@
                 <p class="new"><a href="{{url('logo/create')}}">Add new</p></a>
                 @foreach(\App\Models\Logo::all() as $logo)
                 <div class="paperAd">
-                    <img src="{{asset('img/'.$logo->path)}}" alt="">
-                    <p class="pInfo">
-                        {{$logo->description}}
-                    </p>
-                    <div class="status">
-                        <span>Status:</span>
-                        @if($logo->active == 1)
-                            <span class="active">Active</span>
-                        @else
-                            <span class="deactive">Deactive</span>
-                        @endif
-                    </div>
-                    <div class="buttonsStat">
-                        <a href="{{url('logos/'.$logo->id.'/active')}}">{!! FA::icon('check'),'&nbsp;&nbsp;Activate' !!}</a>
-                        <a class="deactiveBtn" href="{{url('logos/'.$logo->id.'/deactive')}}">{!! FA::icon('times'),'&nbsp;&nbsp;Deactivate' !!}</a>             
-                    </div>
+                   <div class="portAd">
+                        <img src="{{asset('img/'.$logo->path)}}" alt="">
+                        <p class="pInfo">
+                            {{$logo->description}}
+                        </p>
+                        <div class="status">
+                            <span>Status:</span>
+                            @if($logo->active == 1)
+                                <span class="active">Active</span>
+                            @else
+                                <span class="deactive">Deactive</span>
+                            @endif
+                        </div>
+                        <div class="buttonsStat">
+                            <a href="{{url('logos/'.$logo->id.'/active')}}">{!! FA::icon('check'),'&nbsp;&nbsp;Activate' !!}</a>
+                            <a class="deactiveBtn" href="{{url('logos/'.$logo->id.'/deactive')}}">{!! FA::icon('times'),'&nbsp;&nbsp;Deactivate' !!}</a>             
+                        </div>
 
-                    <div class="buttonsEdit">
-                        <a href="{{url('logo/'.$logo->id.'/edit')}}">{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</a>
-                    </div>
+                        <div class="buttonsEdit">
+                            <a href="{{url('logo/'.$logo->id.'/edit')}}">{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</a>
+                        </div>
+                   </div>
                 </div>
             @endforeach
             </section>
@@ -94,27 +98,29 @@
                 <p class="new"><a href="{{url('pack/create')}}">Add new</p></a>
                    @foreach(\App\Models\Pack::all() as $pack)
                 <div class="paperAd">
-                    <img src="{{asset('img/'.$pack->path)}}" alt="">
-                    <p class="pInfo">
+                   <div class="portAd">
+                        <img src="{{asset('img/'.$pack->path)}}" alt="">
+                        <p class="pInfo">
 
-                    {{$pack->description}}
+                        {{$pack->description}}
 
-                    </p>
-                    <div class="status">
-                        <span>Status:</span>
-                        @if($pack->active == 1)
-                            <span class="active">Active</span>
-                        @else
-                            <span class="deactive">Deactive</span>
-                        @endif
-                    </div>
-                    <div class="buttonsStat">
-                        <a href="{{url('packs/'.$pack->id.'/active')}}">{!! FA::icon('check'),'&nbsp;&nbsp;Activate' !!}</a>
-                        <a class="deactiveBtn" href="{{url('packs/'.$pack->id.'/deactive')}}">{!! FA::icon('times'),'&nbsp;&nbsp;Deactivate' !!}</a>             
-                    </div>
+                        </p>
+                        <div class="status">
+                            <span>Status:</span>
+                            @if($pack->active == 1)
+                                <span class="active">Active</span>
+                            @else
+                                <span class="deactive">Deactive</span>
+                            @endif
+                        </div>
+                        <div class="buttonsStat">
+                            <a href="{{url('packs/'.$pack->id.'/active')}}">{!! FA::icon('check'),'&nbsp;&nbsp;Activate' !!}</a>
+                            <a class="deactiveBtn" href="{{url('packs/'.$pack->id.'/deactive')}}">{!! FA::icon('times'),'&nbsp;&nbsp;Deactivate' !!}</a>             
+                        </div>
 
-                    <div class="buttonsEdit">
-                       <a href="{{url('pack/'.$pack->id.'/edit')}}">{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</a>
+                        <div class="buttonsEdit">
+                           <a href="{{url('pack/'.$pack->id.'/edit')}}">{!! FA::icon('pencil'),'&nbsp;&nbsp;Edit Text' !!}</a>
+                        </div>
                     </div>
                 </div>
                    @endforeach

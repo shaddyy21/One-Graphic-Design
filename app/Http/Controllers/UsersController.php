@@ -9,6 +9,10 @@ use App\Http\Controllers\Controller;
 
 class UsersController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth',['only' => ['create','edit','store','update']]);
+    }
+    
     /**
      * Display a listing of the resource.
      *
@@ -75,14 +79,12 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,$id)
+    public function update(\App\Http\Requests\UpdateUserRequest $request,$id)
     {
         $user = \App\Models\User::find($id);
-        $value = $request->input("value");
-        $field = $request->input("field");
-        $user->$field = $field;
+        $user->fill($request->all());
         $user->save();
-        return $value;
+        return redirect('user/'.$user->id);
     }
 
     /**

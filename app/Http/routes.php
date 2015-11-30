@@ -84,11 +84,27 @@ Route::get('createPaper',function(){
 /*=========================================================*/
 
 
-Route::post("sendmail",function(\App\Http\Requests\ContactFormRequest $request){
+Route::post("sendmail",function(){
     
     //Send email using Laravel send function
     
     $data = Request::all();
+    $rules = [
+            "name" => "required",
+            "emailC" => "required|email",
+            "subject" => "required",
+            "content" => "required"
+        ];
+    
+    $validator = Validator::make($data,$rules);
+    
+    if ($validator->fails())
+    {
+        // The given data did not pass validation
+        return redirect("/#Contact")->withErrors($validator)->withInput();
+    }
+    
+    
     
     Mail::send('viewMail', $data, function($message){
         //email 'From' field: Get users email add and name

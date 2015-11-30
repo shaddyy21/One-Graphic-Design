@@ -22,7 +22,7 @@
     #PaperAd,#LogoAd,#PackAd{
         h1{
             display: inline-block;
-            margin: 1.5em 0 0 9em;
+            margin: 1.5em auto 1em 6.5em;
             font-size: 5em;
             text-align: center;
             color: black;
@@ -34,7 +34,6 @@
         width: 4.2em;
         margin-left: 10em;
         display: inline-block;
-//        border: red thin solid;
         a{
             text-decoration: none;
             color: black;
@@ -46,29 +45,27 @@
         display: flex;
         border-bottom: $secondary-back-color solid thin;
         margin-top: 3em;
+        margin: auto;
         .portAd{
             display: flex;
             margin: auto;
             img{
                 width: 10em;
                 height: 10em;
-                margin: 1em 0 2em 0;
+                margin: 1em 2em 2em 2em;
                 border: 0.15em black solid;
             }
             .pInfo{
                 display: inline-block;
                 width: 35em;
                 font-size: 2em;
-                margin-left: 8em;
-                margin-right: -8em;
-    //            border: green thin solid;
+                margin: 1em -8em 0 5em;
             }
 
             .status{
-    //            border: blue thin solid;
                 height: 1.5em;
                 width: 9em;
-                margin: 0.65em 0 0 0em;
+                margin: 0.65em -2em 0 -15em;
                 font-size: 1.5em;
 
                 .active{
@@ -81,7 +78,6 @@
             }
 
             .buttonsStat{
-    //            border: orange solid thin;
                 margin: 3.9em 0 0 -14em;
                 height: 2em;
                 width: 16.3em;
@@ -116,15 +112,13 @@
             }
         
             .buttonsEdit{
-    //            border: cyan solid thin;
                 width: 16.5em;
                 height: 2em;
                 margin: 6em 0 0 -15.3em;
 
                 a{
                     display: block;
-                    margin-top: 0.5em;
-                    margin-left: -0.85em;
+                    margin: 0.5em 0 0 -0.85em;
                     width: 9.8em;
                     font-size: 1.25em;
                     text-align: center;
@@ -142,20 +136,16 @@
     }
 
     .loginForm{
-//        border: red thin solid;
         height: 26em;
         width: 22em;
         margin: 10em auto;
-//        margin-top: 5em;
     }
 
     .label{
         width: 5.5em;
         font-size: 2.5em;
-        margin-left: 3em;
-        margin-top: 1em;
+        margin: 1em 0 0 2.5em;
         display: inline-block;
-        border: green thin solid;
     }
 
     .input{
@@ -163,7 +153,6 @@
         height: 2em;
         margin-top: 0.5em;
         display: inline-block;
-//        border: blue thin solid;
     }
 
     .main-heading{
@@ -173,16 +162,13 @@
             font-family: Agency FB;
             font-weight: normal;
             font-size: 3em;
-            margin: auto;
-            margin-top: -0.8em;
+            margin: -0.8em auto;
         }
     }
 
     #Login{
-//        border: orange thin solid;
         height: 3em;
-        margin-left: 7.5em;
-        margin-top: 2em;
+        margin: 2em 0 0 7.5em;
     }
 
     .createForm{
@@ -190,20 +176,19 @@
     }
 
     .formAdmin{
-        margint: auto;
+        margin: auto;
     }
 
     .profile{
         margin: auto;
         font-size: 1.5em;
         .pro{
-            margin: 0 14em 0 14em;
+            margin: auto;
             h3{
                 display: block;
                 margin-left: 15em;
                 text-align: center;
                 width: 5em;
-    //            border: blue thin solid;
             }
 
             #EmailUs{
@@ -214,14 +199,11 @@
                 display: block;
                 width: 15em;
                 height: 1.64em;
-                margin-top: -2.89em;
-                margin-left: 23.5em;
+                margin: -2.89em 0 0 23.5em;
                 text-align: center;
-    //            border: red solid thin;
             }
 
             #EmailU{
-    //            border: blue solid thin;
                 margin-left: 26.8em;
             }
 
@@ -246,63 +228,53 @@
     .error{
         color: red;
         text-align: center;
-        margin-right: -1em;
-        margin-left: 7em;
+        margin: 0 -1em 0 7em;
         font-size: 1.3em;
     }
 
     .desp{
         margin: 12em auto;
-//        width: 
     }
 
-.headingF{
-    background-color: $secondary-back-color;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    height: 6.5em;
-    display: flex;
-    top: 0;
-    left: 0;
-    
+    .headingF{
+        background-color: $secondary-back-color;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        height: 6.5em;
+        display: flex;
+        top: 0;
+        left: 0;
 
-    p{
-        text-decoration: none;
-        margin: auto;
-    }
-    
-    a{
-        margin: auto;
-        width: 85%;
-        img{
-            width: 100%;
-        //        height: 5em;
+
+        p{
+            text-decoration: none;
             margin: auto;
         }
-    }
 
-    .admin{
         a{
-            color: black;
-            text-decoration: none;
-            text-align: center;
-            display: inline-block;
-            margin: 3em 1em 0 0;
+            margin: auto;
+            width: 85%;
+            img{
+                width: 100%;
+                margin: auto;
+            }
+        }
+
+        .admin{
+            a{
+                color: black;
+                text-decoration: none;
+                text-align: center;
+                display: inline-block;
+                margin: 3em 1em 0 0;
+            }
         }
     }
-}
 
-.form, .pure-form,.pure-form-aligned{
-    margin-right: -3em;
-    margin-left: -12em;
-}
-
-
-
-
-
-
+    .form, .pure-form,.pure-form-aligned{
+        margin: 0 -3em 0 -12em;
+    }
 /*==============================================================*/

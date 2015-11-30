@@ -52,7 +52,7 @@
                     <p id="Logo" class="linkUnderline-two">Logo</p>
                     <p id="Pack" class="linkUnderline-three">Packaging</p>
                 </div>
-            @if(Request::ajax() == false)
+                
                 <div class="display">
                    <div class="paper">
                         <p>Paper Art</p>
@@ -103,7 +103,6 @@
                       </div>
                    </div>
                 </div>
-            @endif
             </section>
             
             <section id="About">

@@ -87,7 +87,7 @@ class PacksController extends Controller
         if($request->hasFile("img")){
             $fileName = \Carbon\Carbon::now()->timestamp."_editpack.jpg";
             $request->file('path')->move('img', $fileName);
-            $pack->path = $fileName;  
+            $pack->path = $fileName;              
         }
         $pack->save();
         return redirect('admin#PackAd');

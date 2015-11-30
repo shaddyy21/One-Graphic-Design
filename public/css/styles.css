@@ -435,17 +435,15 @@ section {
   .form #Form input {
     width: 15em;
     height: 2em;
-    margin-top: -2em;
-    margin-left: 6em;
+    margin-top: -2em 0 0 6em;
     display: inline-block; }
   .form #Form #Email {
     margin-left: 2.75em; }
   .form #Form #Subject {
     margin-left: 2.5em; }
   .form #Form #Message {
-    margin-top: -1.2em;
-    width: 15em;
-    margin-left: 6em; }
+    margin-top: -1.2em 0 0 6em;
+    width: 15em; }
   .form #Form #Send {
     height: 3em;
     width: 50%;
@@ -482,8 +480,7 @@ section {
   display: block;
   width: 20px;
   height: 20px;
-  margin-top: -10px;
-  margin-right: -54px;
+  margin: -10px -54px 0 0;
   padding: 0;
   cursor: pointer;
   color: transparent;
@@ -547,7 +544,6 @@ section {
 
 /* Dots */
 .slick-slider {
-  /*    margin-bottom: 1.88em;*/
   height: 100%;
   width: 320px; }
 
@@ -719,7 +715,7 @@ section {
 
 #PaperAd h1, #LogoAd h1, #PackAd h1 {
   display: inline-block;
-  margin: 1.5em 0 0 9em;
+  margin: 1.5em auto 1em 6.5em;
   font-size: 5em;
   text-align: center;
   color: black; }
@@ -738,7 +734,8 @@ section {
   display: -ms-flexbox;
   display: flex;
   border-bottom: #6E6E6E solid thin;
-  margin-top: 3em; }
+  margin-top: 3em;
+  margin: auto; }
   .paperAd .portAd {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -747,18 +744,17 @@ section {
     .paperAd .portAd img {
       width: 10em;
       height: 10em;
-      margin: 1em 0 2em 0;
+      margin: 1em 2em 2em 2em;
       border: 0.15em black solid; }
     .paperAd .portAd .pInfo {
       display: inline-block;
       width: 35em;
       font-size: 2em;
-      margin-left: 8em;
-      margin-right: -8em; }
+      margin: 1em -8em 0 5em; }
     .paperAd .portAd .status {
       height: 1.5em;
       width: 9em;
-      margin: 0.65em 0 0 0em;
+      margin: 0.65em -2em 0 -15em;
       font-size: 1.5em; }
       .paperAd .portAd .status .active {
         color: darkgreen; }
@@ -798,8 +794,7 @@ section {
       margin: 6em 0 0 -15.3em; }
       .paperAd .portAd .buttonsEdit a {
         display: block;
-        margin-top: 0.5em;
-        margin-left: -0.85em;
+        margin: 0.5em 0 0 -0.85em;
         width: 9.8em;
         font-size: 1.25em;
         text-align: center;
@@ -820,10 +815,8 @@ section {
 .label {
   width: 5.5em;
   font-size: 2.5em;
-  margin-left: 3em;
-  margin-top: 1em;
-  display: inline-block;
-  border: green thin solid; }
+  margin: 1em 0 0 2.5em;
+  display: inline-block; }
 
 .input {
   width: 22em;
@@ -837,25 +830,23 @@ section {
   font-family: Agency FB;
   font-weight: normal;
   font-size: 3em;
-  margin: auto;
-  margin-top: -0.8em; }
+  margin: -0.8em auto; }
 
 #Login {
   height: 3em;
-  margin-left: 7.5em;
-  margin-top: 2em; }
+  margin: 2em 0 0 7.5em; }
 
 .createForm {
   margin-top: 6em; }
 
 .formAdmin {
-  margint: auto; }
+  margin: auto; }
 
 .profile {
   margin: auto;
   font-size: 1.5em; }
   .profile .pro {
-    margin: 0 14em 0 14em; }
+    margin: auto; }
     .profile .pro h3 {
       display: block;
       margin-left: 15em;
@@ -867,8 +858,7 @@ section {
       display: block;
       width: 15em;
       height: 1.64em;
-      margin-top: -2.89em;
-      margin-left: 23.5em;
+      margin: -2.89em 0 0 23.5em;
       text-align: center; }
     .profile .pro #EmailU {
       margin-left: 26.8em; }
@@ -890,8 +880,7 @@ section {
 .error {
   color: red;
   text-align: center;
-  margin-right: -1em;
-  margin-left: 7em;
+  margin: 0 -1em 0 7em;
   font-size: 1.3em; }
 
 .desp {
@@ -927,8 +916,7 @@ section {
     margin: 3em 1em 0 0; }
 
 .form, .pure-form, .pure-form-aligned {
-  margin-right: -3em;
-  margin-left: -12em; }
+  margin: 0 -3em 0 -12em; }
 
 /*==============================================================*/
 @media only screen and (min-width: 35em) {
@@ -988,8 +976,7 @@ section {
     margin-left: 2px; }
   .slick-prev,
   .slick-next {
-    margin-right: -60px;
-    margin-left: -50px; }
+    margin: 0 -60px 0 -50px; }
   .slick-prev:before,
   .slick-next:before {
     font-size: 40px;
@@ -1041,27 +1028,22 @@ section {
     margin: auto; }
     .form #Form label {
       width: 8em;
-      margin-left: -0.5em;
-      margin-top: 2em;
+      margin-top: 2em 0 0 -0.5em;
       text-align: center; }
     .form #Form input {
       width: 60%;
-      margin-top: 2.5em;
-      margin-left: -2em; }
+      margin-top: 2.5em 0 0 -2em; }
     .form #Form #Email {
       margin-left: 2.75em; }
     .form #Form #Subject {
       margin-left: 2.5em; }
     .form #Form #Message {
       width: 60%;
-      margin-top: 2.5em;
-      margin-left: -2em; }
+      margin-top: 2.5em 0 0 -2em; }
     .form #Form #Send {
       height: 2em;
       width: 50%;
-      margin-top: 1em;
-      margin-bottom: 1em;
-      margin-left: 5em;
+      margin-top: 1em 0 1em 5em;
       font-size: 1.8em;
       text-align: center;
       border-radius: 1em; }
@@ -1134,8 +1116,7 @@ section {
     margin-left: 2px; }
   .slick-prev,
   .slick-next {
-    margin-right: -60px;
-    margin-left: -50px; }
+    margin: 0 -60px 0 -50px; }
   .slick-prev:before,
   .slick-next:before {
     font-size: 40px;
@@ -1335,8 +1316,7 @@ section {
     font-weight: normal;
     font-size: 5em;
     margin: auto;
-    margin-top: -1.5em;
-    margin-bottom: 1em; }
+    margin-top: -1.5em 0 1em 0; }
   label {
     font-size: 1.2em; }
   .form #Form label {

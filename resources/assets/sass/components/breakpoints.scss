@@ -3,7 +3,6 @@
     .container{
         width: 100%;
         overflow: hidden;
-//        border: orange thin solid;
     }
     
     .heading{
@@ -34,7 +33,6 @@
         
         #Bars {
             font-size: 3em;
-//            margin-top: 1.1em;
         }
     }
     
@@ -62,7 +60,6 @@
         margin: auto;
         width: 28em;
         height: 28em;
-//        border: thin darkblue solid;
     }
     
     .image-slider a img{   
@@ -70,17 +67,14 @@
         width: 100%;
         height: 100%;
         margin: auto;
-//        border: red solid thin;
     }
     
    .slick-slide{
         display: none;
         float: left;
         margin-left: 0;
-    //    width: 100%;
         height: 100%;
         min-height: 1px;
-//        border: black thin solid;
     }
     
     .slick-slider .slick-track,
@@ -89,13 +83,11 @@
         height: 100%;
         width: 100%;
         margin-left: 2px;
-//        border: orange solid thin;
     }
     
     .slick-prev,
     .slick-next {
-        margin-right: -60px;
-        margin-left: -50px;
+        margin: 0 -60px 0 -50px;
     }
     
     .slick-prev:before,
@@ -133,13 +125,11 @@
     }
     
     .imgContainer{
-//        border: white solid thin;
         width: 34.5em;
         margin: auto;
     }
     
     .paper,.logo,.packaging{
-//        border: cyan solid thin;
         width: 25em;
         p{
             color: black;
@@ -168,58 +158,46 @@
     }
     
         .form{
-//       border: thin red solid;
-        #Form{
-//            border: thin green solid;
-            width: 32em;
-            font-size: 1.35em;
-            margin: auto;
+            #Form{
 
-            label{
-//                border: thin blue solid;
-                width: 8em;
-                margin-left: -0.5em;
-                margin-top: 2em;
-                text-align: center;
-//                display: inline-block;
-            }
+                width: 32em;
+                font-size: 1.35em;
+                margin: auto;
 
-            input{
-    //            border: thin orange solid;
-                width: 60%;
-                margin-top: 2.5em;
-                margin-left: -2em;
-//                display: inline-block;
-            }
-            
-            #Email{
-                margin-left: 2.75em;
-            }
-            
-            #Subject{
-                margin-left: 2.5em;
-            }
-            
-            #Message{
-//                width: 21.5em;
-                width: 60%;
-                margin-top: 2.5em;
-                margin-left: -2em;
-            }
-            
-            #Send{
-                height: 2em;
-                width: 50%;
-                margin-top: 1em;
-                margin-bottom: 1em;
-                margin-left: 5em;
-                font-size: 1.8em;
-                text-align: center;
-//                border: aqua solid thin;
-                border-radius: 1em;
+                label{
+                    width: 8em;
+                    margin-top: 2em 0 0 -0.5em;
+                    text-align: center;
+                }
+
+                input{
+                    width: 60%;
+                    margin-top: 2.5em 0 0 -2em;
+                }
+
+                #Email{
+                    margin-left: 2.75em;
+                }
+
+                #Subject{
+                    margin-left: 2.5em;
+                }
+
+                #Message{
+                    width: 60%;
+                    margin-top: 2.5em 0 0 -2em;
+                }
+
+                #Send{
+                    height: 2em;
+                    width: 50%;
+                    margin-top: 1em 0 1em 5em;
+                    font-size: 1.8em;
+                    text-align: center;
+                    border-radius: 1em;
+                }
             }
         }
-    }
     
     footer{
         p{
@@ -232,7 +210,6 @@
 /*==========================================================================================*/
     @media only screen and (min-width: 55em) {
         .container{
-//            border: cyan thin solid;
         }
         
        .heading{
@@ -288,7 +265,6 @@
         #Home,#Portfolio,#About,#Contact,#Other {
             h1{
                 font-size: 4em;
-//                margin:2em 0 1em 1.5em;
                 margin: auto;
                 margin-top: 2em;
                 text-align: center;
@@ -299,17 +275,13 @@
             margin: auto;
             width: 30em;
             height: 30em;
-//            border: thin darkblue solid;
         }
 
         .image-slider{   
             display: block;
             width: 100%;
             height: 100%;
-        //	position: relative;
-        //    margin-top: 10em;
             margin: auto;
-//            border: blue solid thin;
         }
 
        .slick-slide{
@@ -319,7 +291,6 @@
             width: 100%;
             height: 100%;
             min-height: 1px;
-//            border: black thin solid;
         }
 
         .slick-slider .slick-track,
@@ -328,13 +299,11 @@
             height: 100%;
             width: 100%;
             margin-left: 2px;
-    //        border: orange solid thin;
         }
 
         .slick-prev,
         .slick-next {
-            margin-right: -60px;
-            margin-left: -50px;
+            margin: 0 -60px 0 -50px;
         }
 
         .slick-prev:before,
@@ -353,15 +322,14 @@
                 text-align: left;
                 font-family: Agency FB;
                 font-weight: normal;
-//                border: red solid thin;
             }
+            
             img{
                 width: 25em;
                 height: 25em;
                 margin: 1.5em 0 1.5em 13em;
             }
             .cls{
-//                border: blue thin solid;
                 width: 4.5em;
                 margin: 0.5em 0 0 23em;
             }
@@ -379,13 +347,11 @@
         }
         
         .imgContainer{
-//            border: limegreen thin solid;
             width: 50em;
             margin: auto;
         }
 
         .paper,.logo,.packaging{
-//            border: white thick dotted;
             p{
                 color: black;
                 text-align: center;
@@ -412,14 +378,11 @@
         }
 
         .form{
-//           border: thin red solid;
             #Form{
-//               border: thin green solid;
                 width: 38em;
                 margin: auto;
 
                 label{
-//                    border: thin blue solid;
                     width: 8em;
                     margin: 1.3em 0 0 1em;
                     display: inline-block;
@@ -467,7 +430,6 @@
        margin: 0 0 1em 0;
         width: 100%;
         height: 10.5em;
-//        border: thin red solid;
         a{
             margin: auto;
             width: 85%;
@@ -500,18 +462,14 @@
         top: 0;
         left: 0;
         background-color: $secondary-back-color;
-//        margin-top: 5.25em;
         width: 100%;
         ul{
             display: flex;
-//            margin: 1em 0 0 2.5em;
-                li{
-                    width: auto;
-//                    margin-left: 0;
-                    text-align: center;
-                    flex: 1 1 content;
-//                    border: red thin solid;
-                }
+            li{
+                width: auto;
+                text-align: center;
+                flex: 1 1 content;
+            }
         }
     }
     
@@ -559,7 +517,6 @@
             width: 85%;
             img{
                 width: 100%;
-            //        height: 5em;
                 margin: auto;
             }
         }
@@ -591,13 +548,11 @@
         
         p{
             text-decoration: none;
-//            margin: auto;
-             color: black;
-                text-decoration: none;
-                font-size: 2.5em;
-                text-align: center;
-//                display: inline-block;
-                margin: 1em -1em 0 0em;
+            color: black;
+            text-decoration: none;
+            font-size: 2.5em;
+            text-align: center;
+            margin: 1em -1em 0 0em;
             
             a{
                 text-decoration: none;
@@ -618,7 +573,6 @@
             a{
                 color: black;
                 text-decoration: none;
-//                font-size: 3em;
                 text-align: center;
                 display: inline-block;
                 margin: 0 2em 0 1em;
@@ -633,8 +587,7 @@
         font-weight: normal;
         font-size: 5em;
         margin: auto;
-        margin-top: -1.5em;
-        margin-bottom: 1em;
+        margin-top: -1.5em 0 1em 0;
     }
     
     label{

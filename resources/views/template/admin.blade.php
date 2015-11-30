@@ -37,7 +37,7 @@
                 @foreach(\App\Models\Paper::all() as $paper)
                    <div class="paperAd">
                        <div class="portAd">
-                            <img src="{{asset('img/'.$paper->path)}}" alt="">
+                            <a href="{{asset('img/'.$paper->path)}}"><img src="{{asset('img/'.$paper->path)}}" alt=""></a>
                             <p class="pInfo">
                                 {{$paper->description}}
                             </p>
@@ -68,7 +68,7 @@
                 @foreach(\App\Models\Logo::all() as $logo)
                 <div class="paperAd">
                    <div class="portAd">
-                        <img src="{{asset('img/'.$logo->path)}}" alt="">
+                        <a href="{{asset('img/'.$logo->path)}}"><img src="{{asset('img/'.$logo->path)}}" alt=""></a>
                         <p class="pInfo">
                             {{$logo->description}}
                         </p>
@@ -99,7 +99,7 @@
                    @foreach(\App\Models\Pack::all() as $pack)
                 <div class="paperAd">
                    <div class="portAd">
-                        <img src="{{asset('img/'.$pack->path)}}" alt="">
+                        <a href="{{asset('img/'.$pack->path)}}"><img src="{{asset('img/'.$pack->path)}}" alt=""></a>
                         <p class="pInfo">
 
                         {{$pack->description}}

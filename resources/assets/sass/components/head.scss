@@ -3,9 +3,7 @@
     margin: 0;
     padding: 0;
     position: fixed;
-//    border: 1px red solid;
     width: 100%;
-    
     z-index: 1000;
     height: 6.5em;
     display: flex;
@@ -21,12 +19,10 @@
     p{
         text-decoration: none;
         margin: auto;
-//        margin-top: 1em;
     }
     
     img{
         width: 80%;
-    //        height: 5em;
         margin: auto;            
     }
 
@@ -44,10 +40,9 @@
     width: 100%;
     display: none;
     margin-top: 3.26em;
-//    background-color: $secondary-back-color;
     
     a{
-            text-decoration: none;
+        text-decoration: none;
     }
     
     a:hover{
@@ -55,12 +50,10 @@
     }
     
     ul{
-//        width: 100%;
         margin: 0;
         padding: 0;
         
         li{
-//            width: 100%;
             margin: auto;
             text-align: center;
         }

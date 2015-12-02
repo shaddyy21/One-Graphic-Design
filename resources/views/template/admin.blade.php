@@ -43,7 +43,7 @@
                             </p>
                             <div class="status">
                                 <span>Status:</span>
-                            @if($logo->active == 1)
+                            @if($paper->active == 1)
                                 <span class="active">Active</span>
                             @else
                                 <span class="deactive">Deactive</span>

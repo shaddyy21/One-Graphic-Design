@@ -39,15 +39,21 @@
             <div class="img-slider">
 				<div class="image-slider">
                     @foreach(App\Models\Paper::all()->sortBy('desc') as $paper)
-                        <a href="{{url('paper/'.$paper->id)}}"><img src="{{asset('img/'.$paper->path)}}" alt="Packaging"></a>
+                       @if($paper->active == 1) 
+                            <a href="{{url('paper/'.$paper->id)}}"><img class="pic1" src="{{asset('img/'.$paper->path)}}" alt=""></a>
+                        @endif
                     @endforeach
                     
                     @foreach(App\Models\Logo::all()->sortBy('desc') as $logo)
-                        <a href="{{url('logo/'.$logo->id)}}"><img src="{{asset('img/'.$logo->path)}}" alt="Packaging"></a>
+                        @if($logo->active == 1)
+                            <a href="{{url('logo/'.$logo->id)}}"><img class="pic2" src="{{asset('img/'.$logo->path)}}" alt=""></a>
+                        @endif
                     @endforeach
                     
                     @foreach(App\Models\Pack::all()->sortBy('desc') as $pack)
-                        <a href="{{url('pack/'.$pack->id)}}"><img src="{{asset('img/'.$pack->path)}}" alt="Packaging"></a>
+                        @if($pack->active == 1)
+                            <a href="{{url('pack/'.$pack->id)}}"><img class="pic3" src="{{asset('img/'.$pack->path)}}" alt=""></a>
+                        @endif
                     @endforeach
 				</div>
 			</div>

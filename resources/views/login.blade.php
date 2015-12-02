@@ -21,7 +21,7 @@
                         <div class="pure-control-group">
                             {!! Form::label('password', 'Password') !!}
                             {!! Form::password('password') !!}
-                            {!! $errors->first('password','<p class="error">:message</p>')!!}
+                            {!! $errors->first('passwordl','<p class="error">:message</p>')!!}
                         </div>
 
                         {!! Form::button('<i class="fa fa-sign-in"></i> Log-in',array('id' => 'Send','type'=>'submit')) !!}

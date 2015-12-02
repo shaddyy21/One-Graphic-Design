@@ -31,6 +31,7 @@ Route::get('createPaper',function(){
 /*               Pack Activate and Deactivate              */
 /*=========================================================*/
     Route::get('packs/{id}/active', function ($id) {
+        $this->middleware('auth',['only' => ['create','edit','store','update']]);
         $pack = \App\Models\Pack::find($id);
         $pack->active = "1";
         $pack->save();
@@ -68,6 +69,7 @@ Route::get('createPaper',function(){
 /*=========================================================*/
 /*               Paper Activate and Deactivate              */
 /*=========================================================*/
+
     Route::get('papers/{id}/active', function ($id) {
         $paper = \App\Models\Paper::find($id);
         $paper->active = "1";

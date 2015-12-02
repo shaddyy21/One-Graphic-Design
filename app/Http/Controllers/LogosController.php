@@ -47,7 +47,7 @@ class LogosController extends Controller
       $request->file('path')->move('img', $fileName);
       $logo->path = $fileName;
       $logo->save();
-      return redirect('admin#logoAd');
+      return redirect('admin#LogoAd');
     }
 
     /**

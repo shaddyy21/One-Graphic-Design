@@ -82,8 +82,6 @@ Route::get('createPaper',function(){
         return redirect('admin#PaperAd');
     });
 /*=========================================================*/
-
-
 Route::post("sendmail",function(){
     
     //Send email using Laravel send function
@@ -103,7 +101,7 @@ Route::post("sendmail",function(){
         // The given data did not pass validation
         return redirect("/#Contact")->withErrors($validator)->withInput();
     }
-    
+//    
     
     
     Mail::send('viewMail', $data, function($message){

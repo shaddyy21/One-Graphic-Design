@@ -159,43 +159,48 @@
     }
     
         .form{
-            #Form{
+            margin: auto;
+            width: 80%;
+            .contact{
+                
+                #Form{
 
-                width: 32em;
-                font-size: 1.35em;
-                margin: auto;
+                    width: 25em;
+                    font-size: 1.35em;
+                    margin: auto;
 
-                label{
-                    width: 8em;
-                    margin-top: 2em 0 0 -0.5em;
-                    text-align: center;
-                }
+                    label{
+                        width: 8em;
+                        margin-top: 2em 0 0 -0.5em;
+                        text-align: center;
+                    }
 
-                input{
-                    width: 60%;
-                    margin-top: 2.5em 0 0 -2em;
-                }
+                    input{
+                        width: 60%;
+                        margin: 1em 0 0 -3em;
+                    }
 
-                #Email{
-                    margin-left: 2.75em;
-                }
+                    #Email{
+                        margin-left: 2.75em;
+                    }
 
-                #Subject{
-                    margin-left: 2.5em;
-                }
+                    #Subject{
+                        margin-left: 2.5em;
+                    }
 
-                #Message{
-                    width: 60%;
-                    margin-top: 2.5em 0 0 -2em;
-                }
+                    #Message{
+                        width: 60%;
+                        margin-top: 2.5em 0 0 -2em;
+                    }
 
-                #Send{
-                    height: 2em;
-                    width: 50%;
-                    margin-top: 1em 0 1em 5em;
-                    font-size: 1.8em;
-                    text-align: center;
-                    border-radius: 1em;
+                    #Send{
+                        height: 2em;
+                        width: 50%;
+                        margin-top: 1em 0 1em 5em;
+                        font-size: 1.8em;
+                        text-align: center;
+                        border-radius: 1em;
+                    }
                 }
             }
         }
@@ -377,41 +382,47 @@
         }
 
         .form{
-            #Form{
-                width: 38em;
+            margin: auto;
+            width: 90%;
+            .contact{
                 margin: auto;
+                width: 100%;
+                #Form{
+                    width: 38em;
+                    margin: auto;
 
-                label{
-                    width: 8em;
-                    margin: 1.3em 0 0 1em;
-                    display: inline-block;
-                }
+                    label{
+                        width: 8em;
+                        margin: 1.3em 0 0 1em;
+                        display: inline-block;
+                    }
 
-                input{
-                    width: 25em;
-                    margin: 1.8em 0 0 1.5em;
-                    display: inline-block;
-                }
+                    input{
+                        width: 25em;
+                        margin: 1.8em 0 0 1.5em;
+                        display: inline-block;
+                    }
 
-                #Email{
-                    margin-left: 2.75em;
-                }
+                    #Email{
+                        margin-left: 2.75em;
+                    }
 
-                #Subject{
-                    margin-left: 2.5em;
-                }
+                    #Subject{
+                        margin-left: 2.5em;
+                    }
 
-                #Message{
-                    width: 25em;
-                    margin: 1.5em 0 0 0em;
-                }
+                    #Message{
+                        width: 25em;
+                        margin: 1.5em 0 0 1.5em;
+                    }
 
-                #Send{
-                    height: 3em;
-                    width: 50%;
-                    margin-left: 6.5em;
-                    font-size: 2em;
-                    text-align: center;
+                    #Send{
+                        height: 3em;
+                        width: 50%;
+                        margin-left: 6.5em;
+                        font-size: 2em;
+                        text-align: center;
+                    }
                 }
             }
         }
@@ -594,26 +605,30 @@
     }
     
     .form{
-        #Form{
-            label{
-                font-size: 1.3em;
-                margin-top: 0.5em;
-            }
+        width: 90%;
+        .contact{
             
-            input{
-                width: 25em;
-                margin: 1em 0 0 0em;
-                display: inline-block;
-            }
-            
-            #Message{
-                margin: 1.2em 0 0 0em;
-            }
-            
-            .description{
-                width: 26em;
-                min-height: 5em;
-                margin: -1.2em 0 0 12em;
+            #Form{
+                label{
+                    font-size: 1.3em;
+                    margin-top: 0.5em;
+                }
+
+                input{
+                    width: 25em;
+                    margin: 1em 0 0 0em;
+                    display: inline-block;
+                }
+
+                #Message{
+                    margin: 1.2em 0 0 0em;
+                }
+
+                .description{
+                    width: 26em;
+                    min-height: 5em;
+                    margin: -1.2em 0 0 12em;
+                }
             }
         }
     }

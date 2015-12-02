@@ -15,7 +15,6 @@
                         Email address: {{$emailC}} <br>
                         Subject:{{$subject}}<br>
                         Message: {{$content}}<br>
-                        Date:{{$}} <br>
                       
                     </p>
             </div>

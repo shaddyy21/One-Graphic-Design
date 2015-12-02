@@ -141,37 +141,39 @@
             <section id="Contact">
                 <h1>Contact Us</h1>
                 <div class="form pure-form pure-form-aligned">
-                    <fieldset>
-                        {!! Form::open(array('url' => 'sendmail', 'id'=>'Form')) !!}
-                            <div class="pure-control-group">
-                                {!! Form::label('name', 'Full Name') !!}
-                                {!! Form::text('name') !!}
-                                {!! $errors->first('name','<p class="error">:message</p>')!!}
+                   <div class="contact">
+                        <fieldset>
+                            {!! Form::open(array('url' => 'sendmail', 'id'=>'Form')) !!}
+                                <div class="pure-control-group">
+                                    {!! Form::label('name', 'Full Name') !!}
+                                    {!! Form::text('name') !!}
+                                    {!! $errors->first('name','<p class="error">:message</p>')!!}
 
-                            </div>
-                            
-                            <div class="pure-control-group">
-                                {!! Form::label('emailC', 'E-mail') !!}
-                                {!! Form::text('emailC') !!}
-                                {!! $errors->first('emailC','<p class="error">:message</p>')!!}
-                            </div>
-                            
-                            <div class="pure-control-group">
-                                {!! Form::label('subject', 'Subject') !!}
-                                {!! Form::text('subject') !!}
-                                {!! $errors->first('subject','<p class="error">:message</p>')!!}
-                            </div>
-                        
-                            <div class="pure-control-group">
-                                {!! Form::label('content', 'Message') !!}
-                                {!! Form::textarea('content',null,array('id' => 'Message')) !!}
-                                {!! $errors->first('content','<p class="error">:message</p>')!!}
-                            </div>
-                        
-                            
-                            {!! Form::button('<i class="fa fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;Send',array('id' => 'Send','type'=>'submit')) !!}
-                        {!! Form::close() !!}
-                    </fieldset>
+                                </div>
+
+                                <div class="pure-control-group">
+                                    {!! Form::label('emailC', 'E-mail') !!}
+                                    {!! Form::text('emailC') !!}
+                                    {!! $errors->first('emailC','<p class="error">:message</p>')!!}
+                                </div>
+
+                                <div class="pure-control-group">
+                                    {!! Form::label('subject', 'Subject') !!}
+                                    {!! Form::text('subject') !!}
+                                    {!! $errors->first('subject','<p class="error">:message</p>')!!}
+                                </div>
+
+                                <div class="pure-control-group">
+                                    {!! Form::label('content', 'Message') !!}
+                                    {!! Form::textarea('content',null,array('id' => 'Message')) !!}
+                                    {!! $errors->first('content','<p class="error">:message</p>')!!}
+                                </div>
+
+
+                                {!! Form::button('<i class="fa fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;Send',array('id' => 'Send','type'=>'submit')) !!}
+                            {!! Form::close() !!}
+                        </fieldset>
+                    </div>
                 </div>
             </section>
             

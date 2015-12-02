@@ -424,30 +424,36 @@ section {
   width: 19.5em;
   margin: auto; }
 
-.form #Form {
-  width: 20.5em;
-  margin: auto; }
-  .form #Form label {
-    width: 4.8em;
-    display: inline-block; }
-  .form #Form input {
-    width: 15em;
-    height: 2em;
-    margin-top: -2em 0 0 6em;
-    display: inline-block; }
-  .form #Form #Email {
-    margin-left: 2.75em; }
-  .form #Form #Subject {
-    margin-left: 2.5em; }
-  .form #Form #Message {
-    margin-top: -1.2em 0 0 6em;
-    width: 15em; }
-  .form #Form #Send {
-    height: 3em;
-    width: 50%;
-    margin: 1em 0 1em 4.5em;
-    background-color: #9E9E9E;
-    border: none; }
+.form {
+  margin: auto;
+  width: 70%; }
+  .form .contact {
+    margin: auto;
+    width: 100%; }
+    .form .contact #Form {
+      width: 21em;
+      margin: auto; }
+      .form .contact #Form label {
+        width: 4.8em;
+        display: inline-block; }
+      .form .contact #Form input {
+        width: 15em;
+        height: 2em;
+        margin-top: -2em 0 0 6em;
+        display: inline-block; }
+      .form .contact #Form #Email {
+        margin-left: 2.75em; }
+      .form .contact #Form #Subject {
+        margin-left: 2.5em; }
+      .form .contact #Form #Message {
+        margin: -1.2em 0 0 6em;
+        width: 15em; }
+      .form .contact #Form #Send {
+        height: 3em;
+        width: 50%;
+        margin: 1em 0 1em 4.5em;
+        background-color: #9E9E9E;
+        border: none; }
 
 .pagination {
   display: -webkit-flex;
@@ -823,7 +829,7 @@ section {
       margin: 6em 0 0 -15.3em; }
       .paperAd .portAd .buttonsEdit a {
         display: block;
-        margin: 0.5em 0 0 -0.85em;
+        margin: 0.5em 0 0 -0.55em;
         width: 9.8em;
         font-size: 1.25em;
         text-align: center;
@@ -868,8 +874,9 @@ section {
 .createForm {
   margin-top: 6em; }
 
-.formAdmin {
-  margin: auto; }
+.form .formAdmin {
+  margin: auto;
+  width: 100%; }
 
 .profile {
   width: 52em;
@@ -940,9 +947,6 @@ section {
     text-align: center;
     display: inline-block;
     margin: 3em 1em 0 0; }
-
-.form, .pure-form, .pure-form-aligned {
-  margin: 0 -3em 0 -12em; }
 
 /*==============================================================*/
 @media only screen and (min-width: 35em) {
@@ -1050,31 +1054,34 @@ section {
     width: 20em;
     margin: auto;
     text-align: justify; }
-  .form #Form {
-    width: 32em;
-    font-size: 1.35em;
-    margin: auto; }
-    .form #Form label {
-      width: 8em;
-      margin-top: 2em 0 0 -0.5em;
-      text-align: center; }
-    .form #Form input {
-      width: 60%;
-      margin-top: 2.5em 0 0 -2em; }
-    .form #Form #Email {
-      margin-left: 2.75em; }
-    .form #Form #Subject {
-      margin-left: 2.5em; }
-    .form #Form #Message {
-      width: 60%;
-      margin-top: 2.5em 0 0 -2em; }
-    .form #Form #Send {
-      height: 2em;
-      width: 50%;
-      margin-top: 1em 0 1em 5em;
-      font-size: 1.8em;
-      text-align: center;
-      border-radius: 1em; }
+  .form {
+    margin: auto;
+    width: 80%; }
+    .form .contact #Form {
+      width: 25em;
+      font-size: 1.35em;
+      margin: auto; }
+      .form .contact #Form label {
+        width: 8em;
+        margin-top: 2em 0 0 -0.5em;
+        text-align: center; }
+      .form .contact #Form input {
+        width: 60%;
+        margin: 1em 0 0 -3em; }
+      .form .contact #Form #Email {
+        margin-left: 2.75em; }
+      .form .contact #Form #Subject {
+        margin-left: 2.5em; }
+      .form .contact #Form #Message {
+        width: 60%;
+        margin-top: 2.5em 0 0 -2em; }
+      .form .contact #Form #Send {
+        height: 2em;
+        width: 50%;
+        margin-top: 1em 0 1em 5em;
+        font-size: 1.8em;
+        text-align: center;
+        border-radius: 1em; }
   footer p {
     font-size: 1.5em; } }
 
@@ -1194,30 +1201,36 @@ section {
     font-size: 1.8em;
     width: 25em;
     margin: auto; }
-  .form #Form {
-    width: 38em;
-    margin: auto; }
-    .form #Form label {
-      width: 8em;
-      margin: 1.3em 0 0 1em;
-      display: inline-block; }
-    .form #Form input {
-      width: 25em;
-      margin: 1.8em 0 0 1.5em;
-      display: inline-block; }
-    .form #Form #Email {
-      margin-left: 2.75em; }
-    .form #Form #Subject {
-      margin-left: 2.5em; }
-    .form #Form #Message {
-      width: 25em;
-      margin: 1.5em 0 0 0em; }
-    .form #Form #Send {
-      height: 3em;
-      width: 50%;
-      margin-left: 6.5em;
-      font-size: 2em;
-      text-align: center; }
+  .form {
+    margin: auto;
+    width: 90%; }
+    .form .contact {
+      margin: auto;
+      width: 100%; }
+      .form .contact #Form {
+        width: 38em;
+        margin: auto; }
+        .form .contact #Form label {
+          width: 8em;
+          margin: 1.3em 0 0 1em;
+          display: inline-block; }
+        .form .contact #Form input {
+          width: 25em;
+          margin: 1.8em 0 0 1.5em;
+          display: inline-block; }
+        .form .contact #Form #Email {
+          margin-left: 2.75em; }
+        .form .contact #Form #Subject {
+          margin-left: 2.5em; }
+        .form .contact #Form #Message {
+          width: 25em;
+          margin: 1.5em 0 0 1.5em; }
+        .form .contact #Form #Send {
+          height: 3em;
+          width: 50%;
+          margin-left: 6.5em;
+          font-size: 2em;
+          text-align: center; }
   footer p {
     font-size: 2em; } }
 
@@ -1348,18 +1361,20 @@ section {
     margin-top: -1.5em 0 1em 0; }
   label {
     font-size: 1.2em; }
-  .form #Form label {
-    font-size: 1.3em;
-    margin-top: 0.5em; }
-  .form #Form input {
-    width: 25em;
-    margin: 1em 0 0 0em;
-    display: inline-block; }
-  .form #Form #Message {
-    margin: 1.2em 0 0 0em; }
-  .form #Form .description {
-    width: 26em;
-    min-height: 5em;
-    margin: -1.2em 0 0 12em; } }
+  .form {
+    width: 90%; }
+    .form .contact #Form label {
+      font-size: 1.3em;
+      margin-top: 0.5em; }
+    .form .contact #Form input {
+      width: 25em;
+      margin: 1em 0 0 0em;
+      display: inline-block; }
+    .form .contact #Form #Message {
+      margin: 1.2em 0 0 0em; }
+    .form .contact #Form .description {
+      width: 26em;
+      min-height: 5em;
+      margin: -1.2em 0 0 12em; } }
 
 /*# sourceMappingURL=styles.css.map */

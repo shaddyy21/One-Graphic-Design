@@ -188,8 +188,5 @@
    
     <script src="{{asset('js/jQuery.js')}}"></script>
     <script src="{{asset('slick/slick.js')}}"></script>
-    <script src="{{asset('slick/slick.min.js')}}"></script>
-    <script src="{{asset('js/Spin.js')}}"></script>
-    <script src="{{asset('js/jquery.history.js')}}"></script>
 </body>
 </html>

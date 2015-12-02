@@ -85,15 +85,10 @@ class PapersController extends Controller
     {
         $paper = \App\Models\Paper::find($id);
         $paper->fill($request->all());
-        if($request->hasFile("img")){
-            $fileName = \Carbon\Carbon::now()->timestamp."_editpaper.jpg";
-            $request->file('path')->move('img', $fileName);
-            $paper->path = $fileName;
-        }
-        elseif($request->hasFile("")){
+        if($request->hasFile('path')){
             $paper = \App\Models\Paper::find($id);
             $paper->fill($request->all());
-            $fileName = \Carbon\Carbon::now()->timestamp."_editpaper.jpg";
+            $fileName = \Carbon\Carbon::now()->timestamp.'_editpaper.jpg';
             $request->file('path')->move('img', $fileName);
             $paper->path = $fileName;
         }

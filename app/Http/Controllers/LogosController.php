@@ -43,7 +43,7 @@ class LogosController extends Controller
     public function store(\App\Http\Requests\CreateLogoRequest $request)
     {
       $logo = \App\Models\Logo::create($request->all());
-      $fileName = \Carbon\Carbon::now()->timestamp."_logo.jpg";
+      $fileName = \Carbon\Carbon::now()->timestamp.'_logo.jpg';
       $request->file('path')->move('img', $fileName);
       $logo->path = $fileName;
       $logo->save();
@@ -85,8 +85,8 @@ class LogosController extends Controller
     {
         $logo = \App\Models\Logo::find($id);
         $logo->fill($request->all());
-        if($request->hasFile("img")){
-            $fileName = \Carbon\Carbon::now()->timestamp."_editlogo.jpg";
+        if($request->hasFile('path')){
+            $fileName = \Carbon\Carbon::now()->timestamp.'_editlogo.jpg';
             $request->file('path')->move('img', $fileName);
             $logo->path = $fileName;  
         }

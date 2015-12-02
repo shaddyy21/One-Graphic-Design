@@ -38,9 +38,17 @@
                <h1>Home</h1>
             <div class="img-slider">
 				<div class="image-slider">
-                 @foreach(App\Models\Pack::all()->sortBy('desc') as $pack)
-                    <a href="{{url('pack/'.$pack->id)}}"><img src="{{asset('img/'.$pack->path)}}" alt="Packaging"></a>
-                 @endforeach
+                    @foreach(App\Models\Paper::all()->sortBy('desc') as $paper)
+                        <a href="{{url('paper/'.$paper->id)}}"><img src="{{asset('img/'.$paper->path)}}" alt="Packaging"></a>
+                    @endforeach
+                    
+                    @foreach(App\Models\Logo::all()->sortBy('desc') as $logo)
+                        <a href="{{url('logo/'.$logo->id)}}"><img src="{{asset('img/'.$logo->path)}}" alt="Packaging"></a>
+                    @endforeach
+                    
+                    @foreach(App\Models\Pack::all()->sortBy('desc') as $pack)
+                        <a href="{{url('pack/'.$pack->id)}}"><img src="{{asset('img/'.$pack->path)}}" alt="Packaging"></a>
+                    @endforeach
 				</div>
 			</div>
             </section>

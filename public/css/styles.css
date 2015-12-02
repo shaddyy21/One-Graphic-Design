@@ -761,12 +761,14 @@ section {
   display: -ms-flexbox;
   display: flex;
   border-bottom: #6E6E6E solid thin;
+  margin: auto;
   margin-top: 3em;
-  margin: auto; }
+  width: 80%; }
   .paperAd .portAd {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
     margin: auto; }
     .paperAd .portAd img {
       width: 10em;

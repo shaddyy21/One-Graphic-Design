@@ -1,6 +1,46 @@
 /*==============================================================*/
 /*                          Admin                               */
 /*==============================================================*/
+    .headingA{
+        background-color: $secondary-back-color;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        height: 6.5em;
+        display: flex;
+        top: 0;
+        left: 0;
+
+        a{
+            width: 70%;
+            margin: auto;
+            .headImg{
+                width: 100%;
+                margin: auto;            
+            }
+        }
+
+        p{
+            text-decoration: none;
+            margin: auto;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+
+        .admin{
+            
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
     #Admin{
         margin-right: 1em;
     }
@@ -180,6 +220,7 @@
     }
 
     .profile{
+        width: 52em;
         margin: auto;
         font-size: 1.5em;
         .pro{
@@ -188,23 +229,15 @@
                 display: block;
                 margin-left: 15em;
                 text-align: center;
-                width: 5em;
+                width: 5em;       
             }
-
-            #EmailUs{
-                margin-left: 14.16em;
-            }
-
+            
             h4{
                 display: block;
                 width: 15em;
                 height: 1.64em;
                 margin: -2.89em 0 0 23.5em;
-                text-align: center;
-            }
-
-            #EmailU{
-                margin-left: 26.8em;
+                text-align: center;        
             }
 
             a{

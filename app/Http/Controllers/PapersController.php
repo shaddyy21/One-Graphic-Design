@@ -88,7 +88,14 @@ class PapersController extends Controller
         if($request->hasFile("img")){
             $fileName = \Carbon\Carbon::now()->timestamp."_editpaper.jpg";
             $request->file('path')->move('img', $fileName);
-            $paper->path = $fileName;  
+            $paper->path = $fileName;
+        }
+        elseif($request->hasFile("")){
+            $paper = \App\Models\Paper::find($id);
+            $paper->fill($request->all());
+            $fileName = \Carbon\Carbon::now()->timestamp."_editpaper.jpg";
+            $request->file('path')->move('img', $fileName);
+            $paper->path = $fileName;
         }
         $paper->save();
         return redirect('admin#PaperAd');

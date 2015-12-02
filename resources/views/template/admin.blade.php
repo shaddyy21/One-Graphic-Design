@@ -50,7 +50,7 @@
                             @endif
                             </div>
                             <div class="buttonsStat">
-                                <a href="{{url('paper/'.$paper->id.'/active')}}">{!! FA::icon('check'),'&nbsp;&nbsp;Activate' !!}</a>
+                                <a href="{{url('papers/'.$paper->id.'/active')}}">{!! FA::icon('check'),'&nbsp;&nbsp;Activate' !!}</a>
                                 <a class="deactiveBtn" href="{{url('papers/'.$paper->id.'/deactive')}}">{!!                                                                   FA::icon('times'),'&nbsp;&nbsp;Deactivate' !!}</a>                           
                             </div>
 

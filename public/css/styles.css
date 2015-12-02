@@ -289,23 +289,21 @@ footer p {
   display: flex;
   top: 0;
   left: 0; }
-  .heading h1 {
-    margin: auto;
-    -webkit-flex: 1 1 100%;
-    -ms-flex: 1 1 100%;
-    flex: 1 1 100%;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center; }
+  .heading a {
+    width: 70%;
+    margin: auto; }
+    .heading a .headImg {
+      width: 100%;
+      margin: auto; }
   .heading p {
     text-decoration: none;
     margin: auto; }
-  .heading img {
-    width: 80%;
-    margin: auto; }
-  .heading .admin a {
-    color: black;
-    text-decoration: none; }
+  .heading .admin {
+    display: inline-block;
+    margin: 5em 3em 0 0; }
+    .heading .admin a {
+      color: black;
+      text-decoration: none; }
 
 #Nav {
   width: 100%;
@@ -699,6 +697,35 @@ section {
 /*==============================================================*/
 /*                          Admin                               */
 /*==============================================================*/
+.headingA {
+  background-color: #6E6E6E;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  height: 6.5em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0; }
+  .headingA a {
+    width: 70%;
+    margin: auto; }
+    .headingA a .headImg {
+      width: 100%;
+      margin: auto; }
+  .headingA p {
+    text-decoration: none;
+    margin: auto; }
+    .headingA p a {
+      text-decoration: none;
+      color: black; }
+  .headingA .admin a {
+    text-decoration: none;
+    color: black; }
+
 #Admin {
   margin-right: 1em; }
 
@@ -843,6 +870,7 @@ section {
   margin: auto; }
 
 .profile {
+  width: 52em;
   margin: auto;
   font-size: 1.5em; }
   .profile .pro {
@@ -852,16 +880,12 @@ section {
       margin-left: 15em;
       text-align: center;
       width: 5em; }
-    .profile .pro #EmailUs {
-      margin-left: 14.16em; }
     .profile .pro h4 {
       display: block;
       width: 15em;
       height: 1.64em;
       margin: -2.89em 0 0 23.5em;
       text-align: center; }
-    .profile .pro #EmailU {
-      margin-left: 26.8em; }
     .profile .pro a {
       display: block;
       margin: 2em auto 1em auto;
@@ -931,17 +955,19 @@ section {
     z-index: 1000; }
     .heading a {
       margin: auto;
-      width: 75%; }
+      width: 85%; }
       .heading a .headImg {
         width: 100%;
         margin: auto; }
-    .heading .admin a {
-      color: black;
-      font-size: 1.5em;
-      text-decoration: none;
-      text-align: center;
-      display: inline-block;
-      margin: 3.5em 0 0 0; }
+    .heading .admin {
+      margin: 2em 0.5em 0 0; }
+      .heading .admin a {
+        color: black;
+        font-size: 1.5em;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        margin: 3.5em 0 0 0; }
     .heading #Bars {
       font-size: 3em; }
   section {
@@ -1055,10 +1081,12 @@ section {
 /*==========================================================================================*/
 @media only screen and (min-width: 55em) {
   .heading {
+    margin: 0 0 1em 0;
+    width: 100%;
     height: 11em; }
     .heading a {
       margin: auto;
-      width: 75%; }
+      width: 80%; }
       .heading a .headImg {
         width: 100%;
         margin: auto; }
